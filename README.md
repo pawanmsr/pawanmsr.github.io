@@ -1,6 +1,8 @@
 Personal Outreach
 =================
 
+[![Build Status](https://travis-ci.com/pawanmsr/pawanmsr.github.io.svg?branch=main)](https://travis-ci.com/pawanmsr/pawanmsr.github.io)
+
 Personal GitHub Pages repository.  
 Powered by [Jekyll](https://github.com/jekyll/jekyll). Flavored with [Daktilo](https://github.com/kronik3r/daktilo).
 
