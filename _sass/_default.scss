@@ -26,6 +26,13 @@ img {
     max-width: 100%;
 }
 
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
 blockquote {
     letter-spacing: 3px;
     margin:0px;
@@ -72,8 +79,16 @@ strong {
     overflow: hidden;
 }
 
+.footer {
+    overflow: hidden;
+}
+
 .navigation {
     float:left;
+}
+
+.attribution {
+    text-align: center;
 }
 
 .logo {
