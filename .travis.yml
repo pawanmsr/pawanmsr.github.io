@@ -13,9 +13,8 @@ script: ./script/cibuild
 
 branches:
   only:
-  - master
   - main
-  - dev
+  - master
 
 addons:
   apt:
