@@ -1,7 +1,7 @@
 # Site settings
 title: Pawan
 description: >
-  Hi I am Pawan. I write sometimes. Check it out.
+  Hi, I am Pawan. I write sometimes. Check it out.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
