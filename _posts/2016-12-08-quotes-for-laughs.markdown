@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Quotes for Laughs"
-subtitle: "Just some humourous quotes from famous people."
+subtitle: "Just some hilarious quotes from famous people."
 date:   2016-12-08 08:55
 categories: [fun]
 ---
 
-Here are some funny sayings by famous people to chuckle to. Found these in my Journal.
+Found these in my Journal. Chuckle off!
 
 Albert Einstein:
 > Common sense is the collection of prejudices acquired by age of eighteen.
