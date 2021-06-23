@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reason for Education"
-subtitle: "Why I think education is necessary."
+subtitle: "My thoughts on the most important reason why education must be essential."
 date:   2021-01-23 15:35
 categories: [blog]
 ---
@@ -16,6 +16,6 @@ Education is not a destination but an eternal journey and possessing the faculty
 Confucius:
 > Learn as though you would never be able to master it; hold it as though you would be in fear of losing it.
 
-Wrong is easier done than thought about. Hold your morals and principles dear to you but do not be stringent, for at times the distinction between right and wrong is obfuscated. Springing to the dark side requires no effort and there will always be ample perpetrators trying to dismantle the society. It requires effort to hold on to the light. This is where education comes to be: your knowledge and training helps you listen and understand everyone and filter out useful data from chatter and make rational and informed decisions for yourself and the society you live in. Hasty decisions often turn out to be long term regrets. Be kind to everyone, for everyone is fighting their own battles. Happy learning.
+Wrong is easier done than thought about. Hold your morals and principles dear to you but do not be stringent, for at times the distinction between right and wrong is obfuscated. Springing to the dark side requires no effort and there will always be ample perpetrators trying to dismantle the society. It requires effort to hold on to the light. This is where education comes to be: your knowledge and training helps you listen to and understand everyone, and filter out useful data from chatter, and make rational and informed decisions for yourself and the society you live in. Hasty decisions often turn out to be long term regrets [IMO]. Be kind to everyone, for everyone is fighting their own battles. Happy learning.
 
 Alright, I am off to play AoE. If you have any thoughts, please feel free to [mail me](mailto:pawanmsr@outlook.com).
