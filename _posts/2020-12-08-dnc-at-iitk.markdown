@@ -123,12 +123,16 @@ Various domains of data processing techniques, classified on the basis of type o
 
 ### Resources
 
-Data processing is a vast area and the domains mentioned above are full fledged fields of their own. The list of resources is endless. [Drop me a mail](mailto:pawanmsr@outlook.com?subject=[D&C]Share%20resources) with the particular field you are interested in and I will tell you of the resources I know of.
+Data processing is a vast area and the domains mentioned above are full fledged fields of their own. The list of resources is endless. [Drop me a mail](mailto:pawanmsr@outlook.com?subject=[DnC]%20Resource%20Request) with the particular field you are interested in and I will tell you of the resources I know of.
 
-## Further
+## Exploration
 
 Becoming an expert in each of the above mentioned sections is a nice thing to aim, but it is not required. Each of the above sections have job roles associated with them. A Database Administrator, for instance, needs to deploy and maintain (and seldom design) databases. They need to perform queries and organize data models.
 
 For certain roles, the kind of work is highly variable. One such role is Data Analyst. A Data Analyst needs to have prowess in areas that are required to help them successfully analyse the data they intend to work with. A Financial Analyst, for example, needs to have working knowledge of time series analysis and differential equations, among others.
 
-Many roles cannot be easily bifurcated from each other and there is substantial overlap between roles [SIT]. Always try to find out what will be expected from you before accepting the role. Firms often try to ramp up the nature of work in their job descriptions, against the actual expectation, to attract candidates. In other words, be wary of taking a job as Data Engineer, for example, and then end up running SQL queries all day (there’s nothing wrong or extremely easy about running SQL queries all day; but that is not the only thing a Data Engineer does) [IMO].
+Many roles cannot be easily bifurcated from each other and there is substantial overlap between roles [SIT]. Always try to find out what will be expected from you before accepting the role. Firms often try to ramp up the nature of work in their job descriptions, against the actual expectation, to attract candidates. In other words, be wary of taking a job as Data Engineer, for example, and then end up running SQL queries all day (there’s nothing wrong or extremely easy about running SQL queries all day; but that is not the only thing a Data Engineer does [IMO]).
+
+## Acknowledgements
+
+The brilliant community of professors, students and researchers at IITK, and the fabulous friends I made there.
