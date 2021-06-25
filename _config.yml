@@ -8,9 +8,8 @@ url: "" # the base hostname & protocol for your site
 
 author:
   fullname: Pawan Harendra Mishra
-  # googleplus: https://www.google.com/+MotaquillahMaddane
   github: pawanmsr
-  # twitter: electrik_frog
+  # twitter: twitter_name
   # disqus: your_disqus_forum_shortname
   instagram: pawanmsr
   linkedin: pawanmsr
@@ -18,7 +17,7 @@ author:
   email: pawanmsr@outlook.com
   facebook: pawanharendramishra
 
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'G-D38QQ9CS1K'
 
 # Syntax highlighting
 highlightstyle: ''
