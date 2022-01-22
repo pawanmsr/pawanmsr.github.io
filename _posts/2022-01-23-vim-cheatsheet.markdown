@@ -49,7 +49,7 @@ Look for `~/.vimrc`.
  
 ### General Commands  
 
-Commands are made up of `set` followed by of options. Options may hold value.  
+Commands are made up of `set` followed by options. Options may hold value.  
 
 Boolean options can be toggled by appending `!` to the option.  
 Boolean options can be unset by prepending `no` to the option.  
