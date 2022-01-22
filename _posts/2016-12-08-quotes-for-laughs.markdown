@@ -4,7 +4,7 @@ title:  "Quotes for Laughs"
 subtitle: "Just some hilarious quotes from famous people."
 date:   2016-12-08 08:55
 author:
-    fullname: Various Authors, Pawan
+    fullname: Various Authors
 categories: [fun]
 ---
 
