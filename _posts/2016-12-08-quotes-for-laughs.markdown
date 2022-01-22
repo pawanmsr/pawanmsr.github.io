@@ -39,3 +39,4 @@ Isaac Asimov:
 
 Theodore Roosevelt:
 > If you could kick the person in the pants responsible for most of your trouble, you would not sit for a month.
+
