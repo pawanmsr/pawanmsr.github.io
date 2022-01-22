@@ -4,7 +4,7 @@ title:  "Quotes for Laughs"
 subtitle: "Just some hilarious quotes from famous people."
 date:   2016-12-08 08:55
 author:
-    fullname: Various Authors, Pawan
+    fullname: Various Authors
 categories: [fun]
 ---
 
@@ -39,3 +39,4 @@ Isaac Asimov:
 
 Theodore Roosevelt:
 > If you could kick the person in the pants responsible for most of your trouble, you would not sit for a month.
+
