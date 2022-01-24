@@ -26,7 +26,6 @@ A prowess in typing will make vim enjoyable:
 
 ### Resources  
 
-- [SpeedCoder](https://www.speedcoder.net).  
 - `vimtutor` Command-line program.  
 - `:help _` Visit vim's documentation. Replace `_` with command.  
 
