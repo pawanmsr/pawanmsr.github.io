@@ -6,7 +6,7 @@ date:   2021-01-23 15:35
 categories: [blog]
 ---
 
-I believe that education is essential regardless of whatever a person intends to do. By education, I mean, not only possessing the necessary knowledge of how the world works, but also the wisdom to apply it. Schools and universities often focus on knowledge acquisition and seldom on thinking. Thinking is as much important compared to rote learning, if not more. Education is an amalgamation of knowledge and wisdom. Where the former is quite easy to acquire by means of ample resources avaliable, the later is quite rare.  
+I believe that education is essential regardless of whatever a person intends to do. By education, I do not mean just having a degree or a certificate - which a proof of certain kind of knowledge - but also being aware of the essentials of how the world works. Schools and universities often focus on knowledge acquisition and seldom on thinking. Thinking is as much important compared to rote learning, if not more. Education is an amalgamation of knowledge and wisdom. Where the former is quite easy to acquire (by means of ample resources avaliable), the later is quite rare and difficult (and requires one to churn through several processes and gain an overall perspective of the society and world at large) [IMO].  
 
 Mahatma Gandhi:
 > Live as if you were to die tomorrow. Learn as if you were to live forever.
