@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coding Adventures: Vim"
+title: "Programming Adventures: Vim"
 subtitle: "Guide to vim for programmers."
 date: 2022-01-23 00:15
 categories: [blog]
