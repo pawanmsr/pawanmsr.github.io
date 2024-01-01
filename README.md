@@ -6,23 +6,23 @@ Work In Progress - Under Development.
 
 ## Structure
 
-- [ ] Add layouts in [_layouts](/_layouts/).
-- [ ] Add includes in [_includes](/_includes/).
-- [ ] Add assets to [assets](/assets/).
-- [ ] Add data to [_data](/_data/).
-- [ ] Add stylesheet to [_sass](/_sass/).
+- [ ] Views in [_layouts](/_layouts/).
+- [ ] Components in [_includes](/_includes/).
+- [ ] Libraries in [assets](/assets/).
+- [ ] Data in [_data](/_data/).
+- [ ] Stylesheet in [_sass](/_sass/).
 
 ## Design
 
 <pre>
 
-             Header
-        ----------------
-        |              |
-   Nav  |    Content   | Utils 
-        |              |
-        ----------------
-             Footer
+     |    Header    |
+     ----------------
+     |              |
+ Nav |    Content   | Utils
+     |              |
+     ----------------
+     |    Footer    |
 
 </pre>
 
@@ -38,4 +38,16 @@ The **Header** will contain the title of the post. The **Utils** with contain th
 
 ## Themes
 
-Space and Classroom.
+Space (dark) and Classroom (multicolor).
+
+## Languages
+
+- Language Support:
+    - [ ] Hindi
+    - [ ] Marathi
+    - [ ] . . . 
+
+## Tools and Frameworks
+
+- [Feather](https://feathericons.com/)
+- [Foundation](https://get.foundation/)
