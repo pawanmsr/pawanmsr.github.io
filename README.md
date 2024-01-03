@@ -6,11 +6,15 @@ Work In Progress - Under Development.
 
 ## Structure
 
-- [ ] Views in [_layouts](/_layouts/).
-- [ ] Components in [_includes](/_includes/).
-- [ ] Libraries in [assets](/assets/).
-- [ ] Data in [_data](/_data/).
-- [ ] Stylesheet in [_sass](/_sass/).
+Standard jekyll structure.
+
+- Views in [_layouts](/_layouts/).
+- Components in [_includes](/_includes/).
+- Libraries in [assets](/assets/).
+- Data in [_data](/_data/).
+- Stylesheet in [_sass](/_sass/).
+- Javascript/Typescript in [_script](/_script/).
+
 
 ## Design
 
@@ -42,12 +46,18 @@ Space (dark) and Classroom (multicolor).
 
 ## Languages
 
+English (India/UK) is the default.
+
 - Language Support:
     - [ ] Hindi
     - [ ] Marathi
+    - [ ] Telugu
     - [ ] . . . 
 
 ## Tools and Frameworks
 
 - [Feather](https://feathericons.com/)
 - [Foundation](https://get.foundation/)
+- [MathJax](https://www.mathjax.org/)
+- [ ] Blender/CAD/Animation
+- [ ] Diagrams/Flowcharts
