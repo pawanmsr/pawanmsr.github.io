@@ -9,3 +9,7 @@ Gemfile.lock
 
 # Editor
 .vscode
+
+# NPM
+node_modules
+package-lock.json
