@@ -82,3 +82,8 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+
+
+# Compress/minify the generated css file.
+sass:
+  style: compressed
