@@ -1,0 +1,37 @@
+<!-- Footer -->
+
+<footer>
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+        <div class="cell small-1 text-left">
+            <div data-sticky-container>
+                <div class="sticky" data-stick-to="bottom" data-sticky>
+                    <button type="button">
+                        <i data-feather="sun"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cell small-5 text-left">
+            {% if page.layout == 'post' %}
+            Written by <strong>{{ page.author | default: site.author }}</strong>
+            {% endif %}
+        </div>
+
+        <div class="cell small-5 text-right">
+            <small>Some Rights Reserved.</small>
+        </div>
+    
+        <div class="cell small-1 text-right">
+            <a href="#top" data-smooth-scroll>
+                <div data-sticky-container>
+                    <div class="sticky" data-stick-to="bottom" data-sticky>
+                        <button type="button" data-toggle="up">
+                            <i data-feather="arrow-up-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>

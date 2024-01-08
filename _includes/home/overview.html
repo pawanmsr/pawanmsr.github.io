@@ -1,0 +1,63 @@
+<!-- Hello -->
+
+<div class="grid-y grid-frame grid-padding-y grid-padding-x">
+    <div class="cell small-6 text-justify">
+        <p>Hi, this is the overview section. Here one may introduce themselves to the prospective readers and provide an overview of their fields of study, whether it be Quantum Mechanics or Category Theory.</p>
+    </div>
+
+    <div class="cell small-4 text-center">
+        <img src="{{ 'assets/img/profile.png' | relative_url }}" alt="Author image">
+    </div>
+
+    <div class="cell small-2">
+        <ul class="menu align-center simple">
+            {% if site.twitter.username %}
+            <li>
+                <a href="https://{{ site.twitter.url }}/{{ site.twitter.username }}">
+                    <i data-feather="twitter"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.github.username %}
+            <li>
+                <a href="https://{{ site.github.url }}/{{ site.github.username }}">
+                    <i data-feather="github"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.linkedin.username %}
+            <li>
+                <a href="https://{{ site.linkedin.url }}/{{ site.linkedin.username }}">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.facebook.username %}
+            <li>
+                <a href="https://{{ site.facebook.url }}/{{ site.facebook.username }}">
+                    <i data-feather="facebook"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.instagram.username %}
+            <li>
+                <a href="https://{{ site.instagram.url }}/{{ site.instagram.username }}">
+                    <i data-feather="instagram"></i>
+                </a>
+            </li>
+            {% endif %}
+            
+            {% if site.twitch.username %}
+            <li>
+                <a href="https://{{ site.twitch.url }}/{{ site.twitch.username }}">
+                    <i data-feather="twitch"></i>
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

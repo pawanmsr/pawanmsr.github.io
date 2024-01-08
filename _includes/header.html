@@ -1,0 +1,33 @@
+<!-- Header -->
+
+<header>
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+        <div class="cell small-1 text-left">
+            <div data-sticky-container>
+                <div class="sticky" data-sticky>
+                    <button class="hide-for-large" type="button" data-toggle="nav">
+                        <i data-feather="sidebar"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="top" class="cell small-10 text-center">
+            {% if page.layout == 'home' %}
+            {% include home/search.html %}
+            {% else %}
+            {% include post/title.html %}
+            {% endif %}
+        </div>
+        
+        <div class="cell small-1 text-right">
+            <div data-sticky-container>
+                <div class="sticky" data-sticky>
+                    <button class="hide-for-large" type="button" data-toggle="side">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+<ul class="no-bullet">
+{% for post in site.posts %}
+    <a href="{{ post.url | prepend: site.base_url}}">
+        <li>
+            <h4>{{ post.title }} <small>{{ post.date | date: "%d %B %Y" }}</small></h4>
+        </li>
+    </a>
+{% endfor %}
+</ul>

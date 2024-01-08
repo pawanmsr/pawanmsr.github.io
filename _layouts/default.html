@@ -4,8 +4,20 @@
     {% include head.html %}
 
     <body>
-        {% include navigation.html %}
+        <div class="off-canvas-wrapper">
+            {% include navigation.html %}
 
-        {{ content }}
+            <div class="off-canvas-content" data-off-canvas-content>
+                {% include header.html %}
+
+                {{ content }}
+
+                {% include footer.html %}
+            </div>
+
+            {% include sidebar.html %}
+        </div>
+
+        {% include script.html %}
     </body>
 </html>

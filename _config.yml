@@ -18,18 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Jekyll Bhautiki # the title of the website (e.g.: name of the individual)
+author: Bhautiki
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Physics inspired feature-rich Jekyll theme with math support.
+  Physics inspired feature-rich Jekyll theme with Math support.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
   username: jekyllrb
-  url:
+  url: www.twitter.com
 github:
-  username:  jekyll
-  url:
+  username: jekyll
+  url: www.github.com
+linkedin:
+  username: jekyll-bhautiki
+  url: www.linkedin.com/in
+facebook:
+  username: jekyll-bhautiki
+  url: www.facebook.com
+instagram:
+  username: jekyll-bhautiki
+  url: www.instagram.com
+twitch:
+  username: jekyll-bhautiki
+  url: www.twitch.com
 
 # Build settings
 # theme: jekyll-bhautiki
@@ -41,8 +54,10 @@ google_analytics:
   id:
 
 # Language
-lang: en
-# langs = [en] # improve support later.
+lang: eng
+# langs = [eng, fre, hin, mar, tel, bho] # TODO: add language support
+# ISO 639.2 standard:
+# https://www.loc.gov/standards/iso639-2/php/code_list.php
 
 # Timezone
 timezone: Asia/Kolkata
@@ -68,7 +83,8 @@ exclude:
   - vendor/ruby/
   - LICENSE
   - README.md
-
+  - package.json
+  - package-lock.json
 
 kramdown:
   syntax_highlighter: rouge
@@ -87,3 +103,25 @@ kramdown:
 # Compress/minify the generated css file.
 sass:
   style: compressed
+
+collections:
+  pages:
+    output: true
+
+# Front Matter defaults.
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: "_posts" # an empty string here means all files in the project
+      type: posts # types available: pages, posts, drafts and custom collections (plural)
+    values:
+      layout: "post"
+      permalink: /post/:title
+  -
+    scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: "page"
+      permalink: /:title

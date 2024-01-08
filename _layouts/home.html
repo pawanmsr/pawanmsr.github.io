@@ -1,6 +1,29 @@
 ---
 layout: default
-refactor: true
 ---
 
-{% include home/header.html %}
+<div class="grid-container">
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+        {% for post in site.posts %}
+        <div class="cell">
+            <a href="{{ post.url | prepend: site_baseurl }}">
+                <div class="card">
+                    <div class="card-divider">
+                        <h4>{{ post.title }}</h4>
+                    </div>
+                    
+                    {% if post.image %}
+                        {% assign src = post.image.path | default: post.image %}
+                        {% assign alt = post.image.description | default: "Preview" %}
+                        <img class="card-image" src="{{ src | relative_url }}" alt="{{ alt }}">
+                    {% endif %}
+                    
+                    <div class="card-section">
+                        <p>{{ post.subtitle }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
