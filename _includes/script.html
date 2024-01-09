@@ -1,12 +1,19 @@
 <!-- Scripts -->
 
-<script src="{{ 'assets/external/jquery/js/jquery.min.js' | relative_url }}" crossorigin="anonymous"></script>
-<script src="{{ 'assets/external/feather-icons/js/feather.min.js' | relative_url }}" crossorigin="anonymous"></script>
-<script src="{{ 'assets/external/foundation-sites/js/foundation.min.js' | relative_url }}" crossorigin="anonymous"></script>
+<script src="{{ '/assets/external/jquery/js/jquery.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/external/feather-icons/js/feather.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/external/foundation-sites/js/foundation.min.js' | relative_url }}"></script>
 
-<script>
-    feather.replace();
-    $(document).ready(function() {
-        $(document).foundation();
-    });
-</script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+{% if page.toc %}
+<script src="{{ '/assets/external/tocbot/js/tocbot.min.js' | relative_url }}"></script>
+{% endif %}
+
+{% if page.layout == 'post' %}
+<script src="{{ '/assets/js/post.js' | relative_url }}"></script>
+{% endif %}
+
+{% if page.math %}
+<script src="{{ '/assets/external/mathjax/js/tex-mml-chtml.js' | relative_url }}"></script>
+{% endif %}

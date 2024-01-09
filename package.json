@@ -1,6 +1,23 @@
 {
+  "scripts": {
+    "build": "parcel build"
+  },
+  "targets": {
+    "default": {
+      "source": [
+        "_scripts/post.js",
+        "_scripts/main.js"
+      ],
+      "distDir": "assets/js/"
+    }
+  },
   "dependencies": {
     "feather-icons": "^4.29.1",
-    "foundation-sites": "^6.8.1"
+    "foundation-sites": "^6.8.1",
+    "mathjax": "^3.2.2",
+    "tocbot": "^4.25.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
   }
 }

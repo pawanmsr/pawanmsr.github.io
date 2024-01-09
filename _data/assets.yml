@@ -1,0 +1,3 @@
+# Syntax highlight
+pygments:
+  css: /assets/external/pygments/css/monokai.css

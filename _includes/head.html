@@ -1,8 +1,19 @@
 <!-- Meta & Style -->
 
 <head>
-    <title>Jekyll Bhautiki</title>
+    <title>
+        {% if page.title %}
+        {{ page.title }} |
+        {% endif %}
+        {{ site.title }}
+    </title>
 
-    <link rel="stylesheet" href="{{ '/assets/external/foundation-sites/css/foundation.min.css' | relative_url }}" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ '/assets/css/bhautiki.css' | relative_url }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/external/foundation-sites/css/foundation.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/bhautiki.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.data.assets.pygments.css | relative_url }}">
+
+    {% if page.layout == 'post' %}
+    <!-- add post specific css -->
+    <link rel="stylesheet" href="{{ '/assets/external/tocbot/css/tocbot.css' | relative_url }}">
+    {% endif %}
 </head>

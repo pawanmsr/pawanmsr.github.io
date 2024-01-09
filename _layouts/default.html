@@ -8,11 +8,13 @@
             {% include navigation.html %}
 
             <div class="off-canvas-content" data-off-canvas-content>
-                {% include header.html %}
+                <article>
+                    {% include header.html %}
 
-                {{ content }}
+                    {{ content }}
 
-                {% include footer.html %}
+                    {% include footer.html %}
+                </article>
             </div>
 
             {% include sidebar.html %}

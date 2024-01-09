@@ -18,6 +18,19 @@ Standard jekyll structure.
 - Stylesheet in [_sass](/_sass/).
 - Other scripts in [_script](/_script/).
 
+The scripts are bundled by parcel.
+
+```shell
+# Any change made to _scripts need to be bundled
+# before they can take effect.
+npm install
+
+# Remember: add (new) sources in package.json
+# before running parcel build.
+npm run build
+
+```
+
 #### Markups
 
 - [SASS](https://sass-lang.com/).
@@ -77,6 +90,18 @@ English (India/UK) is the default.
     - [ ] Telugu
     - [ ] . . . 
 
+Syntax highlighting is performed by [rouge](). Visit [Pygments](https://pygments.org/styles/) for available styles.
+
+```shell
+# Install Pygments.
+pipenv install
+
+export style=default # monokai (for dark mode)
+export pygments_dir=assets/external/pygments/css/
+mkdir -p $pygments_dir
+pygmentize -f html -S $style -a .highlight > $pygments_dir$style.css
+
+```
 
 ### Deployment Notes
 

@@ -12,14 +12,14 @@
             </div>
         </div>
         
-        <div class="cell small-5 text-left">
+        <div class="cell small-6 text-left">
             {% if page.layout == 'post' %}
-            Written by <strong>{{ page.author | default: site.author }}</strong>
+            Written by <strong>{{ page.author | default: site.author }}</strong> on <strong>{{ page.date | date: "%d %B %Y" }}</strong>.
             {% endif %}
         </div>
 
-        <div class="cell small-5 text-right">
-            <small>Some Rights Reserved.</small>
+        <div class="cell small-4 text-right">
+            <strong>Some Rights Reserved.</strong>
         </div>
     
         <div class="cell small-1 text-right">

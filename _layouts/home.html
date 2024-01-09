@@ -3,24 +3,28 @@ layout: default
 ---
 
 <div class="grid-container">
-    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+    <div class="grid-x grid-margin-x small-up-1 large-up-2">
         {% for post in site.posts %}
         <div class="cell">
             <a href="{{ post.url | prepend: site_baseurl }}">
                 <div class="card">
                     <div class="card-divider">
-                        <h4>{{ post.title }}</h4>
+                        <h5>{{ post.title }}</h5>
                     </div>
                     
+                    <div class="card-section">
+                        <h6>{{ post.subtitle }}</h6>
+                    </div>
+
+                    <div class="card-section text-right">
+                        <small>{{ post.date | date: "%d %B %Y" }}</small>
+                    </div>
+
                     {% if post.image %}
                         {% assign src = post.image.path | default: post.image %}
                         {% assign alt = post.image.description | default: "Preview" %}
-                        <img class="card-image" src="{{ src | relative_url }}" alt="{{ alt }}">
+                        <!-- add image tag -->
                     {% endif %}
-                    
-                    <div class="card-section">
-                        <p>{{ post.subtitle }}</p>
-                    </div>
                 </div>
             </a>
         </div>

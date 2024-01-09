@@ -2,13 +2,13 @@
 
 <div class="off-canvas position-left reveal-for-large" id="nav" data-off-canvas data-transition="push">
   <div class="grid-y grid-frame grid-padding-y grid-padding-x">
-    <div class="cell small-2">
-      <h3>
+    <div class="cell small-4">
+      <h1>
         {{ site.title }}
-      </h3>
+      </h1>
     </div>
 
-    <div class="cell small-4">
+    <nav class="cell small-6">
       <ul class="vertical menu">
         <li>
           <a href="{{ '/' | prepend: site.base_url }}" class="hollow button text-left">
@@ -41,11 +41,7 @@
           </a>
         </li>
       </ul>
-    </div>
-
-    <div class="cell small-4">
-      <img src="{{ 'assets/img/bhautiki-samay.gif' | relative_url }}" alt="Earth">
-    </div>
+    </nav>
 
     <div class="cell small-2">
       <p>{{ site.description }}</p>

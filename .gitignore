@@ -13,9 +13,15 @@ Gemfile.lock
 # NPM
 node_modules
 package-lock.json
+.parcel-cache
 
 # Ruby
 .ruby-version
+
+# Python for Pygments
+.python-version
+Pipfile.lock
+venv
 
 # Temporary
 _posts/*
