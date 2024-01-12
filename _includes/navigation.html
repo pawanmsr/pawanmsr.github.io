@@ -8,7 +8,7 @@
       </h1>
     </div>
 
-    <nav class="cell auto">
+    <nav class="cell shrink">
       <ul class="vertical menu">
         {% for section in site.data.sections %}
         {% assign name = section | first %}
@@ -24,7 +24,7 @@
       </ul>
     </nav>
 
-    <div class="cell shrink">
+    <div class="cell auto text-center">
       {% if site.data.assets.nav.img %}
       <img src="{{ site.data.assets.nav.img | relative_url }}" alt="Site Image">
       {% endif %}

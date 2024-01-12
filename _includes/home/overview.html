@@ -1,11 +1,11 @@
 <!-- Hello -->
 
 <div class="grid-y grid-frame grid-padding-y grid-padding-x">
-    <div class="cell auto text-center">
+    <div class="cell shrink text-center">
         {{- site.data.messages.overview.text -}}
     </div>
 
-    <div class="cell shrink">
+    <div class="cell auto text-center">
         {% if site.author.gravatar %}
         <img src="{{ site.author.gravatar | prepend: 'https://gravatar.com/avatar/' }}" alt="Author Gravtar">
         {% endif %}
