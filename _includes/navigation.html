@@ -2,49 +2,36 @@
 
 <div class="off-canvas position-left reveal-for-large" id="nav" data-off-canvas data-transition="push">
   <div class="grid-y grid-frame grid-padding-y grid-padding-x">
-    <div class="cell small-4">
+    <div class="cell shrink">
       <h1>
         {{ site.title }}
       </h1>
     </div>
 
-    <nav class="cell small-6">
+    <nav class="cell auto">
       <ul class="vertical menu">
+        {% for section in site.data.sections %}
+        {% assign name = section | first %}
+        {% if site.data.sections[name].path %}
         <li>
-          <a href="{{ '/' | prepend: site.base_url }}" class="hollow button text-left">
-            <i data-feather="home"></i>
-            <span>Home</span>
+          <a href="{{ site.data.sections[name].path | prepend: site.base_url }}" class="hollow button text-left">
+            <i data-feather="{{ site.data.sections[name].icon }}"></i>
+            <span>{{ name | upcase }}</span>
           </a>
         </li>
-        <li>
-          <a href="{{ '/about' | prepend: site.base_url }}" class="hollow button text-left">
-            <i data-feather="info"></i>
-            <span>About</span>
-          </a>
-        </li>
-        <li>
-          <a href="{{ '/categories' | prepend: site.base_url }}" class="hollow button text-left">
-            <i data-feather="bookmark"></i>
-            <span>Categories</span>
-          </a>
-        </li>
-        <li>
-          <a href="{{ '/tags' | prepend: site.base_url }}" class="hollow button text-left">
-            <i data-feather="tag"></i>
-            <span>Tags</span>
-          </a>
-        </li>
-        <li>
-          <a href="{{ '/archive' | prepend: site.base_url }}" class="hollow button text-left">
-            <i data-feather="archive"></i>
-            <span>Archive</span>
-          </a>
-        </li>
+        {% endif %}
+        {% endfor %}
       </ul>
     </nav>
 
-    <div class="cell small-2">
-      <p>{{ site.description }}</p>
+    <div class="cell shrink">
+      {% if site.data.assets.nav.img %}
+      <img src="{{ site.data.assets.nav.img | relative_url }}" alt="Site Image">
+      {% endif %}
+    </div>
+
+    <div class="cell small-2-shrink">
+      {{ site.description }}
     </div>
   </div>
 </div>

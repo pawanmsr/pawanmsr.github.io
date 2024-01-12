@@ -1,3 +1,40 @@
-# Syntax highlight
-pygments:
-  css: /assets/external/pygments/css/monokai.css
+
+head:
+  # Order sensitive for JavaScript (js).
+  jquery:
+    js: /assets/external/jquery/js/jquery.min.js
+  
+  foundation:
+    css: /assets/external/foundation-sites/css/foundation.min.css
+    js: /assets/external/foundation-sites/js/foundation.min.js
+  
+  feather:
+    js: /assets/external/feather-icons/js/feather.min.js
+  
+  main:
+    css: /assets/css/bhautiki.css
+    js: /assets/js/main.js
+  
+  # Syntax highlight
+  pygments:
+    css: /assets/external/pygments/css/monokai.css
+
+post:
+  js: /assets/js/post.js
+
+  tocbot:
+    css: /assets/external/tocbot/css/tocbot.css
+    js: /assets/external/tocbot/js/tocbot.min.js
+  
+  math:
+    js: /assets/external/mathjax/js/tex-mml-chtml.js
+
+nav:
+  img: /assets/img/bhautiki-samay.gif
+
+favicon:
+  apple-touch: /assets/img/favicon/apple-touch-icon.png
+  x32: /assets/img/favicon/favicon-32x32.png
+  x16: /assets/img/favicon/favicon-16x16.png
+  manifest: /assets/img/favicon/site.webmanifest
+  shortcut: /assets/img/favicon/favicon.ico

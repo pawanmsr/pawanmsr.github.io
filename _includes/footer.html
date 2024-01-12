@@ -5,21 +5,33 @@
         <div class="cell small-1 text-left">
             <div data-sticky-container>
                 <div class="sticky" data-stick-to="bottom" data-sticky>
-                    <button type="button">
-                        <i data-feather="sun"></i>
+                    <button id="mode" type="button">
+                        <i data-feather="moon"></i>
                     </button>
                 </div>
             </div>
         </div>
-        
+
         <div class="cell small-6 text-left">
             {% if page.layout == 'post' %}
-            Written by <strong>{{ page.author | default: site.author }}</strong> on <strong>{{ page.date | date: "%d %B %Y" }}</strong>.
+            Written by
+            {% if page.author %}
+            <strong>{{- page.author -}}</strong>
+            {% elsif page.authors %}
+            <strong>{{- page.authors[0] -}}</strong> et. al.
+            {% else %}
+            <strong>{{- site.author.name -}}</strong>
+            {% endif %}
+            {% if page.date %}
+            on <strong>{{ page.date | date: "%d %B %Y" }}</strong>.
+            {% endif %}
             {% endif %}
         </div>
 
         <div class="cell small-4 text-right">
-            <strong>Some Rights Reserved.</strong>
+            {% if page.layout == 'post' %}
+            {{- site.data.messages.copyright.text -}}
+            {% endif %}
         </div>
     
         <div class="cell small-1 text-right">

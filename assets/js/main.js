@@ -1,2 +1,2 @@
-$(document).ready(function(){$(document).foundation(),feather.replace()});
+(()=>{let e,t;let o=()=>{feather.replace()},s="data-theme",a="dark",n="light",i="mode";function m(){document.documentElement.setAttribute(s,a),$("#mode").find("svg").replaceWith('<i data-feather="sun"></i>'),o()}function d(){document.documentElement.setAttribute(s,n),$("#mode").find("svg").replaceWith('<i data-feather="moon"></i>'),o()}o(),$(document).foundation(),e=window.matchMedia("(prefers-color-scheme: dark)"),(t=sessionStorage.getItem(i))==a?m():t==n?d():(e.matches?m():d(),sessionStorage.setItem(i,"")),$("#mode").on("click",()=>{$("#mode").find("svg").hasClass("feather-moon")?(m(),sessionStorage.setItem(i,a)):(d(),sessionStorage.setItem(i,n))})})();
 //# sourceMappingURL=main.js.map

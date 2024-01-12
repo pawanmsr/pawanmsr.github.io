@@ -6,7 +6,7 @@ Physics inspired feature-rich Jekyll theme with math support.
 
 ## Development
 
-Status: Under Development.
+[Docs](/docs/) for more details.
 
 ### Guide
 
@@ -18,7 +18,7 @@ Standard jekyll structure.
 - Stylesheet in [_sass](/_sass/).
 - Other scripts in [_script](/_script/).
 
-The scripts are bundled by parcel.
+The scripts are bundled by `parcel`.
 
 ```shell
 # Any change made to _scripts need to be bundled
@@ -28,6 +28,21 @@ npm install
 # Remember: add (new) sources in package.json
 # before running parcel build.
 npm run build
+
+```
+
+Install ruby. Use `rbenv` if a multiple versions of ruby need to be present on development system.
+
+```shell
+
+# Install jekyll and blunder.
+gem install jekyll bundler
+
+# Install dependencies.
+bundle install
+
+# Host on local.
+bundle exec jekyll serve
 
 ```
 
@@ -43,9 +58,11 @@ Easy feature integration.
 - [Feather](https://feathericons.com/)
 - [Foundation](https://get.foundation/)
 - [MathJax](https://www.mathjax.org/)
+- [Tocbot](https://tscanlin.github.io/tocbot/)
+
+TODO
+
 - [ ] Blender/CAD/Animation
-- [ ] Diagrams/Flowcharts
-- [ ] Tex
 
 
 ### Design
@@ -78,7 +95,7 @@ The **Header** will contain the title like in a post, but the **Sidebar** will c
 
 #### Themes
 
-Space (dark) and Classroom (multicolor).
+Space (dark) and Vintage Notebook (multicolor).
 
 #### Languages
 
@@ -90,7 +107,7 @@ English (India/UK) is the default.
     - [ ] Telugu
     - [ ] . . . 
 
-Syntax highlighting is performed by [rouge](). Visit [Pygments](https://pygments.org/styles/) for available styles.
+Syntax highlighting is performed by [rouge](https://github.com/rouge-ruby/rouge). Visit [Pygments](https://pygments.org/styles/) for available styles.
 
 ```shell
 # Install Pygments.
@@ -100,22 +117,5 @@ export style=default # monokai (for dark mode)
 export pygments_dir=assets/external/pygments/css/
 mkdir -p $pygments_dir
 pygmentize -f html -S $style -a .highlight > $pygments_dir$style.css
-
-```
-
-### Deployment Notes
-
-Install ruby. Use `rbenv` if a multiple versions of ruby need to be present on development system.
-
-```shell
-
-# Install jekyll and blunder.
-gem install jekyll bundler
-
-# Install dependencies.
-bundle install
-
-# Host on local.
-bundle exec jekyll serve
 
 ```

@@ -19,35 +19,40 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Jekyll Bhautiki # the title of the website (e.g.: name of the individual)
-author: Bhautiki
-email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Physics inspired feature-rich Jekyll theme with Math support.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter:
-  username: jekyllrb
-  url: www.twitter.com
-github:
-  username: jekyll
-  url: www.github.com
-linkedin:
-  username: jekyll-bhautiki
-  url: www.linkedin.com/in
-facebook:
-  username: jekyll-bhautiki
-  url: www.facebook.com
-instagram:
-  username: jekyll-bhautiki
-  url: www.instagram.com
-twitch:
-  username: jekyll-bhautiki
-  url: www.twitch.com
+
+author:
+  name: Bhautiki
+  email: your-email@example.com
+  # supply sha256sum of email for gravatar
+  gravatar: '?d=robohash&f=y&s=200'
+  picture: /assets/img/bhautiki-samay.gif
+  url: https://example.com/
+  socials:
+    twitter:
+      username: jekyllrb
+    github:
+      username: jekyll
+    linkedin:
+      username: ""
+    facebook:
+      username: ""
+    instagram:
+      username: ""
+    twitch:
+      username: ""
+    goodreads:
+      username: ""
 
 # Build settings
 # theme: jekyll-bhautiki
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
 
 # Analytics
 google_analytics:
@@ -121,16 +126,24 @@ collections:
 defaults:
   -
     scope:
-      path: "_posts" # an empty string here means all files in the project
+      path: _posts # an empty string here means all files in the project
       type: posts # types available: pages, posts, drafts and custom collections (plural)
     values:
-      layout: "post"
+      layout: post
       permalink: /post/:title
       toc: true
   -
     scope:
-      path: "_pages"
+      path: _pages
       type: pages
     values:
-      layout: "page"
+      layout: page
       permalink: /:title
+
+jekyll-archives:
+  enabled: [year, tags, categories]
+  layout: archive
+  permalinks:
+    year: '/archive/:year/'
+    tag: '/archive/tag/:name/'
+    category: '/archive/category/:name/'

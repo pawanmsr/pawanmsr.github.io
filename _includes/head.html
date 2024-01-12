@@ -8,12 +8,39 @@
         {{ site.title }}
     </title>
 
-    <link rel="stylesheet" href="{{ '/assets/external/foundation-sites/css/foundation.min.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/bhautiki.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ site.data.assets.pygments.css | relative_url }}">
+    <!-- meta -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+    <meta name="title" content="{{ site.title }}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="color-scheme" content="[light | dark]+">
+    <meta name="robots" content="index, nofollow, nocache">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, interactive-widget=overlays-content, shrink-to-fit=no, viewport-fit=contain"/>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.data.assets.favicon.apple-touch | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.data.assets.favicon.x32 | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.data.assets.favicon.x16 | relative_url }}">
+    <link rel="manifest" href="{{ site.data.assets.favicon.manifest | relative_url }}">
+    <link rel="shortcut icon" href="{{ site.data.assets.favicon.shortcut | relative_url }}">
 
     {% if page.layout == 'post' %}
     <!-- add post specific css -->
-    <link rel="stylesheet" href="{{ '/assets/external/tocbot/css/tocbot.css' | relative_url }}">
+    {% for asset in site.data.assets.post %}
+    {% assign name = asset | first %}
+    
+    {% if site.data.assets.post[name].css %}
+    <link rel="stylesheet" href="{{ site.data.assets.post[name].css | relative_url }}">
     {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% for asset in site.data.assets.head %}
+    {% assign name = asset | first %}
+    
+    {% if site.data.assets.head[name].css %}
+    <link rel="stylesheet" href="{{ site.data.assets.head[name].css | relative_url }}">
+    {% endif %}
+    {% endfor %}
 </head>

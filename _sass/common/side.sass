@@ -1,16 +1,15 @@
-$side-width: 256px
-$side-height: 600px
+@use 'feather'
+@use 'image'
 
 #side
-    width: $side-width
+    width: $bar-width
 
     .grid-y
-        min-height: $side-height
-
+        min-height: $bar-height
+    
     img
-        max-height: 200px
-        max-width: 200px
-        object-fit: scale-down
-        border-radius: 50%
-        padding: 8px
-        margin: 4px
+        @include image.bar-image
+        @include image.rounded
+    
+    .feather
+        @include feather.feather-socials

@@ -1,0 +1,19 @@
+home:
+  path: /
+  icon: home
+
+about:
+  path: /about
+  icon: info
+
+categories:
+  path: /categories
+  icon: briefcase
+
+archive:
+  path: /archive
+  icon: archive
+
+tags:
+  path:
+  icon: tag

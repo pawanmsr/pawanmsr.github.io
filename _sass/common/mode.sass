@@ -1,0 +1,123 @@
+@mixin light-mode
+    --color: #06080F
+    --background: rgb(245, 245, 220) url('/assets/external/img/textured-paper.png')
+    
+    --bar-color: #4A0404
+    --bar-background: #FFF8DC url('/assets/external/img/dark-wood.png')
+
+    --hover: rgb(171, 171, 156)
+    --header-background: rgb(187, 187, 172)
+    --content-background: rgb(203, 203, 188)
+
+    --bar-link-color: #C04000
+    
+
+@mixin dark-mode
+    --color: #fff
+    --background: #000 url('/assets/external/img/stardust.png')
+    
+    --bar-color: #daa520
+    --bar-background: #855E42 url('/assets/external/img/dark-wood.png')
+    
+    --hover: #020202
+    --header-background: #0F0F0F
+    --content-background: #3A3A3A
+
+    --bar-link-color: #FFFF00
+    
+    
+html, html[data-theme="light"]
+    @include light-mode
+
+html[data-theme="dark"]
+    @include dark-mode
+
+@media (prefers-color-scheme: dark)
+    html, html[data-theme="dark"]
+        @include dark-mode
+    
+    html[data-theme="light"]
+        @include light-mode
+
+.off-canvas-content
+    background: var(--background)
+    color: var(--color)
+
+    a
+        color: var(--color)
+        font-weight: 700
+    
+    .feather
+        color: var(--color)
+    
+    code:
+        font-family: monospace
+        font-weight: 500
+        font-size: small
+    
+    .card
+        background: linear-gradient(to bottom, var(--header-background), var(--content-background))
+        color: var(--color)
+        border-color: var(--color)
+
+        p
+            font-weight: 400
+    
+    .card-divider
+        background: var(--header-background)
+    
+    .accordion
+        background: var(--header-background)
+    
+        .accordion-title
+            color: var(--color)
+            &:hover, &:focus
+                background-color: var(--hover)
+        
+        .accordion-content
+            background-color: var(--content-background)
+    
+    footer
+        font-size: smaller
+    
+    blockquote
+        border: none
+        letter-spacing: 3px
+        margin:0px
+        margin-top: 40px
+        margin-bottom: 70px
+        padding: 0px
+        text-align: center
+
+        p
+            display: inline
+            font-size: 20px
+            font-weight: 400
+            &:before
+                content: "“ "
+            &:after
+                content: " ”"
+
+.off-canvas
+    background: var(--bar-background)
+    color: var(--bar-color)
+
+    a
+        color: var(--bar-color)
+
+        &:hover
+            color: var(--bar-link-color)
+
+    .toc-link::before
+        background: var(--bar-color)
+
+    .is-active-link::before
+        background: var(--bar-background)
+
+    .button.hollow
+        color: var(--bar-color)
+        border-color: var(--bar-color)
+
+        &:hover
+            color: var(--bar-link-color)
+            border-color: var(--bar-link-color)

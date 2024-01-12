@@ -10,13 +10,20 @@ layout: page
     {% assign posts = category_list | last %}
     <li class="accordion-item" data-accordion-item>
         <!-- Accordion tab title -->
-        <a href="#" class="accordion-title"><i data-feather="bookmark"></i>{{- category | upcase -}}</a>
+        <a href="#" class="accordion-title">
+            <i data-feather="folder"></i>
+            {{- category | upcase -}}
+        </a>
 
         <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
         <div class="accordion-content" data-tab-content>
             <ul class="no-bullet">
                 {% for post in posts %}
-                <li><a href="{{ post.url | prepend: site.base_url }}">{{- post.title -}}</a></li>
+                <li>
+                    <a href="{{ post.url | prepend: site.base_url }}">
+                        {{- post.title -}}
+                    </a>
+                </li>
                 {% endfor %}
             </ul>
         </div>

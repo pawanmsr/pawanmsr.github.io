@@ -1,60 +1,34 @@
 <!-- Hello -->
 
 <div class="grid-y grid-frame grid-padding-y grid-padding-x">
-    <div class="cell small-6 text-justify">
-        <p>Hi, this is the overview section. Here one may introduce themselves to the prospective readers and provide an overview of their fields of study, whether it be Quantum Mechanics or Category Theory.</p>
+    <div class="cell auto text-center">
+        {{- site.data.messages.overview.text -}}
     </div>
 
-    <div class="cell small-4 text-center">
-        <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Author image">
+    <div class="cell shrink">
+        {% if site.author.gravatar %}
+        <img src="{{ site.author.gravatar | prepend: 'https://gravatar.com/avatar/' }}" alt="Author Gravtar">
+        {% endif %}
     </div>
 
-    <div class="cell small-2">
+    <div class="cell small-2-shrink">
         <ul class="menu align-center simple">
-            {% if site.twitter.username %}
-            <li>
-                <a href="https://{{ site.twitter.url }}/{{ site.twitter.username }}" target="_blank">
-                    <i data-feather="twitter"></i>
-                </a>
-            </li>
-            {% endif %}
-
-            {% if site.github.username %}
-            <li>
-                <a href="https://{{ site.github.url }}/{{ site.github.username }}" target="_blank">
-                    <i data-feather="github"></i>
-                </a>
-            </li>
-            {% endif %}
-
-            {% if site.linkedin.username %}
-            <li>
-                <a href="https://{{ site.linkedin.url }}/{{ site.linkedin.username }}" target="_blank">
-                    <i data-feather="linkedin"></i>
-                </a>
-            </li>
-            {% endif %}
-
-            {% if site.facebook.username %}
-            <li>
-                <a href="https://{{ site.facebook.url }}/{{ site.facebook.username }}" target="_blank">
-                    <i data-feather="facebook"></i>
-                </a>
-            </li>
-            {% endif %}
-
-            {% if site.instagram.username %}
-            <li>
-                <a href="https://{{ site.instagram.url }}/{{ site.instagram.username }}" target="_blank">
-                    <i data-feather="instagram"></i>
-                </a>
-            </li>
-            {% endif %}
+            {% for social in site.data.socials %}
+            {% assign name = social | first %}
             
-            {% if site.twitch.username %}
+            {% if site.author.socials[name].username %}
             <li>
-                <a href="https://{{ site.twitch.url }}/{{ site.twitch.username }}" target="_blank">
-                    <i data-feather="twitch"></i>
+                <a href="{{ site.data.socials[name].url }}/{{ site.author.socials[name].username }}" target="_blank">
+                    <i data-feather="{{ site.data.socials[name].icon }}"></i>
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+
+            {% if site.author.email %}
+            <li>
+                <a href="{{ site.data.socials.mail.url | append: ':' | append: site.author.email }}" crossorigin="anonymous" target="_blank">
+                    <i data-feather="{{ site.data.socials.mail.icon }}"></i>
                 </a>
             </li>
             {% endif %}
