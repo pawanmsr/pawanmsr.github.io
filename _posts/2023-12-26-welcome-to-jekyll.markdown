@@ -3,7 +3,8 @@ layout: post
 title:  "Welcome to Jekyll!"
 description: "First post by jekyll."
 date:   2023-12-26 20:11:31 +0530
-author: Jekyll
+author: # single author
+authors: [Jekyll, Bhautiki] # multiple authors
 categories: [guide]
 toc: false
 ---

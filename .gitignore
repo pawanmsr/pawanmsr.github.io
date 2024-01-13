@@ -17,6 +17,7 @@ package-lock.json
 
 # Ruby
 .ruby-version
+*.gem
 
 # Python for Pygments
 .python-version

@@ -2,6 +2,10 @@
 
 Physics inspired feature-rich Jekyll theme with math support.
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-bhautiki.svg)](https://badge.fury.io/rb/jekyll-bhautiki)
+
+[![Demo](https://i.ibb.co/f1Wn19m/jekyll-bhautiki.jpg)](https://ibb.co/TvGbv1z)
+
 > I will use this theme to eventually upgrade my personal blog. I looked at many themes that are already available, but I reckoned that most of them would require significant overhauls to fit my bill. Moreover, I feel that it would be fun maintaining my own theme for my own blog.
 
 ## Development

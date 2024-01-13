@@ -18,7 +18,7 @@
             {% if page.author %}
             <strong>{{- page.author -}}</strong>
             {% elsif page.authors %}
-            <strong>{{- page.authors[0] -}}</strong> et. al.
+            <strong>{{- page.authors | first -}}</strong> et al.
             {% else %}
             <strong>{{- site.author.name -}}</strong>
             {% endif %}
