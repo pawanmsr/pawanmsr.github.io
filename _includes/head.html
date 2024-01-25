@@ -1,6 +1,15 @@
 <!-- Meta & Style -->
 
 <head>
+    {% if jekyll.environment == 'production' %}
+    <!-- GA. -->
+    {% if site.analytics.google %}
+    {% include extra/gtag.html %}
+    {% endif %}
+
+    <!-- Other measurement tools. -->
+    {% endif %}
+    
     <title>
         {% if page.title %}
         {{ page.title }} |

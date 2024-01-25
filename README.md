@@ -33,9 +33,15 @@ npm install
 # before running parcel build.
 npm run build
 
+# Update Changelog.
+npm run log
+# Remember to change the version number in both:
+# - The jekyll-bhautiki.gemspec (for release)
+# - package.json (for changelog)
+
 ```
 
-Install ruby. Use `rbenv` if a multiple versions of ruby need to be present on development system.
+Install ruby. Use `rbenv`, if multiple versions of ruby need to be present on development system.
 
 ```shell
 
@@ -87,17 +93,17 @@ The **Navbar** and Footer is static.
 
 #### Home
 
-The **Header** will contain a searchbar. Search is performed on request (for static pages; dynamically on server) on the blog articles. The **Sidebar** will contain an overview section and display picture along with socials. The **Posts** will list articles as cards.
+The **Header** is supposed to contain a Searchbar. Search is performed on request (for static pages; dynamically on server) on the blog articles. The **Sidebar** is supposed to contain an overview section and display picture along with socials. The **Posts** is supposed to list articles as cards.
 
 #### Post
 
-The **Header** will contain the title of the post. The **Sidebar** with contain the contents/section names in faded manner.
+The **Header** is supposed to contain the title of the post. The **Sidebar** is supposed to contain the contents/section names.
 
 #### Pages
 
-The **Header** will contain the title like in a post, but the **Sidebar** will contian an overview section just like in the home page.
+The **Header** is supposed to contain the title, similar to a post, but the **Sidebar** is supposed to keep the overview section from the home page.
 
-#### Themes
+#### Modes
 
 Space (dark) and Vintage Notebook (multicolor).
 
