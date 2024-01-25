@@ -19,6 +19,3 @@ Poetry, Hobbies, Projects and more.  Laughs and learning.
 rake test
 
 ```
-
-TODO: cache gems for quicker builds.
-TODO: update run.sh.
