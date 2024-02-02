@@ -19,5 +19,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.12"
   
-  spec.required_ruby_version = ">= 3.3.0"
+  spec.required_ruby_version = ">= 3.2.3"
 end
