@@ -54,6 +54,9 @@ bundle install
 # Host on local.
 bundle exec jekyll serve
 
+# User gem build and gem push to
+# build and push gems.
+
 ```
 
 #### Markups
