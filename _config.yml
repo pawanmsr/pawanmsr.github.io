@@ -55,8 +55,8 @@ plugins:
   - jekyll-archives
 
 # Analytics
-google_analytics:
-  id:
+analytics:
+  google:
 
 # Language
 lang: eng
