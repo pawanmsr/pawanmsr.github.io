@@ -8,6 +8,8 @@
     <div class="cell auto text-center">
         {% if site.author.gravatar %}
         <img src="{{ site.author.gravatar | prepend: 'https://gravatar.com/avatar/' }}" alt="Author Gravtar">
+        {% elsif site.author.picture %}
+        <img src="{{ site.author.picture | relative_url }}" alt="Author Picture">
         {% endif %}
     </div>
 
