@@ -10,7 +10,7 @@ categories: [blog]
 
 [Very high-speed integrated circuit Hardware Description Language](https://en.wikipedia.org/wiki/VHDL){:target="_blank"} is a used to describe programmable digital [Systems On Chip](https://en.wikipedia.org/wiki/System_on_a_chip){:target="_blank"}.  
 
-I created this guide out of interest, to act as a cheat sheet for my *personal use*.  
+I created this guide out of interest, to act as a cheat-sheet for my *personal use*.  
 There were many high quality guides for Verilog, but not so many for VHDL.  
 
 ## Overview  
