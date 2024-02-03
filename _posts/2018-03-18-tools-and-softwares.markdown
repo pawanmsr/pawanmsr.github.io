@@ -34,9 +34,9 @@ Analysing Experimental Images
 - Fiji  
 - Imagej  
 
-[![Board](https://i.ibb.co/jJPCt15/tns.jpg)](https://ibb.co/LNXTK2P)  
+[![Board](https://i.ibb.co/jJPCt15/tns.jpg)](https://ibb.co/LNXTK2P){:target="_blank"}  
 
 Desire To Learn
 ---------------
 
-*If you are a motivated individual then visit [Swayam](https://swayam.gov.in/) to learn from various online courses - it is an initiative by GoI.*
+*If you are a motivated individual then visit [Swayam](https://swayam.gov.in/){:target="_blank"} to learn from various online courses - it is an initiative by GoI.*
