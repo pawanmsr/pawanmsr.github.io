@@ -28,13 +28,13 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.30121276"
      inkscape:cx="824.99825"
-     inkscape:cy="1160.3094"
+     inkscape:cy="1156.9895"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer16"
+     inkscape:current-layer="layer19"
      inkscape:export-bgcolor="#ffffffff" />
   <defs
      id="defs1">
@@ -457,6 +457,20 @@
          id="path6-1" />
     </marker>
   </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer19"
+     inkscape:label="background"
+     style="fill:#f9f9f9;fill-opacity:0.6;stroke:#ff6600"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.9;stroke:#ff6600;stroke-width:1.9969;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect2"
+       width="698.00305"
+       height="598.00311"
+       x="0.99844998"
+       y="0.99844998" />
+  </g>
   <g
      inkscape:label="verticalBar"
      inkscape:groupmode="layer"
@@ -1082,28 +1096,28 @@
      inkscape:groupmode="layer"
      id="layer18"
      inkscape:label="caption"
-     style="fill:#808080"
+     style="fill:#000000;stroke:none"
      sodipodi:insensitive="true">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="78.553055"
        y="554.38263"
        id="text17"><tspan
          sodipodi:role="line"
          id="tspan17"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
          x="78.553055"
          y="554.38263">Branches, Topics and Subtopics in the field of Physics</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="250.01654"
        y="570.07739"
        id="text18"><tspan
          sodipodi:role="line"
          id="tspan18"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
          x="250.01654"
          y="570.07739">A non extensive bare minimum overview.</tspan></text>
   </g>
@@ -1113,7 +1127,7 @@
      inkscape:label="unknown"
      sodipodi:insensitive="true">
     <rect
-       style="fill:#333333;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       style="fill:#000000;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        id="rect15"
        width="32"
        height="500"

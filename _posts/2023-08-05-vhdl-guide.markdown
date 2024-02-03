@@ -8,9 +8,9 @@ categories: [blog]
 
 # VHDL
 
-[Very high-speed integrated circuit Hardware Description Language](https://en.wikipedia.org/wiki/VHDL) is a used to describe programmable digital [Systems On Chip](https://en.wikipedia.org/wiki/System_on_a_chip).  
+[Very high-speed integrated circuit Hardware Description Language](https://en.wikipedia.org/wiki/VHDL){:target="_blank"} is a used to describe programmable digital [Systems On Chip](https://en.wikipedia.org/wiki/System_on_a_chip){:target="_blank"}.  
 
-I created this guide out of  to act as a cheatsheet for my *personal use*.  
+I created this guide out of  to act as a cheat sheet for my *personal use*.  
 There were many high quality guides for Verilog, but not so many for VHDL.  
 
 ## Overview  
@@ -168,7 +168,7 @@ WITH expression_to_evaluate SELECT
                              yet_another_value_or_source_signal WHEN OTHERS;
 
 -- there can be multiple values of evaluated expression in a single WHEN statement
--- multiple values need to be listed using '|' seperator
+-- multiple values need to be listed using '|' separator
 -- value_or_source_signal WHEN first_value | second_value | third_value,
 
 ```
@@ -390,7 +390,7 @@ TYPE state_type IS (ST0, ST1, ST2, ST3);
 
 ## Notes
 
-[GHDL](https://github.com/ghdl/ghdl) and other tools can be used to simulate designs on a general purpose computer but it is better to use an actual programmable chipset. Moreover, the chipset associated softwares are often shipped with common digital blocks that can be imported for higher level design.  
+[GHDL](https://github.com/ghdl/ghdl) and other tools can be used to simulate designs on a general purpose computer but it is better to use an actual programmable chip set. Moreover, the chip set associated softwares are often shipped with common digital blocks that can be imported for higher level design.  
 
 ### Verilog
 
