@@ -9,9 +9,9 @@ categories:	[blog]
 
 ## Featured Articles  
 
-*I usually don't add to this section often because to know if an article is worthwhile I need to throughly understand it and assertain its correctness, which is time consuming.*
+*I usually don't add to this section often because to know if an article is worthwhile I need to throughly understand it and ascertain its correctness, which is time consuming.*
 
-- [The Physics of Energy-Based Models](https://physicsofebm.github.io/)  
+- [The Physics of Energy-Based Models](https://physicsofebm.github.io/){:target="_blank"}  
 
 ## Books  
 
