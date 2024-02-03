@@ -12,7 +12,7 @@ Vim is a text editor.
 It's handy when working on most remote machines.  
 Many programmers use it as their default code editor.  
 
-I created this guide to act as a cheatsheet for my personal use.  
+I created this guide to act as a cheat sheet for my personal use.  
 People who use vim regularly often create one for reference.  
 More detailed vim guides for various use cases can be found on the internet.  
 
