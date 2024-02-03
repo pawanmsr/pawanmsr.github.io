@@ -48,4 +48,4 @@ Murray Gell-Mann:
 Albert Einstein:
 > Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.  
 
-*Ofcourse there are many funny things people would (or would not have said but were wrongly attributed) - these are just the ones I had came across.*
+*Of course there are many funny things people would (or would not have said but were wrongly attributed) - these are just the ones I had came across.*

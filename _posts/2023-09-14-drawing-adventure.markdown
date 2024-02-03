@@ -18,7 +18,7 @@ I have added minimal detailing to give it a cartoonish appearance. Moreover, add
 
 ![Su 30 MKI](/assets/img/posts/su-30.svg)
 
-Heavy, long-range, super-maneuverable, multi-role, twinjet fighter aircraft. Indian Air Force operates over 250 of these beautiful birds.  
+Heavy, long-range, super-maneuverable, multi-role, twin-jet fighter aircraft. Indian Air Force operates over 250 of these beautiful birds.  
 
 ### The Flying Bullet  
 
@@ -34,10 +34,10 @@ In the early 2000s, when I was barely aware of my own existence (very young), I 
 
 Imagine a requirement being specified for building a bunch of aircrafts and an airbase to host them! What kind of engineers (and associated technicians) would be required to handle such a development?
 
-Most importantly, a powerplant would be needed (or else any designed vehicle would be little more than a mock-up). Ofcourse a battery and motor coupled with large wings can take off, but for higher speeds a powerful engine would be required. Engines have different types (such as a piston engine or a turbine engine) and their configurations. A group of Mechanical Engineers, Materials Engineers and Chemical Engineers would be needed to design the various parts, made up of specific materials, and tuned for certain classes of fuels. Mechanical Engineers and Materials Engineers would also be needed, along with an Aerodynamicists or two, to design the Airframe. The design of avionics would need a bunch of Electrical Engineers. Inputs and outputs to and from the onboard instruments would be handled by programs, and Computer Engineers will need to design and implement the algorithms to enable the functions.
+Most importantly, a power plant would be needed (or else any designed vehicle would be little more than a mock-up). Of course a battery and motor coupled with large wings can take off, but for higher speeds a powerful engine would be required. Engines have different types (such as a piston engine or a turbine engine) and their configurations. A group of Mechanical Engineers, Materials Engineers and Chemical Engineers would be needed to design the various parts, made up of specific materials, and tuned for certain classes of fuels. Mechanical Engineers and Materials Engineers would also be needed, along with an Aerodynamicist or two, to design the Airframe. The design of avionics would need a bunch of Electrical Engineers. Inputs and outputs to and from the onboard instruments would be handled by programs, and Computer Engineers will need to design and implement the algorithms to enable the functions.
 
-The aircraft will need a hanger for parking, and a runway to fly from. The runway must allow smooth operations (for instance, it should neither fracture during winters nor should it bulge during summers). The runway, whether it be made of tarmac of concrete, would need to withstand load and must not sink even during emergengy landings of heavy lift cargo planes. A Civil Engineer can design them effectively.
+The aircraft will need a hanger for parking, and a runway to fly from. The runway must allow smooth operations (for instance, it should neither fracture during winters nor should it bulge during summers). The runway, whether it be made of tarmac of concrete, would need to withstand load and must not sink even during emergency landings of heavy lift cargo planes. A Civil Engineer can design them effectively.
 
-Sciences and Mathematics would come handy at various design phases. Structural analysis (shear, strain, stress, torsion, and more) would be needed to be performed to assertain the limits and reiterate design phase if the expectations fall short of the targetted specification.
+Sciences and Mathematics would come handy at various design phases. Structural analysis (shear, strain, stress, torsion, and more) would be needed to be performed to ascertain the limits and reiterate design phase if the expectations fall short of the targeted specification.
 
-On the whole, every class of engineer would be needed to successfully accomplish such a task and so such a bureau would be a heaven for engineers.
+On the whole, every class of engineer would be needed to successfully accomplish the above task and so such a bureau would be a heaven for engineers.
