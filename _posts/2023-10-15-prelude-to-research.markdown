@@ -15,7 +15,7 @@ Max Planck, one of the pioneers of Quantum Physics, was reportedly advised again
 
 > [...] in this field, almost everything is already discovered, and all that remains is to fill a few unimportant holes.  
 
-Heinrich Hertz, in 1977, wrote in his memoirs:
+Heinrich Hertz, wrote in his memoirs (published in 1977):
 
 > Sometimes I really regret that I did not live in those times when there was still so much that was new; to be sure enough much is yet unknown, but I do not think that it will be possible to discover anything easily nowadays that would lead us to revise our entire outlook as radically as was possible in the days when telescopes and microscopes were still new.
 
