@@ -8,7 +8,7 @@ toc:    false
 categories: [fun]
 ---
 
-*I thought of using on my poems to test out my (old) blog, but when I skimmed through my journal, I realized that most of what I wrote (at that time) was not worth reading if not completely garbage, but the quotes I had been collecting seemed pretty interesting. So I listed some of the funniest ones, and since then I haven't felt like removing this post.*
+*I thought of using one of my poems to test out my (old) blog, but when I skimmed through my journal, I realized that most of what I wrote (at that time) was not worth reading if not completely garbage, but the quotes I had been collecting seemed pretty interesting. So I listed some of the funniest ones, and since then I haven't felt like removing this post.*
 
 Found these in my Journal. Chuckle off!
 
