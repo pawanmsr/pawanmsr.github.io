@@ -13,4 +13,4 @@ I built this site to enable me to share more of my math-heavy articles, while en
 
 ## Me
 
-<a href="http://keyhero.com/profile/vayu/?ba" title="vayu's typing test profile"><img src="https://www.keyhero.com/static//badges/1499/typing-test-449894.png" alt="vayu's typing test WPM" style="vertical-align:middle"></a>
+[![vayu's typing test profile](https://www.keyhero.com/static//badges/1499/typing-test-449894.png)](http://keyhero.com/profile/vayu/?ba)

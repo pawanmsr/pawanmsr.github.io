@@ -14,10 +14,6 @@ head:
   main:
     css: /assets/css/bhautiki.css
     js: /assets/js/main.js
-  
-  # Syntax highlight
-  pygments:
-    css: /assets/external/pygments/css/monokai.css
 
 post:
   js: /assets/js/post.js
