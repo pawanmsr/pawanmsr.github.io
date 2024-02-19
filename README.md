@@ -4,7 +4,7 @@ Physics inspired feature-rich Jekyll theme with math support.
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-bhautiki.svg)](https://badge.fury.io/rb/jekyll-bhautiki)
 
-[![Demo](https://i.ibb.co/f1Wn19m/jekyll-bhautiki.jpg)](https://ibb.co/TvGbv1z)
+[![Demo](https://i.ibb.co/yXb3dqZ/jekyll-bhautiki.png)](https://ibb.co/vHKtVkT)
 
 > I will use this theme to eventually upgrade my personal blog. I looked at many themes that are already available, but I reckoned that most of them would require significant overhauls to fit my bill. Moreover, I feel that it would be fun maintaining my own theme for my own blog.
 
@@ -118,7 +118,12 @@ English (India/UK) is the default.
     - [ ] Hindi
     - [ ] Marathi
     - [ ] Telugu
-    - [ ] . . . 
+    - [ ] Kannada
+    - [ ] . . .  
+
+- Foreign Language Support:
+    - [ ] French
+    - [ ] . . .  
 
 Syntax highlighting is performed by [rouge](https://github.com/rouge-ruby/rouge). Visit [Pygments](https://pygments.org/styles/) for available styles.
 
@@ -130,5 +135,7 @@ export style=default # monokai (for dark mode)
 export pygments_dir=assets/external/pygments/css/
 mkdir -p $pygments_dir
 pygmentize -f html -S $style -a .highlight > $pygments_dir$style.css
+
+# TODO: convert to sass.
 
 ```

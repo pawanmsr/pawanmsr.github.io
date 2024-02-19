@@ -1,3 +1,4 @@
+
 @mixin light-mode
     --color: #06080F
     --background: rgb(245, 245, 220) url('/assets/external/img/textured-paper.png')
@@ -11,7 +12,7 @@
 
     --bar-link-color: #C04000
     --quote-color:  #00008B
-    
+
 
 @mixin dark-mode
     --color: #fff
@@ -30,9 +31,11 @@
     
 html, html[data-theme="light"]
     @include light-mode
+    @import '../../assets/external/pygments/css/default'
 
 html[data-theme="dark"]
     @include dark-mode
+    @import '../../assets/external/pygments/css/monokai'
 
 @media (prefers-color-scheme: dark)
     html, html[data-theme="dark"]

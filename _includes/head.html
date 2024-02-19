@@ -13,6 +13,9 @@
     <title>
         {% if page.title %}
         {{ page.title }} |
+        {% elsif page.type %}
+        <!-- For archives. -->
+        {{ page.type | upcase }} {{ page.title | default: page.date | date: "%Y" }} |
         {% endif %}
         {{ site.title }}
     </title>
