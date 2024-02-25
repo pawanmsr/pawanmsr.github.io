@@ -28,7 +28,7 @@ Most produced supersonic combat aircraft. Performs as a fighter-interceptor. Num
 
 #### The Thunder  
 
-In the early 2000s, when I was barely aware of my own existence (very young), I first saw the MiG 21 roar past wee bit away, at low levels over the barren plain (almost hugging the terrain). My memory fades, but I do remember standing beside a personnel as our heads tracked the jet - perhaps it was just taking off. I quivered with fear at first which soon turned into an unforgettable excitement. The experience was first of few, and I spent innumerable hours at school and libraries sifting through any encyclopedias and picture books that had more details about these fascinating machines. Oh what fun it was spitting (useless) facts to people around, and carve out models that left them bedazzled!
+Our world view is formed from the people we interact with and the things we enjoy doing. For instance, when I was barely aware of my own existence (very young), I first saw the MiG 21 roar past wee bit away, at low levels over the barren plain (almost hugging the terrain). I quivered with fear at first which soon turned into an unforgettable excitement. The experience was first of few, and I spent innumerable hours at school and libraries sifting through any encyclopedias and picture books that had more details about these fascinating machines. Oh what fun it was spitting (useless) facts to people around, and carve out models that left them bedazzled! I guess for this reason, I would often wish my examination centers to be at Kendriya Vidyalayas near an Air Force Station rather than some place in the middle of the city.
 
 ## Engineering Ecosystem  
 
