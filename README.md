@@ -20,7 +20,7 @@ Standard jekyll structure.
 - Components in [_includes](/_includes/).
 - Images, Packages, Scripts in [assets](/assets/).
 - Stylesheet in [_sass](/_sass/).
-- Other scripts in [_script](/_script/).
+- Other scripts in [_scripts](/_scripts/).
 
 The scripts are bundled by `parcel`.
 
