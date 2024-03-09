@@ -4,11 +4,18 @@ Physics inspired feature-rich Jekyll theme with math support.
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-bhautiki.svg)](https://badge.fury.io/rb/jekyll-bhautiki)
 
-[![Demo](https://i.ibb.co/yXb3dqZ/jekyll-bhautiki.png)](https://ibb.co/vHKtVkT)
+[![Demo](https://i.ibb.co/rM2DSYT/jekyll-bhautiki.png)](https://ibb.co/q9YTfKX)
 
-> I will use this theme to eventually upgrade my personal blog. I looked at many themes that are already available, but I reckoned that most of them would require significant overhauls to fit my bill. Moreover, I feel that it would be fun maintaining my own theme for my own blog.
+## Usage
 
-## Development
+This theme was developed for personal use.
+
+- Site data in [_data](/_data/).
+- Posts in [_posts](/_posts/).
+
+Attribution will be appreciated, always :grin:.
+
+## Development and Maintenance
 
 [Docs](/docs/) for more details.
 
@@ -71,7 +78,7 @@ Easy feature integration.
 - [Feather](https://feathericons.com/)
 - [Foundation](https://get.foundation/)
 - [MathJax](https://www.mathjax.org/)
-- [Tocbot](https://tscanlin.github.io/tocbot/)
+- [TocBot](https://tscanlin.github.io/tocbot/)
 
 TODO
 
@@ -114,7 +121,7 @@ Space (dark) and Vintage Notebook (multicolor).
 
 English (India/UK) is the default.
 
-- Language Support:
+- Indian Language Support:
     - [ ] Hindi
     - [ ] Marathi
     - [ ] Telugu

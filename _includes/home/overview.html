@@ -20,7 +20,7 @@
             
             {% if site.author.socials[name].username %}
             <li>
-                <a href="{{ site.data.socials[name].url }}/{{ site.author.socials[name].username }}" target="_blank">
+                <a href="{{ site.data.socials[name].url | append: site.author.socials[name].username }}" target="_blank">
                     <i data-feather="{{ site.data.socials[name].icon }}"></i>
                 </a>
             </li>
@@ -29,8 +29,8 @@
 
             {% if site.author.email %}
             <li>
-                <a href="{{ site.data.socials.mail.url | append: ':' | append: site.author.email }}" crossorigin="anonymous" target="_blank">
-                    <i data-feather="{{ site.data.socials.mail.icon }}"></i>
+                <a href="{{ site.data.socials.email.url | append: ':' | append: site.author.email }}" crossorigin="anonymous" target="_blank">
+                    <i data-feather="{{ site.data.socials.email.icon }}"></i>
                 </a>
             </li>
             {% endif %}
