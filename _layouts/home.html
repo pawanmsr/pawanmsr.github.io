@@ -4,7 +4,32 @@ layout: default
 
 <div class="grid-container">
     <div class="grid-x grid-margin-x small-up-1 large-up-2">
-        {% for post in site.posts %}
+        {% assign drafts = site.posts | where: "draft", true %}
+
+        {% assign count = site.posts.size | minus: drafts.size %}
+        {% assign rest_with_favourites = site.posts | sort: "draft" | slice: 0, count %}
+
+        {% assign favourites = rest_with_favourites | where: "favourite", true %}
+        
+        {% assign count = rest_with_favourites.size | minus: favourites.size %}
+        {% assign rest = rest_with_favourites | sort: "favourite" | slice: 0, count %}
+
+        {% assign posts = favourites | concat: rest | concat: drafts %}
+        
+        {% assign favourite = true %}
+        {% assign draft = false %}
+        
+        {% for post in posts %}
+        {% assign odd = index | modulo: 2 %}
+        
+        {% if favourite != post.favourite and odd %}
+        <div class="cell"></div> <hr>
+        {% endif %}
+        
+        {% if draft != post.draft and odd %}
+        <div class="cell"></div>
+        {% endif %}
+        
         <div class="cell">
             <a href="{{ post.url | prepend: site_baseurl }}">
                 <div class="card">
@@ -16,18 +41,34 @@ layout: default
                         <p>{{ post.description }}</p>
                     </div>
 
-                    <div class="card-section text-right">
-                        <small>{{ post.date | date: "%d %B %Y" }}</small>
+                    <div class="card-section">
+                        <small class="float-left">
+                            {% if post.favourite %}
+                            <i data-feather="star"></i> Favourite 
+                            {% endif %}
+
+                            {% if post.draft %}
+                            <i data-feather="edit-2"></i> Draft 
+                            {% endif %}
+                        </small>
+                        
+                        
+                        <small class="float-right">
+                            {{ post.date | date: "%d %B %Y" }}
+                        </small>
                     </div>
 
                     {% if post.image %}
                         {% assign src = post.image.path | default: post.image %}
                         {% assign alt = post.image.description | default: "Preview" %}
-                        <!-- add image tag -->
                     {% endif %}
+                    <!-- add image tag -->
                 </div>
             </a>
         </div>
+
+        {% assign favourite = post.favourite %}
+        {% assign draft = post.draft %}
         {% endfor %}
     </div>
 </div>
