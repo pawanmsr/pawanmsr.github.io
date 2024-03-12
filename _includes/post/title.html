@@ -2,6 +2,10 @@
 
 <h1>
     {{- page.title -}}
+    {% if page.draft %}
+    <small><br>DRAFT</small>
+    {% endif %}
+    
     <h2 class="subheader">
         {{- page.description -}}
     </h2>
