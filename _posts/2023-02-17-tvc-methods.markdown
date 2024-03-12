@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Hobby Mechanics: Practical Methods for TVC"
-description:    "[DRAFT] Actuation methods for thrust vector control in gyro-stabilized systems."
+description:    "Actuation methods for thrust vector control in gyro-stabilized systems."
 date:   2023-02-17 18:00 +0530
 categories: [blog,projects]
+draft: true
 ---
 
 Stalled.
