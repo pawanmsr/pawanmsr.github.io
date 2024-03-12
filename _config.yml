@@ -47,7 +47,7 @@ author:
     goodreads:
       username: pawanmsr
     youtube:
-      username: ""
+      username:
 
 # Build settings
 # theme: jekyll-bhautiki
