@@ -62,7 +62,7 @@ analytics:
 
 # Language
 lang: eng
-# langs = [eng, fre, hin, mar, kna, tel, bho] # TODO: add language support
+# langs = [eng, fre, hin, mar, kan, tel, ben, spa] # TODO: add language support
 # ISO 639.2 standard:
 # https://www.loc.gov/standards/iso639-2/php/code_list.php
 
