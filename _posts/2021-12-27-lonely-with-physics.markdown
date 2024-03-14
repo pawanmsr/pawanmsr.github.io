@@ -41,11 +41,11 @@ The best thing about being around passionate people is that: one gets to learn a
 
 ### Bucks and Business
 
-People chase prosperity, and entities that are capable of rewarding such (governments, businesses, corporations and others) are important, and have a clout, because they influence policies, utilization of resources, and the laws of the land which in turn sway decisions that people make. This becomes self-reinforcing after a while. For instance, a properties firm/mogul will likely invest in a construction company, whereas a farming cooperative will likely invest in equipment manufacturer (among others).
+People chase prosperity, and entities that are capable of rewarding such (governments, businesses, corporations, customers, investors and others) are important, and have a clout, because they influence policies, utilization of resources, and the laws of the land which in turn sway decisions that people make. This becomes self-reinforcing after a while. For instance, a properties firm/mogul will likely invest in a construction company, whereas a farming cooperative will likely invest in equipment manufacturer (among others).
 
 Business can be conducted (on extremes) like the Soviet way: sending their capable people to Gulag and then offering them restitution in return for their services. Or, the American way: expending monetary resources specifically on those goods and services that are in immediate demand.
 
-Humans are (non logical) emotional beings, and envy is one of the driving forces for Businesses and consumerism. It is what fuels the daily drama we relish so much, lest the world would become more or less a mundane mix of measured mediocrity. Therefore, we need to be aware of what we get obsessed over - some of that might not be worth the effort (yet regardless, it is essential to put in a good deal of effort occasionally; doing so helps build self-respect and confidence especially if one is introverted).
+Humans are (non logical) emotional beings, and envy is one of the driving forces for businesses and consumerism. It is what fuels the daily drama we relish so much, lest the world would become more or less a mundane mix of measured mediocrity. Therefore, we need to be aware of what we get obsessed over - some of that might not be worth the effort (yet regardless, it is essential to put in a good deal of effort occasionally; doing so helps build self-respect and confidence especially if one is introverted).
 
 ### Accompaniment
 
@@ -54,6 +54,8 @@ I often find people my age sharing their couple goals on social media applicatio
 Here's an amusing poem that might get some laughs (*I updated to make it generic - feel free to substitute your name*):
 
 ![Hapless Lad](/assets/img/posts/hl.svg)  
+
+*Please note that, unless you are one of those who dream of ideas and solutions in their sleep, nobody really works "day and night" - it's just a phrase.*
 
 Of course there isn't one right person for each of us - we aren't a jigsaw puzzle, are we? Even if there were people absolutely right for each other, it would be (mathematically) unlikely that they sample each other out from the masses.
 
@@ -70,3 +72,5 @@ Moreover, I think it is noble to invest our time into building something that th
 N. H. Kleinbaum (Dead Poets Society):
 
 > [...] but only in their dreams can men be truly free. 'twas always thus and always thus will be.
+
+Last Updated on **11 March 2024**.
