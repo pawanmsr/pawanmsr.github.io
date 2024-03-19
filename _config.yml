@@ -64,8 +64,8 @@ analytics:
 
 # Language
 lang: eng
-# TODO: learn and add language support
-# langs = [eng, fre, hin, mar, kan, tel, ben, spa, bho]
+# TODO: learn the language and then add language support.
+# langs = [eng, fre, hin, mar, kna, tel, bho, ben, spa, rus, jpn, chi, zho, deu, heb, nld, guj, mai]
 # ISO 639.2 standard: https://www.loc.gov/standards/iso639-2/php/code_list.php
 
 # Timezone
