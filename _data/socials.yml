@@ -23,7 +23,7 @@ twitch:
   icon: twitch
 
 goodreads:
-  url: https://www.goodreads.com
+  url: https://www.goodreads.com/
   icon: book
 
 youtube:
