@@ -1,0 +1,17 @@
+@use 'feather'
+@use 'image'
+    
+#nav
+    width: $bar-width
+
+    .grid-y
+        min-height: $bar-height
+
+    .text-left
+        text-align: left
+
+    img
+        @include image.bar-image
+    
+    .feather
+        @include feather.feather-label
