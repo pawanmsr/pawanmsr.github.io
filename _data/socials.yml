@@ -1,31 +1,35 @@
 twitter:
-  url: https://www.twitter.com
+  url: https://www.twitter.com/
   icon: twitter
 
 github:
-  url: https://www.github.com
+  url: https://www.github.com/
   icon: github
 
 linkedin:
-  url: https://www.linkedin.com/in
+  url: https://www.linkedin.com/in/
   icon: linkedin
 
 facebook:
-  url: https://www.facebook.com
+  url: https://www.facebook.com/
   icon: facebook
 
 instagram:
-  url: https://www.instagram.com
+  url: https://www.instagram.com/
   icon: instagram
 
 twitch:
-  url: https://www.twitch.com
+  url: https://www.twitch.com/
   icon: twitch
 
 goodreads:
-  url: https://www.goodreads.com
+  url: https://www.goodreads.com/
   icon: book
 
-mail:
+youtube:
+  url: https://www.youtube.com/@
+  icon: youtube
+
+email:
   url: mailto
   icon: mail

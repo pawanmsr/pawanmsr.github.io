@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Positioning and Navigation by Matrix Comparison"
-description: "[DRAFT] High speed heuristic contour matching for navigation and guidance."
+description: "High speed heuristic contour matching for navigation and guidance."
 date:   2023-07-16 23:23 +0530
 categories: [blog]
+draft: true
 ---
 
 Stalled.

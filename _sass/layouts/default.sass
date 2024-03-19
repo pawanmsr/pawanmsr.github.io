@@ -1,3 +1,5 @@
+@use '../common/feather'
+
 .off-canvas-content
     min-height: 100vh
 
@@ -8,3 +10,8 @@
 .grid-container
     margin-left: 2rem
     margin-right: 2rem
+
+.card-section
+    .feather
+        @include feather.feather-text
+        

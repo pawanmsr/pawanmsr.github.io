@@ -4,7 +4,37 @@ layout: default
 
 <div class="grid-container">
     <div class="grid-x grid-margin-x small-up-1 large-up-2">
-        {% for post in site.posts %}
+    {% assign drafts = site.posts | where: "draft", true %}
+
+    {% assign count = site.posts.size | minus: drafts.size %}
+    {% assign rest_with_favourites = site.posts | sort: "draft" | slice: 0, count %}
+
+    {% assign favourites = rest_with_favourites | where: "favourite", true %}
+    
+    {% assign count = rest_with_favourites.size | minus: favourites.size %}
+    {% assign rest = rest_with_favourites | sort: "favourite" | slice: 0, count %}
+
+    {% assign posts = favourites | concat: rest | concat: drafts %}
+    
+    {% assign type = nil %}
+    {% assign iteration = 0 %}
+    
+    {% for post in posts %}
+        {% assign odd = iteration | modulo: 2 %}
+        
+        {% if post.draft %}
+        {% assign current_type = "draft" %}
+        {% elsif post.favourite %}
+        {% assign current_type = "favourite" %}
+        {% else %}
+        {% assign current_type = nil %}
+        {% endif %}
+        
+        {% if type != current_type and odd == 1 %}
+        {% assign iteration = iteration | plus: 1 %}
+        <div class="cell"></div>
+        {% endif %}
+        
         <div class="cell">
             <a href="{{ post.url | prepend: site_baseurl }}">
                 <div class="card">
@@ -13,21 +43,37 @@ layout: default
                     </div>
                     
                     <div class="card-section">
-                        <p>{{ post.description }}</p>
+                        <p>{{ post.description | truncate: 256 }}</p>
                     </div>
 
-                    <div class="card-section text-right">
-                        <small>{{ post.date | date: "%d %B %Y" }}</small>
+                    <div class="card-section">
+                        <small class="float-left">
+                            {% if post.favourite %}
+                            <i data-feather="star"></i> Favourite 
+                            {% endif %}
+
+                            {% if post.draft %}
+                            <i data-feather="edit-2"></i> Draft 
+                            {% endif %}
+                        </small>
+                        
+                        
+                        <small class="float-right">
+                            {{ post.date | date: "%d %B %Y" }}
+                        </small>
                     </div>
 
                     {% if post.image %}
                         {% assign src = post.image.path | default: post.image %}
                         {% assign alt = post.image.description | default: "Preview" %}
-                        <!-- add image tag -->
                     {% endif %}
+                    <!-- add image tag -->
                 </div>
             </a>
         </div>
-        {% endfor %}
+
+        {% assign type = current_type %}
+        {% assign iteration = iteration | plus: 1 %}
+    {% endfor %}
     </div>
 </div>
