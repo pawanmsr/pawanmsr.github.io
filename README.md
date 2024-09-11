@@ -1,6 +1,6 @@
 # Personal Blog
 
-Poetry, Hobbies, Projects and more.  Laughs and learning.
+Poetry, Hobbies, Projects and more. Laughs and learning.
 
 [![Test Jekyll Site](https://github.com/pawanmsr/pawanmsr.github.io/actions/workflows/jekyll-test.yml/badge.svg)](https://github.com/pawanmsr/pawanmsr.github.io/actions/workflows/jekyll-test.yml)  
 
