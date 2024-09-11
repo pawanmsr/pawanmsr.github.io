@@ -23,7 +23,7 @@ function install_dependencies() {
 }
 
 function download_assets() {
-    cd "$1" || exit 1
+    cd "$1" || exit 1;
     
     for item in * ; do
         if [ -f "${item}" ] && [ "${item}" == "$2" ]; then
