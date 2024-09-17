@@ -14,7 +14,7 @@ task :default do
     config = Jekyll.configuration({ 
         'source' => './', 
         'destination' => './_site',
-        'incremental' => true # set it to false to regenerate entirely
+        'incremental' => false # set it to false to regenerate entirely
     })
     site = Jekyll::Site.new(config)
     Jekyll::Commands::Build.build site, config
