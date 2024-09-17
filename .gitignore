@@ -24,3 +24,6 @@ package-lock.json
 Pipfile.lock
 venv
 
+# Keep just one test post
+_posts/*
+!_posts/*welcome-to-jekyll*
