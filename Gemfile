@@ -36,4 +36,14 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "faraday-retry", "~> 2.2"
+# rakefile automation on test and production
+group :test, :production do
+  gem "faraday-retry", "~> 2.2"
+  gem "faraday", "~> 2.11"
+  gem "yaml", "~> 0.3.0"
+end
+
+# rakefile automation on development and test
+group :development, :test do
+  gem "sass-embedded", "~> 1.78"
+end
