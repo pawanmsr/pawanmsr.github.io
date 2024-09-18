@@ -1,4 +1,6 @@
 # Ruby task automation
+# It's like make but replace m with r.
+
 # test and production
 require 'yaml'
 require 'jekyll'
@@ -6,13 +8,15 @@ require 'faraday'
 require 'faraday/retry'
 # development and test
 require 'sass-embedded'
+require 'fileutils'
 
 # constants
 SOURCE = './'
 DESTINATION = './_site'
 CONFIGURATION = '_config.yml'
 LOCAL_HOST = 'http://127.0.0.1:4000/'
-SASS_MAIN = 'assets/css/bhautiki.scss'
+MAIN_SASS = '_sass/main.sass'
+DEBUG_SASS = '_site/pre-build/debug.css'
 # end constants
 
 site_config = YAML.load_file(CONFIGURATION)
@@ -51,4 +55,28 @@ task :test do
 
     response = conn.get('/')
     raise CustomException if response.status == 503
+end
+
+task :sass do
+    # result contains css, loaded urls and source maps
+    result = Sass.compile(MAIN_SASS,
+        source_map: true, source_map_include_sources: true,
+        verbose: true) # let the depreciations galore
+
+    directory_name = File.dirname(DEBUG_SASS)
+    unless File.directory?(directory_name)
+        FileUtils.mkdir_p(directory_name)
+        # p creates directory hierarchy
+    end
+
+    # TODO: is that right?
+    stdout = $stdout # Not the best way.
+    File.open(DEBUG_SASS, 'w') do |file|
+        $stdout = file
+        puts result.css
+    end
+    $stdout = stdout
+    
+    puts result.loaded_urls
+    puts result.source_map
 end
