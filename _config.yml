@@ -103,6 +103,7 @@ exclude:
   - jekyll-bhautiki.gemspec
   - docs/
   - Rakefile
+  - run.sh
 
 kramdown:
   syntax_highlighter: rouge
