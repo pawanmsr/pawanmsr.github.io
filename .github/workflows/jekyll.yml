@@ -9,7 +9,7 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: [$default-branch]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,8 +27,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Test job
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+      - name: Compile sass
+        run: rake sass
+      - name: Build site
+        run: rake default
+        env:
+          JEKYLL_ENV: production
+
   # Build job
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,11 +55,11 @@ jobs:
         with:
           # ruby-version: '3.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 1 # Increment this number if you need to re-download cached gems
+          cache-version: 2 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
-      - name: Parcel Custom JS
+        uses: actions/configure-pages@v5
+      - name: Parcel Custom JS # Javascript files
         run: npm run build
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
