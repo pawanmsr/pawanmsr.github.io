@@ -46,4 +46,5 @@ end
 # rakefile automation on development and test
 group :development, :test do
   gem "sass-embedded", "~> 1.78"
+  gem "fileutils", "~> 1.7"
 end
