@@ -1,20 +1,31 @@
 # Ruby task automation
+# test and production
 require 'yaml'
 require 'jekyll'
 require 'faraday'
 require 'faraday/retry'
+# development and test
+require 'sass-embedded'
 
-site_config = YAML.load_file("_config.yml")
+# constants
+SOURCE = './'
+DESTINATION = './_site'
+CONFIGURATION = '_config.yml'
+LOCAL_HOST = 'http://127.0.0.1:4000/'
+SASS_MAIN = 'assets/css/bhautiki.scss'
+# end constants
+
+site_config = YAML.load_file(CONFIGURATION)
 host_url = site_config['url'].strip
 if host_url.empty?
-    host_url = 'http://127.0.0.1:4000/'
+    host_url = LOCAL_HOST
 end
 
 task :default do
     config = Jekyll.configuration({ 
-        'source' => './', 
-        'destination' => './_site',
-        'incremental' => false # set it to false to regenerate entirely
+        'source' => SOURCE, 
+        'destination' => DESTINATION,
+        'incremental' => true # set it to false to regenerate entirely
     })
     site = Jekyll::Site.new(config)
     Jekyll::Commands::Build.build site, config
