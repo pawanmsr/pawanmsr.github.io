@@ -1,10 +1,7 @@
 # Ruby task automation
-<<<<<<< HEAD
 # It's like make but replace m with r.
 
 # test and production
-=======
->>>>>>> 1caf07f (Upgrade (#15))
 require 'yaml'
 require 'jekyll'
 require 'faraday'
