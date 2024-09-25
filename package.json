@@ -1,14 +1,7 @@
 {
   "version": "0.1.8",
   "scripts": {
-    "build": "parcel build",
-    "log": "auto-changelog -p"
-  },
-  "auto-changelog": {
-    "output": "docs/CHANGELOG.md",
-    "template": "keepachangelog",
-    "unreleased": true,
-    "commitLimit": false
+    "build": "parcel build"
   },
   "targets": {
     "default": {
