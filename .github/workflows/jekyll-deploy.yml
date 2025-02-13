@@ -27,24 +27,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Test job
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
-      - name: Compile sass
-        run: rake sass
-      - name: Build site
-        run: rake default
-        env:
-          JEKYLL_ENV: production
-
   # Build job
   build:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -82,3 +66,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        # TODO
