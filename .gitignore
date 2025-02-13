@@ -16,14 +16,10 @@ package-lock.json
 .parcel-cache
 
 # Ruby
-# .ruby-version
+.ruby-version
 *.gem
 
 # Python for Pygments
 .python-version
 Pipfile.lock
 venv
-
-# Keep just one test post
-_posts/*
-!_posts/*welcome-to-jekyll*
