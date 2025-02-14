@@ -6,7 +6,7 @@ name: Test Jekyll Site
 
 on:
   pull_request:
-    branches: [ ${{ default-branch }} ]
+    branches: [ "main" ]
   push:
     branches: [ "main" ]
 
