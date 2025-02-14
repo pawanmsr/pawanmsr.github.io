@@ -7,3 +7,7 @@ Poetry, Hobbies, Projects and more.  Laughs and learning.
 ## Based on Bhautiki
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-bhautiki.svg)](https://badge.fury.io/rb/jekyll-bhautiki)
+
+## Notes
+
+`rake test`
