@@ -55,6 +55,7 @@ task :test do
 
     response = conn.get('/')
     raise CustomException if response.status == 503
+    puts "Successful!" if response.status >= 200 and response.status < 400
 end
 
 task :sass do
