@@ -21,3 +21,4 @@ rake test
 ```
 
 TODO: cache gems for quicker builds.
+TODO: update run.sh.
