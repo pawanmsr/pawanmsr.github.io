@@ -1,3 +1,4 @@
+@use "sass:meta"
 
 @mixin light-mode
     --color: #06080F
@@ -31,11 +32,11 @@
     
 html, html[data-theme="light"]
     @include light-mode
-    @import '../../assets/external/pygments/css/default'
+    @include meta.load-css('../../assets/external/pygments/css/default')
 
 html[data-theme="dark"]
     @include dark-mode
-    @import '../../assets/external/pygments/css/monokai'
+    @include meta.load-css('../../assets/external/pygments/css/monokai')
 
 @media (prefers-color-scheme: dark)
     html, html[data-theme="dark"]

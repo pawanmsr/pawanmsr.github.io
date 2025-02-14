@@ -28,11 +28,17 @@ Most produced supersonic combat aircraft. Performs as a fighter-interceptor. Num
 
 #### The Thunder  
 
-Our world view is formed from the people we interact with and the things we enjoy doing. For instance, when I was barely aware of my own existence (very young), I first saw the MiG 21 roar past wee bit away, at low levels over the barren plain (almost hugging the terrain). I quivered with fear at first which soon turned into an unforgettable excitement. The experience was first of few, and I spent innumerable hours at school and libraries sifting through any encyclopedias and picture books that had more details about these fascinating machines. Oh what fun it was spitting (useless) facts to people around, and carve out models that left them bedazzled! I guess for this reason, I would often wish my examination centers to be at Kendriya Vidyalayas near an Air Force Station rather than some place in the middle of the city.
+Our world view is formed from the people we interact with and the things we enjoy doing. For instance, when I was barely aware of my own existence (very young), I first saw the MiG 21 roar past wee bit away, at low levels over the barren plain (almost hugging the terrain). I quivered with fear at first which soon turned into an unforgettable excitement. The experience was first of few, and I spent innumerable hours at school and libraries sifting through any encyclopedias and picture books that had more details about these fascinating machines. Oh what fun it was spitting (useless) facts to people around, and carve out models that left them bedazzled! I guess for this reason, I would often wish my external examination centers to be at Kendriya Vidyalayas near an Air Force Station rather than some place in the middle of the city.
+
+We get awed for different reasons! I often reminisce the time I went to watch **Rang De Basanti** with a group. People who wanted to fly planes were afraid and started questioning their aspirations, while those who were interested in related engineering and sciences felt motivated to build better ones. Here's how I remembered it again on February 12, 2025:
+
+![Dreaming between Love and Hate](/assets/img/posts/dlh.svg)
+
+My poems are result of my reveries, but this one is based on true events.
 
 ## Engineering Ecosystem  
 
-Imagine a requirement being specified for building a bunch of aircrafts, and an airbase to host them! What kind of engineers (and associated technicians) would be required to handle such a development?
+Imagine a requirement being specified for building a bunch of aircraft, and an airbase to host them! What kind of engineers (and associated technicians) would be required to handle such a development?
 
 Most importantly, a power plant would be needed (or else any designed vehicle would be little more than a mock-up). Of course a battery and motor coupled with large wings can take off, but for higher speeds a powerful engine would be required. Engines have different types (such as a piston engine or a turbine engine) and their configurations. A group of Mechanical Engineers, Materials Engineers and Chemical Engineers would be needed to design the various parts, made up of specific materials, and tuned for certain classes of fuels. Mechanical Engineers and Materials Engineers would also be needed, along with an Aerodynamicist or two, to design the Airframe. The design of avionics would need a bunch of Electrical Engineers. Inputs and outputs to and from the onboard instruments would be handled by programs, and Computer Engineers will need to design and implement the algorithms to enable the functions.
 
@@ -41,3 +47,9 @@ The aircraft will need a hanger for parking, and a runway to fly from. The runwa
 Sciences and Mathematics would come handy at various design phases. Structural analysis (shear, strain, stress, torsion, and more) would be needed to be performed to ascertain the limits and reiterate design phase if the expectations fall short of the targeted specification.
 
 On the whole, every class of engineer would be needed to successfully accomplish the above task and so such a bureau would be a heaven for engineers.
+
+## Further
+
+The aim was to simply give a glimpse of the fields. Checkout *The Engineering ~Playlist~ Booklist* in [Books and Articles](/post/books-articles)
+
+I write more often than I speak - it is easier for everyone that way. I learnt this during my Trinity GESEs and more so when I bought a pair of discs for an english (or was it celtic) motion pictures a month before my First Language exams, and couldn't understand any of it (no, it wasn't anything like Attenborough). So I transcribed it, piecewise (by rolling back and replaying) on a paper roll (similar to a dot-matrix paper), and then re-watched it.

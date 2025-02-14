@@ -13,6 +13,12 @@ categories:	[blog]
 
 - [The Physics of Energy-Based Models](https://physicsofebm.github.io/){:target="_blank"}  
 
+## The Engineering Booklist
+
+Suggested popular reads about non-technical aspects of the fields.
+
+TO BE UPDATED.
+
 ## Books  
 
 <html>
