@@ -50,4 +50,4 @@ jobs:
       - name: Build Site
         run: rake default
         env:
-          JEKYLL_ENV: test
+          JEKYLL_ENV: development
