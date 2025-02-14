@@ -14,4 +14,10 @@ Poetry, Hobbies, Projects and more.  Laughs and learning.
 
 ## Notes
 
-`rake test`
+```shell
+# Rakefile automation
+rake test
+
+```
+
+TODO: cache gems for quicker builds.
