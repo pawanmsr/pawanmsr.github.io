@@ -43,11 +43,11 @@ jobs:
         run: gem install jekyll bundler
       - name: Install Gems
         run: bundle install
+        env:
+          JEKYLL_ENV: development
       - name: Build JS
         run: npm install && npm run build
       - name: Test SASS
         run: rake sass
       - name: Build Site
         run: rake default
-        env:
-          JEKYLL_ENV: development
