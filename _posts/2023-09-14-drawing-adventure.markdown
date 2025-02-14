@@ -30,6 +30,12 @@ Most produced supersonic combat aircraft. Performs as a fighter-interceptor. Num
 
 Our world view is formed from the people we interact with and the things we enjoy doing. For instance, when I was barely aware of my own existence (very young), I first saw the MiG 21 roar past wee bit away, at low levels over the barren plain (almost hugging the terrain). I quivered with fear at first which soon turned into an unforgettable excitement. The experience was first of few, and I spent innumerable hours at school and libraries sifting through any encyclopedias and picture books that had more details about these fascinating machines. Oh what fun it was spitting (useless) facts to people around, and carve out models that left them bedazzled! I guess for this reason, I would often wish my examination centers to be at Kendriya Vidyalayas near an Air Force Station rather than some place in the middle of the city.
 
+We get awed for different reasons! I often reminisce the time I went to watch **Rang De Basanti** with a group. People who wanted to fly planes were afraid and started questioning their aspirations, while those who were interested in related engineering and sciences felt motivated to build better ones. Here's how I remembered it again on February 12, 2025:
+
+![Dreaming between Love and Hate](/assets/img/posts/dlh.svg)
+
+My poems are result of my reveries but this one is based on true events.
+
 ## Engineering Ecosystem  
 
 Imagine a requirement being specified for building a bunch of aircrafts, and an airbase to host them! What kind of engineers (and associated technicians) would be required to handle such a development?
