@@ -26,6 +26,8 @@ jobs:
   # Test job
   test:
     runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: test
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,8 +45,6 @@ jobs:
         run: gem install jekyll bundler
       - name: Install Gems
         run: bundle install
-        env:
-          JEKYLL_ENV: production
       - name: Build JS
         run: npm install && npm run build
       - name: Test SASS
