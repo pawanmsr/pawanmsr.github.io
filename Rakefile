@@ -81,27 +81,3 @@ task :sass do
     puts "#{result.loaded_urls.size} files loaded."
     puts "Caution: sourcemap is empty!" if result.source_map.strip.empty?
 end
-
-task :sass do
-    # result contains css, loaded urls and source maps
-    result = Sass.compile(MAIN_SASS,
-        source_map: true, source_map_include_sources: true,
-        verbose: true) # let the depreciations galore
-
-    directory_name = File.dirname(DEBUG_SASS)
-    unless File.directory?(directory_name)
-        FileUtils.mkdir_p(directory_name)
-        # p creates directory hierarchy
-    end
-
-    # TODO: is that right?
-    stdout = $stdout # Not the best way.
-    File.open(DEBUG_SASS, 'w') do |file|
-        $stdout = file
-        puts result.css
-    end
-    $stdout = stdout
-    
-    puts "#{result.loaded_urls.size} files loaded."
-    puts "Caution: sourcemap is empty!" if result.source_map.strip.empty?
-end
