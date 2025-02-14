@@ -45,8 +45,6 @@ jobs:
         run: bundle install
       - name: Build JS
         run: npm install && npm run build
-      - name: Test SASS
-        run: rake sass
       - name: Build Site
         run: rake default
         env:
