@@ -5,6 +5,7 @@ description:    "Branches, Topics, and Subtopics in Physics."
 date:   2023-10-15 13:37 +0530
 categories: [blog]
 toc: false
+favourite: true
 ---
 
 Albert Michelson, in his address to Ryerson Physical Laboratory in 1894, said:

@@ -30,6 +30,8 @@ Most produced supersonic combat aircraft. Performs as a fighter-interceptor. Num
 
 Our world view is formed from the people we interact with and the things we enjoy doing. For instance, when I was barely aware of my own existence (very young), I first saw the MiG 21 roar past wee bit away, at low levels over the barren plain (almost hugging the terrain). I quivered with fear at first which soon turned into an unforgettable excitement. The experience was first of few, and I spent innumerable hours at school and libraries sifting through any encyclopedias and picture books that had more details about these fascinating machines. Oh what fun it was spitting (useless) facts to people around, and carve out models that left them bedazzled! I guess for this reason, I would often wish my external examination centers to be at Kendriya Vidyalayas near an Air Force Station rather than some place in the middle of the city.
 
+#### Fun Time
+
 We get awed for different reasons! I often reminisce the time I went to watch **Rang De Basanti** with a group. People who wanted to fly planes were afraid and started questioning their aspirations, while those who were interested in related engineering and sciences felt motivated to build better ones. Here's how I remembered it again on February 12, 2025:
 
 ![Dreaming between Love and Hate](/assets/img/posts/dlh.svg)
@@ -50,6 +52,6 @@ On the whole, every class of engineer would be needed to successfully accomplish
 
 ## Further
 
-The aim was to simply give a glimpse of the fields. Checkout *The Engineering ~Playlist~ Booklist* in [Books and Articles](/post/books-articles)
+The aim was to simply give a glimpse of the fields. Checkout *The Engineering Booklist* in [Books and Articles](/post/books-articles)
 
 I write more often than I speak - it is easier for everyone that way. I learnt this during my Trinity GESEs and more so when I bought a pair of discs for an english (or was it celtic) motion pictures a month before my First Language exams, and couldn't understand any of it (no, it wasn't anything like Attenborough). So I transcribed it, piecewise (by rolling back and replaying) on a paper roll (similar to a dot-matrix paper), and then re-watched it.
