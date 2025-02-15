@@ -10,6 +10,7 @@ Poetry, Hobbies, Projects and more.  Laughs and learning.
 
 ## Based on Bhautiki
 
+![Deployment](https://github.com/pawanmsr/pawanmsr.github.io/actions/workflows/jekyll.yml/badge.svg)
 [![Gem Version](https://badge.fury.io/rb/jekyll-bhautiki.svg)](https://badge.fury.io/rb/jekyll-bhautiki)
 
 ## Notes
@@ -19,6 +20,3 @@ Poetry, Hobbies, Projects and more.  Laughs and learning.
 rake test
 
 ```
-
-TODO: cache gems for quicker builds.
-TODO: update run.sh.

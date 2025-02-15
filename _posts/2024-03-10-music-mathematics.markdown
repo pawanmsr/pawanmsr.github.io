@@ -4,7 +4,7 @@ title:  "Musings on Music Mathematics"
 description:    "Relearning music from a mathematical vantage point."
 date:   2024-03-10 17:30 +0530
 categories: [projects,fun]
-toc: true
+toc: false
 draft: true
 favourite: false
 math: true
