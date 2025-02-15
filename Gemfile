@@ -26,7 +26,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 group :test, :production do
   gem "faraday-retry", "~> 2.2"
   gem "faraday", "~> 2.11"
-  gem "yaml", "~> 0.3.0"
+  gem "yaml", "~> 0.4.0"
 end
 
 # rakefile automation on development and test
