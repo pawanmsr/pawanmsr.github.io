@@ -30,7 +30,7 @@ author:
   # supply sha256sum of email for gravatar
   # gravatar: '?d=robohash&f=y&s=200'
   picture: /assets/img/profile.png
-  url: https://pawanmsr.github.io/
+  url:
   socials:
     twitter:
       username: pawanmsr
