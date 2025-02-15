@@ -2,8 +2,6 @@
 
 set -e
 
-env
-
 RUN="bundle exec jekyll serve"
 
 # Ensure ruby and node are present.
@@ -22,8 +20,11 @@ install_dependencies() {
     npm run build
     gem install jekyll bundler
     bundle install
+}
 
+build_mode() {
     # Build.
+    rake sass
     rake default
 }
 
@@ -36,25 +37,26 @@ test_mode() {
         echo "Success!"
     fi
 
-    kill -2 $PID
+    kill -9 $PID
     if $FAIL ; then
         echo "Failed!"
         exit 1;
     fi
 }
 
-while getopts 'it' flag; do
+while getopts 'ibt' flag; do
   case $flag in
     i) # do not use cache - slower
         install_dependencies;;
+    b) # build the site
+        build_mode;;
     t) # test mode
         test_mode
         exit;;
-    \?) echo "bash run.sh [options: -i|t]"
+    \?) echo "bash run.sh [options: -i|b|t]"
         echo "  -i  install dependencies (needed for first run)"
         echo "  -t  test"
+        echo "  -b  build"
         echo
   esac
 done
-
-$RUN

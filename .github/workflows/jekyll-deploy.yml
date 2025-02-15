@@ -42,11 +42,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
       - name: Run Tests
-        run: bash run.sh -it
-        env:
-          JEKYLL_ENV: test
-      - name: Build Site
-        run: rake default
+        run: bash run.sh -b
       - name: Upload Artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
