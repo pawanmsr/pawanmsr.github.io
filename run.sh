@@ -2,6 +2,8 @@
 
 set -e
 
+env
+
 RUN="bundle exec jekyll serve"
 
 # Ensure ruby and node are present.
