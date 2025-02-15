@@ -9,7 +9,7 @@ toc:    false
 ---
 
 Experimental project which was part of Modern Physics Laboratory under supervision of Prof. G.  
-The project replicated (and attempted to further built upon) a publication from [AJP](https://aapt.scitation.org/journal/ajp){:target="_blank"}. The team consisted of three undergraduates from the department of Physics at Indian Institute of Technology, Kanpur.  
+The project replicated (and attempted to further build upon) a publication from [AJP](https://aapt.scitation.org/journal/ajp){:target="_blank"}. The team consisted of three undergraduates from the department of Physics at Indian Institute of Technology, Kanpur.  
 
 [![PosterTop](https://i.ibb.co/rfW31J1/poster-1.png)](https://ibb.co/R45NVWV){:target="_blank"}  
 
