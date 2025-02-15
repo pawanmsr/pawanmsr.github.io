@@ -34,19 +34,17 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           # ruby-version: '3.2' # Not needed with a .ruby-version file
-          bundler-cache: false # runs 'bundle install' and caches installed gems automatically
-          cache-version: 1 # Increment this number if you need to re-download cached gems
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 2 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Setup Node
         uses: actions/setup-node@v4
-      - name: Install Jekyll and Bundle
-        run: gem install jekyll bundler
-      - name: Install Gems
-        run: bundle install
-      - name: Build JS
-        run: npm install && npm run build
+      - name: Run Tests
+        run: bash run.sh -it
+        env:
+          JEKYLL_ENV: test
       - name: Build Site
         run: rake default
       - name: Upload Artifact
