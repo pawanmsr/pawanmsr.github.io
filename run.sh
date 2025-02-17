@@ -58,5 +58,8 @@ while getopts 'ibt' flag; do
         echo "  -t  test"
         echo "  -b  build"
         echo
+        exit;;
   esac
 done
+
+$RUN
