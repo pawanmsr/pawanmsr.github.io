@@ -44,7 +44,7 @@ test_mode() {
     fi
 }
 
-while getopts 'iblt' flag; do
+while getopts 'ibt' flag; do
   case $flag in
     i) # do not use cache - slower
         install_dependencies;;
