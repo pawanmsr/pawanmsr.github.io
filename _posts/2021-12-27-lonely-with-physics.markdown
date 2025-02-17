@@ -3,6 +3,7 @@ layout: post
 title:  "Lonely with Physics"
 description:    "Studying the subjects that keep me going (because that's all I can do at the moment) and other such substances."
 date:   2021-12-27 07:00 +0530
+updated: 2024-03-11
 categories: [fun]
 math:   true
 ---
@@ -72,5 +73,3 @@ Moreover, I think it is noble to invest our time into building something that th
 N. H. Kleinbaum (Dead Poets Society):
 
 > [...] but only in their dreams can men be truly free. 'twas always thus and always thus will be.
-
-Last Updated on **11 March 2024**.
