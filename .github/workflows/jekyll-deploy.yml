@@ -60,7 +60,6 @@ jobs:
         uses: actions/deploy-pages@v4
   
   test-deployment:
-    needs: deploy
     runs-on: ubuntu-latest
     env:
       JEKYLL_ENV: test

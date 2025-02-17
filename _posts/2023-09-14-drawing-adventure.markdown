@@ -3,7 +3,6 @@ layout: post
 title:  "Drawing Adventure and The Heaven for Engineers"
 description:    "Caricature of Sukhoi Su-30 MKI 'Flanker-H' and Mikoyan-Gurevich MiG-21 'Fishbed'."
 date:   2023-09-14 17:30 +0530
-updated: 2025-02-12 12:30 +0530
 categories: [fun]
 ---
 
