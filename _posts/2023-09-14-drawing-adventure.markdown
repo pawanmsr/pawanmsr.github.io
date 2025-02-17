@@ -3,6 +3,7 @@ layout: post
 title:  "Drawing Adventure and The Heaven for Engineers"
 description:    "Caricature of Sukhoi Su-30 MKI 'Flanker-H' and Mikoyan-Gurevich MiG-21 'Fishbed'."
 date:   2023-09-14 17:30 +0530
+updated: 2025-02-12 12:30 +0530
 categories: [fun]
 ---
 
@@ -32,7 +33,9 @@ Our world view is formed from the people we interact with and the things we enjo
 
 #### Fun Time
 
-We get awed for different reasons! I often reminisce the time I went to watch **Rang De Basanti** with a group. People who wanted to fly planes were afraid and started questioning their aspirations, while those who were interested in related engineering and sciences felt motivated to build better ones. Here's how I remembered it again on February 12, 2025:
+We get awed for different reasons! I often reminisce the time I went to watch **Rang De Basanti** with a group. People who wanted to fly planes were afraid and started questioning their aspirations, while those who were interested in related engineering and sciences felt motivated to build better ones.  
+
+Here's how I remembered it again on February 12, 2025:
 
 ![Dreaming between Love and Hate](/assets/img/posts/dlh.svg)
 

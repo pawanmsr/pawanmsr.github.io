@@ -8,4 +8,10 @@ layout: default
             {{ content }}
         </div>
     </div>
+
+    {% if page.updated %}
+    <div class="text-center">
+        <small>Last updated on <strong>{{ page.updated | date: "%d %B %Y" }}</strong>.</small>
+    </div>
+    {% endif %}
 </div>
