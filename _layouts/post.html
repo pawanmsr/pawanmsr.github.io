@@ -6,6 +6,12 @@ layout: default
     <div class="grid-x grid-margin-x grid-padding-x align-center">
         <div class="cell small-10">
             {{ content }}
+
+            {% if page.updated %}
+            <div class="text-center">
+                <small>Last updated on <strong>{{ page.updated | date: "%d %B %Y" }}</strong>.</small>
+            </div>
+            {% endif %}
         </div>
     </div>
 
