@@ -44,7 +44,7 @@ test_mode() {
     fi
 }
 
-while getopts 'ibt' flag; do
+while getopts 'iblt' flag; do
   case $flag in
     i) # do not use cache - slower
         install_dependencies;;
@@ -58,5 +58,8 @@ while getopts 'ibt' flag; do
         echo "  -t  test"
         echo "  -b  build"
         echo
+        exit;;
   esac
 done
+
+$RUN
