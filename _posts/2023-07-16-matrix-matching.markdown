@@ -3,6 +3,7 @@ layout: post
 title:  "Positioning and Navigation by Matrix Comparison"
 description: "High speed heuristic contour matching for navigation and guidance."
 date:   2023-07-16 23:23 +0530
+updated: 2025-03-01 12:30 +0530
 categories: [blog]
 draft: true
 ---
@@ -16,6 +17,16 @@ I have been trying to add heuristic layers to matrix matching program for a micr
 ## TODO
 
 *Need more reading and experimentation.*
+
+## Z Coordinate
+
+It can be difficult to match the Z-Coordinate. Here's an example:
+
+![An Ode to Misunderstanding](/assets/img/posts/aotm.svg)
+
+My poems are result of my reveries. Original but inspired by *spelling bees* (note that it is Mis·un·der·stan·ding and **not** Miss·Under·Standing), ***Water Under the Bridge*** (*Adele*) and *Stable Matching Problem*.  
+
+Alright, I am off to play with coordinate compression.
 
 ## References
 
