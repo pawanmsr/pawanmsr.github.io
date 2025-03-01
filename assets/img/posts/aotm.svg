@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    width="200mm"
@@ -31,7 +30,7 @@
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
      id="defs1">
     <rect
@@ -44,7 +43,8 @@
   <g
      inkscape:label="Background"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#ffffff;fill-opacity:0.8;stroke:#ff0000;stroke-width:1.98018;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:normal"
        id="rect1"
@@ -57,8 +57,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Poem"
-     sodipodi:insensitive="true">
+     inkscape:label="Poem">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;stroke-width:0.264583"
@@ -126,7 +125,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:0.264583"
          x="16"
          y="107.91618"
-         id="tspan6">When they reached <tspan
+         id="tspan6">They reached <tspan
    style="fill:#ff0000"
    id="tspan29">X<tspan
    style="fill:#ff00ff"
