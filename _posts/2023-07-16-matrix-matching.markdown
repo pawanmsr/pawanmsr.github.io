@@ -20,7 +20,7 @@ I have been trying to add heuristic layers to matrix matching program for a micr
 
 ## Z Coordinate
 
-It can be difficult to match the Z-Coordinate. Here's and example:
+It can be difficult to match the Z-Coordinate. Here's an example:
 
 ![An Ode to Misunderstanding](/assets/img/posts/aotm.svg)
 
