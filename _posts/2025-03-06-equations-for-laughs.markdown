@@ -13,7 +13,7 @@ A mathematical post to test the blogging system. Popular equations, people, and 
 
 ## Finding F
 
-A function is a **vehicle** that transports from one region to another.
+A function is a *vehicle* that transports from one region to another.
 
 $$
     F = f(x, y, z, . . . )
@@ -22,14 +22,14 @@ $$
 The region where it starts is called *Domain* and the region where it ends is called *Co-domain*.
 
 $$
-    x, y, z \in mathbf{R} \equiv (-\infty, +\infty) \\
-    F \in mathbf{R} \equiv (-\infty, +\infty)
+    x, y, z \in \mathbf{R} \equiv (-\infty, +\infty) \\
+    F \in \mathbf{R} \equiv (-\infty, +\infty)
 $$
 
 It may not be able to reach everywhere in the region where it ends. The places within the region reachable by the vehicle are cumulatively called *Range*.
 
 $$
-    P = probability(x, y, z, . . . )  
+    P = probability(x, y, z, . . . )  \\
     probability : \mathbf{R}_{+}^{n} \rightarrow [0, 1) \in \mathbf{R}
 $$
 
