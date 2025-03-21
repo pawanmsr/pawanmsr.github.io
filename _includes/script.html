@@ -9,10 +9,13 @@
 {% endfor %}
 
 {% if page.layout == 'post' %}
-<script src="{{ site.data.assets.post.tocbot.js | relative_url }}"></script>
-<script src="{{ site.data.assets.post.js | relative_url }}"></script>
-{% endif %}
+    {% if page.toc %}
+    <script src="{{ site.data.assets.post.tocbot.js | relative_url }}"></script>
+    {% endif %}
 
-{% if page.math %}
-<script src="{{ site.data.assets.post.math.js | relative_url }}"  id="MathJax-script" async></script>
+    {% if page.math %}
+    <script src="{{ site.data.assets.post.math.js | relative_url }}"  id="MathJax-script" async></script>
+    {% endif %}
+
+    <script src="{{ site.data.assets.post.js | relative_url }}"></script>
 {% endif %}
