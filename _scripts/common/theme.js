@@ -19,7 +19,7 @@ function setLightMode() {
     icons();
 }
 
-function setPreferedMode(systemPrefersDark) {
+function setPreferredMode(systemPrefersDark) {
     if (systemPrefersDark.matches) {
         setDarkMode();
     } else {
@@ -38,7 +38,7 @@ export const setMode = () => {
     } else if (mode == LIGHT) {
         setLightMode();
     } else {
-        setPreferedMode(systemPrefersDark);
+        setPreferredMode(systemPrefersDark);
     }
 }
 
