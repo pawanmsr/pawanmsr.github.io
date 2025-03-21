@@ -14,12 +14,5 @@
 {% endif %}
 
 {% if page.math %}
-<script>
-    MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-    };
-</script>
 <script src="{{ site.data.assets.post.math.js | relative_url }}"  id="MathJax-script" async></script>
 {% endif %}
