@@ -16,21 +16,29 @@ A mathematical post to test the blogging system. Popular equations, people, and 
 A function is a *vehicle* that transports from one region to another.
 
 $$
+\begin{equation}
     F = f(x, y, z, . . . )
+\end{equation}
 $$
 
 The region where it starts is called *Domain* and the region where it ends is called *Co-domain*.
 
 $$
-    x, y, z \in \mathbf{R} \equiv (-\infty, +\infty) \\
-    F \in \mathbf{R} \equiv (-\infty, +\infty)
+\begin{equation}
+    \displaylines{
+        x, y, z \in \mathbf{R} \equiv (-\infty, +\infty) \\
+        F \in \mathbf{R} \equiv (-\infty, +\infty)
+    }
+\end{equation}
 $$
 
 It may not be able to reach everywhere in the region where it ends. The places within the region reachable by the vehicle are cumulatively called *Range*.
 
 $$
+\displaylines{
     P = probability(x, y, z, . . . )  \\
     probability : \mathbf{R}_{+}^{n} \rightarrow [0, 1) \in \mathbf{R}
+}
 $$
 
 The classification is based on different parameters such as type of vehicle (its complexity, speed, comfort, and others), the people and goods it admits, locations it starts from ends up at, and more.
@@ -38,18 +46,26 @@ The classification is based on different parameters such as type of vehicle (its
 Vehicles that have a reverse gear are called invertible. Not all functions have an inverse.
 
 $$
+\begin{equation}
     F^{-1}(F) = Identity
+\end{equation}
 $$
 
 ### I and the Ds
 
 $$
+\begin{equation}
+\displaylines{
     D = \nabla{\vec{F}} \\
     D = F'
+}
+\end{equation}
 $$
 
 $$
+\begin{equation}
     I = \int_{C} F
+\end{equation}
 $$
 
 Functions can be understood in more details by means of derivatives and integrals. It is possible to arrange methods, in order of their difficulty.
@@ -71,7 +87,9 @@ Behavior of a substance (such as volume and other macroscopic states) correspond
 Energy is needed to do work ($Q_{input}$). Some energy is lost, usually as heat ($Q_{lost}$). Work done ($W$) is the difference between the two.
 
 $$
+\begin{equation}
 	W = Q_{input} - Q_{lost}
+\end{equation}
 $$
 
 Work done is closed path integral in pressure-volume ($P$ and $V$) phase diagram.
@@ -89,7 +107,9 @@ $$
 Efficiency is the ratio of work done and energy supplied, and is related to the temperature of the system and its surroundings.
 
 $$
+\begin{equation}
 	\eta_{efficiency} = \frac{W}{Q_{input}} = 1 - \frac{T_{outside}}{T_{inside}}
+\end{equation}
 $$
 
 Nutrition energises us.
