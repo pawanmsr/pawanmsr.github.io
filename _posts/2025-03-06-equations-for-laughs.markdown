@@ -68,7 +68,7 @@ $$
 \end{equation}
 $$
 
-Functions can be understood in more details by means of derivatives and integrals. It is possible to arrange methods, in order of their difficulty.
+Functions can be understood in more detail by means of derivatives and integrals. It is possible to arrange methods, in order of their difficulty.
 
 1. Derivative of function gives insight on $F$.
 2. Double Derivative of function gives insight on $D$.
@@ -108,11 +108,14 @@ Efficiency is the ratio of work done and energy supplied, and is related to the 
 
 $$
 \begin{equation}
-	\eta_{efficiency} = \frac{W}{Q_{input}} = 1 - \frac{T_{outside}}{T_{inside}}
+\displaylines{
+	\eta_{efficiency} = \frac{W}{Q_{input}} \\
+        = 1 - \frac{T_{outside}}{T_{inside}}
+}
 \end{equation}
 $$
 
-Nutrition energises us.
+Nutrition energizes us.
 
 ![Isothermal-Adiabatic Cycle](/assets/img/posts/aic.svg)
 
