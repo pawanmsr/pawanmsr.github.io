@@ -1,13 +1,13 @@
-@use "variables"
+@use '../common/static'
 
-@use 'feather'
-@use 'image'
+@use '../common/feather'
+@use '../common/image'
     
 #nav
-    width: variables.$bar-width
+    width: static.$bar-width
 
     .grid-y
-        min-height: variables.$bar-height
+        min-height: static.$bar-height
 
     .text-left
         text-align: left

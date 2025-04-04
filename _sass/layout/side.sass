@@ -1,13 +1,13 @@
-@use "variables"
+@use '../common/static'
 
-@use 'feather'
-@use 'image'
+@use '../common/feather'
+@use '../common/image'
 
 #side
-    width: variables.$bar-width
+    width: static.$bar-width
 
     .grid-y
-        min-height: variables.$bar-height
+        min-height: static.$bar-height
     
     img
         @include image.bar-image

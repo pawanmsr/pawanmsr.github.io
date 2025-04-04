@@ -1,0 +1,43 @@
+@use '../common/dynamic'
+@use '../common/static'
+
+.off-canvas-content
+    background: dynamic.$background
+    color: dynamic.$color
+
+    a
+        color: dynamic.$color
+        font-weight: static.$a-font-weight
+    
+    .feather
+        color: dynamic.$color
+    
+    code
+        font-family: monospace
+        font-weight: static.$code-font-weight
+    
+    .card
+        color: dynamic.$color
+        border-color: dynamic.$color
+        background: dynamic.$card-background
+
+        p
+            font-weight: static.$p-font-weight
+    
+    .card-divider
+        background: dynamic.$header-background
+    
+    .accordion
+        background: dynamic.$header-background
+    
+        .accordion-title
+            color: dynamic.$color
+            &:hover, &:focus
+                background-color: dynamic.$hover-and-focus
+        
+        .accordion-content
+            background-color: dynamic.$content-background
+    
+    blockquote
+        p
+            color: dynamic.$quote-color

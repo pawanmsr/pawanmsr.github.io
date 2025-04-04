@@ -1,0 +1,47 @@
+@use '../common/dynamic'
+@use '../common/static'
+
+table
+    thead, tbody, tfoot
+        border: dynamic.$table-border
+        background-color: dynamic.$table-background
+
+    thead
+        background: dynamic.$table-head-background
+        color: dynamic.$table-head-font-color
+
+    tfoot
+        background: dynamic.$table-foot-background
+        color: dynamic.$table-foot-font-color
+
+    tbody
+        tr
+            @if static.$table-stripe == even
+                &:nth-child(even)
+                    background-color: dynamic.$table-striped-background
+
+            @else if $stripe == odd
+                &:nth-child(odd)
+                    background-color: dynamic.$table-striped-background
+
+    thead tr
+        &:hover
+            background-color: dynamic.$table-head-row-hover
+
+    tfoot tr
+        &:hover
+            background-color: dynamic.$table-foot-row-hover
+
+    tbody tr
+        &:hover
+            background-color: dynamic.$table-row-hover
+
+    @if static.$table-stripe == even
+        tr:nth-of-type(even):hover
+            &:not(.unstriped)
+                background-color: dynamic.$table-row-stripe-hover
+
+    @else if $table-stripe == odd
+        tr:nth-of-type(odd):hover
+            &:not(.unstriped)
+                background-color: dynamic.$table-row-stripe-hover
