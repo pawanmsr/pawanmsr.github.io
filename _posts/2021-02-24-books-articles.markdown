@@ -14,11 +14,7 @@ categories:	[blog]
 
 - [The Physics of Energy-Based Models](https://physicsofebm.github.io/){:target="_blank"}  
 
-## Books  
-
-<!-- {% include extra.goodreads %} -->
-
-### My Book Guide  
+## My Book Guide  
 
 Primary use case of a book is reading, which may be for fun or learning.
 
@@ -32,8 +28,12 @@ Primary use case of a book is reading, which may be for fun or learning.
 | Contemporary Novels          | EBook or Paperback           |
 | On the go books              | EBook                        |
 
-### The Engineering Booklist
+### The Engineering Booklist  
 
 Suggested popular reads about non-technical aspects of the fields.
 
+TO BE UPDATED.
 
+## Reading Updates  
+
+{% include extra/goodreads.html %}
