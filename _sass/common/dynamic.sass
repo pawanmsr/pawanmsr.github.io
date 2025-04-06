@@ -1,0 +1,46 @@
+@use 'sass:color'
+
+@use 'mode'
+@use 'static'
+
+// Content
+$color: var(--color)
+$background: var(--background)
+$quote-color: var(--quote-color)
+
+// Category
+$hover-and-focus: var(--hover)
+$header-background: var(--header-background)
+$content-background: var(--content-background)
+$card-background: linear-gradient(to bottom, $header-background, $content-background)
+
+// Bar
+$bar-color: var(--bar-color)
+$bar-background: var(--bar-background)
+$bar-link-color: var(--bar-link-color)
+
+// Table
+$table-background: var(--table-background)
+$table-head-font-color: $color
+$table-foot-font-color: $color
+
+$table-border: var(--table-border)
+$table-row-hover: var(--table-row-hover)
+$table-row-stripe-hover: var(--table-row-stripe-hover)
+$table-striped-background: var(--table-striped-background)
+$table-head-background: var(--table-head-background)
+$table-head-row-hover: var(--table-head-row-hover)
+$table-foot-background: var(--table-foot-background)
+$table-foot-row-hover: var(--table-foot-row-hover)
+
+// TODO: Not Working
+
+// $table-background: rgb(x, x, x)
+// $table-border: color.scale($table-background, $lightness: static.$table-color-scale)
+// $table-row-hover: color.adjust($table-background, $lightness: -(static.$table-hover-scale))
+// $table-row-stripe-hover: color.adjust($table-background, $lightness: -(static.$table-color-scale + static.$table-hover-scale))
+// $table-striped-background: color.scale($table-background, $lightness: static.$table-color-scale)
+// $table-head-background: color.scale($table-background, $lightness: static.$table-color-scale * 0.5)
+// $table-head-row-hover: color.adjust($table-background, $lightness: -(static.$table-hover-scale))
+// $table-foot-background: color.scale($table-background, $lightness: static.$table-color-scale)
+// $table-foot-row-hover: color.scale($table-background, $lightness: -(static.$table-hover-scale))

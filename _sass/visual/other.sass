@@ -1,0 +1,24 @@
+@use '../common/dynamic'
+
+.off-canvas
+    background: dynamic.$bar-background
+    color: dynamic.$bar-color
+    a
+        color: dynamic.$bar-color
+
+        &:hover
+            color: dynamic.$bar-link-color
+
+    .toc-link::before
+        background: dynamic.$bar-color
+
+    .is-active-link::before
+        background: dynamic.$bar-background
+
+    .button.hollow
+        color: dynamic.$bar-color
+        border-color: dynamic.$bar-color
+
+        &:hover
+            color: dynamic.$bar-link-color
+            border-color: dynamic.$bar-link-color

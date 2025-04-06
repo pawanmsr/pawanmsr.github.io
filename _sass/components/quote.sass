@@ -1,0 +1,19 @@
+@use '../common/static'
+
+blockquote
+    border: none
+    letter-spacing: 3px
+    margin: 0px
+    margin-top: 40px
+    margin-bottom: 70px
+    padding: 0px
+    text-align: center
+
+    p
+        display: inline
+        font-size: 20px
+        font-weight: static.$p-font-weight
+        &:before
+            content: "“ "
+        &:after
+            content: " ”"

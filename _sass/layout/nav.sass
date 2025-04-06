@@ -1,0 +1,19 @@
+@use '../common/static'
+
+@use '../common/feather'
+@use '../common/image'
+    
+#nav
+    width: static.$bar-width
+
+    .grid-y
+        min-height: static.$bar-height
+
+    .text-left
+        text-align: left
+
+    img
+        @include image.bar-image
+    
+    .feather
+        @include feather.feather-label

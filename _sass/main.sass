@@ -1,10 +1,27 @@
-// Import all variables. Must be on top.
-@use 'common/variables'
-
-@use 'common/nav'
-@use 'common/feather'
-@use 'common/side'
+// Import all variables.
+    
+// Static must be on top.
+@use 'common/static'
 @use 'common/syntax'
-@use 'layouts/categories'
-@use 'layouts/default'
+
+// Followed by dynamic
 @use 'common/mode'
+@use 'common/dynamic'
+
+// Other common
+@use 'common/feather'
+@use 'common/image'
+
+// Components
+@use 'components/quote'
+@use 'components/table'
+
+// Visual
+@use 'visual/content'
+@use 'visual/other'
+
+// Layout
+@use 'layout/nav'
+@use 'layout/side'
+@use 'layout/categories'
+@use 'layout/default'
