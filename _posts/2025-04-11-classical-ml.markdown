@@ -44,7 +44,7 @@ $$
 \begin{equation}
     \displaylines{
         \kappa_{i} = \sum_{i} \lambda_{i} \phi_{i} \beta_{i} \\
-        K = \bra \Phi \Phi' \ket = \bra B B' \ket
+        K = \langle \Phi \Phi' \rangle = \langle B B' \rangle
     }
 \end{equation}
 $$
@@ -53,6 +53,6 @@ $\phi$ and $\beta$ are one and the same when applying kernel method. The most co
 
 $$
 \begin{equation}
-\kappa(x_{i}, x_{j}) = e^{- \gamma \Vert x_[i] - x_[j] \Vert^{2}}
+    \kappa(x_{i}, x_{j}) = e^{- \gamma \Vert x_[i] - x_[j] \Vert^{2}}
 \end{equation}
 $$
