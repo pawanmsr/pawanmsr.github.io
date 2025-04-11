@@ -5,6 +5,7 @@ description: "Experiences in designing classical machine learning systems, and c
 date: 2025-04-11 10:45 +0530
 categories: [blog]
 math: true
+draft: true
 ---
 
 Statistical algorithms capable of recognizing patterns in data, and exploiting those patterns to perform specific tasks, have evolved quite rapidly over the past decade. In this article I lay out my experiences in designing classical ML systems and testing capabilities of larger compute intensive generative models and agents.
@@ -92,8 +93,8 @@ Support vectors are pair of points, each belonging to a different class, that ar
 $$
 \begin{equation}
     \displaylines{
-    w_{0} + \sum_{i} w_{i} x_{i} = 1 \\
-    w_{0} + \sum_{i} w_{i} x_{i} = -1
+        w_{0} + \sum_{i} w_{i} x_{i} = 1 \\
+        w_{0} + \sum_{i} w_{i} x_{i} = -1
     }
 \end{equation}
 $$
@@ -113,9 +114,9 @@ Regression tries to make sense of past trends to predict future trends. Predicti
 $$
 \begin{equation}
     \displaylines{
-    h \in H \,, \ \vert H \vert = m \\
-    e \in E \,, \ \vert E \vert = n \\
-    P(h | e) = \frac{P(e | h) P(h)}{\sum P(e | h)}
+        h \in H \,, \ \vert H \vert = m \\
+        e \in E \,, \ \vert E \vert = n \\
+        P(h | e) = \frac{P(e | h) P(h)}{\sum P(e | h)}
     }
 \end{equation}
 $$
@@ -141,8 +142,8 @@ Loss functions need to be minimized whereas value functions need to be maximized
 $$
 \begin{equation}
     \displaylines{
-    L_{mse} = \frac{1}{2} \frac{\sum_{e} \Vert y - \hat{y} \Vert^{2}}{\vert E \vert} \\
-    L_{mae} = \frac{\sum_{e} \vert y - \hat{y} \vert}{\vert E \vert}
+        L_{mse} = \frac{1}{2} \frac{\sum_{e} \Vert y - \hat{y} \Vert^{2}}{\vert E \vert} \\
+        L_{mae} = \frac{\sum_{e} \vert y - \hat{y} \vert}{\vert E \vert}
     }
 \end{equation}
 $$
@@ -152,9 +153,9 @@ It is possible to design a custom loss function based on business optimizations.
 $$
 \begin{equation}
     \displaylines{
-    L_{huber} = \begin{cases}
-        L_{mse} & \vert y - \hat{y} \vert \lt \delta \\
-        \delta \times (L_{mae} - \frac{1}{2} \delta) & \\
+        L_{huber} = \begin{cases}
+            L_{mse} & \vert y - \hat{y} \vert \lt \delta \\
+            \delta \times (L_{mae} - \frac{1}{2} \delta) & \\
         \end{cases}
     }
 \end{equation}
@@ -174,16 +175,36 @@ Systems need to handle data, code, and the results from running the code.
 
 ### Infrastructure, Operations and Deployment
 
-Section 2.1
+Data collection can be difficult if the data domain is niche (images of engine blocks in differing configurations, for instance). Data bought from external vendors is often refined and categorized, but there may be restrictions, to say nothing of the costs. It is better to put compressed BLOB at locations dedicated for storage. There is also a possibility of shipping data along with code by incorporating large file storage systems, but I have no practical experience with this method.
+
+It is a logical step to create applications to view, label and handle data. The same application can also run batch processes to transport data to servers dedicated for training and prepare them for consumption. It may enable options to commence training as well as save the architecture and weights to storage server (usually at predefined checkpoints).
+
+When required benchmarks have been achieved, the model (as a package) can be copied and reconstructed at servers that are nearest to its users.
 
 #### Try This At Home
 
-Section 4 - end
+Although, I would strongly recommend renting compute and storage from known vendors as they are hassle-free and have much better interface, it is possible to setup servers with help of open source tools (IME) if one can get hold of a workstation.
+
+1. Install operating system and drivers followed by database, code and network management systems.
+2. Create users, write systemd configurations and scripts for services.
+3. Create microservices for remote execution (similar to command injection).
+
+I tried this using a set of refurbished and new mini-PCs running low end processors (under the hood), as a downstream task for another of my projects. It is possible to run simple algorithms with limited data and communicate with edge devices. Multiprocessing often led to heating and subsequent throttling to the extent that it didn't make much difference.
 
 ### Edge Computing
 
-Section 4
+Inference cost can be saved for miniature models by shipping them with user applications. Additionally, inference will no longer require an API call. Programming the algorithm in application native language can become a bottleneck. A web application will usually need the forward propagation programmed in javascript or typescript, for instance.
+
+Models that can retrain or fine tune themselves in short durations (~ 10s of seconds) on at least a few types of devices, can be shipped with user applications. Repeated retraining can lead to slow-downs and heat-up that might force users to review the application negatively. Moreover, there can be minor differences in parameter values if trained on non-standard host devices, due to non-availability or differences in data types within the processors.
 
 ## Capabilities of Language Generation Models
 
 TODO.
+
+### Reference
+
+Capstone on Kaggle by Google
+
+## Acknowledgements
+
+
