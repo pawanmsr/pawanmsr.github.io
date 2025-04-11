@@ -23,13 +23,13 @@ Classical machine learning focuses on classification, regression and recommendat
 
 - Numerical (such as the number of pages in a book).
 - Categorical (such as the color of pen's ink).
-    - Ordinal is special type of categorical wherein the data elements can be (compared and) ordered, but their values of may not follow linear distribution (such as importance of chess pieces).
+    - Ordinal is special type of categorical wherein the data elements can be (compared and) ordered, but their values may not follow linear distribution (such as importance of chess pieces).
 
 #### Transformation
 
 Encoding is a method of mapping data onto Hilbert space. One Hot Encoding (OHE) forms the basis of vector space for hashed categorical data. Specifically, text has tokens (read: words) that forms a dictionary. English has upwards of 100,000 words that are in current use, many other languages, that I know of, have even more. The OHE for english will then be a 100,000 length vector with exactly one of its values set (to 1). OHE works when the number of categories are much less ($~10$).
 
-Data can be transformed from a higher dimensional space to lower dimensional space by use of one or more projections (sequentially). Data can be transformed from lower dimensional space to higher dimensional space by means of kernels. Projections and kernels are often represented as matrices which may include non-linear functions. The transformed data becomes an *embedding*.
+Data can be transformed from a higher dimensional space to lower dimensional space by use of one or more projections (sequentially). Data can be transformed from lower dimensional space to higher dimensional space by means of kernels. Projections and kernels are often represented as matrices, which may include non-linear functions. The transformed data becomes an *embedding*.
 
 $$
 \begin{equation}
@@ -40,7 +40,7 @@ $$
 \end{equation}
 $$
 
-$m$ and $n$ are dimensions. Colloquially, this is also known as dimensionality reduction and feature selection. $P$ can be obtained by component analysis, discriminant analysis, clustering (such as nearest neighbor and t-SNE) or methods suited specially for the particular data (such as unsupervised encoder - decoder networks for text and image). Lower dimensional embeddings are versatile for upstream tasks.
+$m$ and $n$ are dimensions. Colloquially, this is also known as dimensionality reduction and feature selection. $P$ can be obtained by component analysis, discriminant analysis, clustering (such as nearest neighbor and t-SNE) or methods suited specifically for the particular data (such as unsupervised encoder - decoder networks for text and image). Lower dimensional embeddings are versatile for upstream tasks.
 
 $$
 \begin{equation}
@@ -51,7 +51,7 @@ $$
 \end{equation}
 $$
 
-$\phi$ and $\beta$ are one and the same when applying kernel method. The most common is the radial basis function:
+$\phi$ and $\beta$ are one and the same when applying kernel method. The most common is the radial basis function.
 
 $$
     \displaylines{
@@ -63,7 +63,7 @@ $$
 
 ### Classification
 
-Classification involves labelled data points. Data points with a particular label belong to a class. Data point to class is usually a surjection. Multiple labels leads to multi-class classification problem.
+Classification involves labelled data points. Data points with a particular label belong to a class. Data point to class, is usually a surjection. Multiple labels leads to multi-class classification problem.
 
 #### Sampling
 
@@ -100,7 +100,7 @@ $$
 
 Support Vector Machines (SVMs) try to maximize the distance to the support vectors. Detecting and removing anomaly helps train better SVMs. When number of classes is huge, it is more efficient to train with one-versus-all strategy. On the other hand, training with one-versus-one strategy increases accuracy at the cost of increased complexity (and variance).
 
-Decision trees are another great way of segregating data. Analogous to breadth first search with each node tries to reduce entropy of the training data that reaches it, decision trees have one of the quickest inference runtime (IME).
+Decision trees are another great way of segregating data. Analogous to breadth first search, each node tries to reduce entropy of training data that reaches the node. Decision trees have one of the quickest inference runtime (IME).
 
 #### Boosting
 
@@ -122,13 +122,13 @@ $$
 
 #### Bagging
 
-We sample $E$ to create many different datasets $E_{i}$ and train a model ($h_{i}$) for each of the $E_{i}$s. Ensembling the independently trained models (by weighted mean, for example) often results in better overall results.
+We sample $E$ to create many different datasets ($E_{i}$) and train a model ($h_{i}$) for each of the $E_{i}$s. Ensembling the independently trained models (by weighted mean, for example) often improves the overall results.
 
 ### Recommendation
 
-We try to increase the chance of a buyer ($B$) accepting a product ($P$), if the product is offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent system for each element $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
+We try to increase the chance of a buyer ($B$) accepting a product ($P$), if the product is offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent system for each element $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
 
-SVMs and Decision Trees also work well in the case when $\vert B \vert$ is not too large and $\vert P \vert$ is small (IME).
+SVMs and Decision Trees also work well in the case when $\vert B \vert$ is not too large, and $\vert P \vert$ is small (IME).
 
 ### Function Selection
 
@@ -147,7 +147,7 @@ $$
 \end{equation}
 $$
 
-It is possible to design a custom loss function based on optimization with respect to business. Furthermore, it is also possible to combine loss functions linearly or weighted sum by focusing on data points. One such example is the Huber loss.
+It is possible to design a custom loss function based on business optimizations. Furthermore, it is also possible to combine loss functions linearly or as a weighted sum with weights derived from focusing on data points. One such example is the Huber loss.
 
 $$
 \begin{equation}
@@ -169,3 +169,21 @@ $$
 $$
 
 ## Designing Machine Learning Systems
+
+Systems need to handle data, code, and the results from running the code.
+
+### Infrastructure, Operations and Deployment
+
+Section 2.1
+
+#### Try This At Home
+
+Section 4 - end
+
+### Edge Computing
+
+Section 4
+
+## Capabilities of Language Generation Models
+
+TODO.
