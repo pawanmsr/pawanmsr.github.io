@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Statistics Adventures: Classical Machine Learning and Language Generation"
-description: "Experiences in designing classical machine learning systems, and capabilities of language generation models."
+description: "Experiences in designing classical machine learning systems and capabilities of language generation models."
 date: 2025-04-11 10:45 +0530
 categories: [blog]
 math: true
 draft: true
 ---
 
-Statistical algorithms capable of recognizing patterns in data, and exploiting those patterns to perform specific tasks, have evolved quite rapidly over the past decade. In this article I lay out my experiences in designing classical ML systems and testing capabilities of larger compute intensive generative models and agents.
+Statistical algorithms capable of recognizing patterns in data, and exploiting those patterns to perform specific tasks, have evolved quite rapidly over the past decade. In this article I lay out my experiences in designing classical machine learning systems, and testing capabilities of larger compute intensive generative models and agents.
 
 ### Note
 
@@ -16,9 +16,9 @@ The focus is more on industrial applications rather than theoretical study.
 
 - IME: In My Experience
 
-## Treatise on Classical ML
+## Treatise on Classical Machine Learning
 
-Classical machine learning focuses on classification, regression and recommendation and other non reasoning based tasks.
+Classical machine learning consists of classification, regression, recommendation and other non reasoning based tasks.
 
 ### Data
 
@@ -28,7 +28,7 @@ Classical machine learning focuses on classification, regression and recommendat
 
 #### Transformation
 
-Encoding is a method of mapping data onto Hilbert space. One Hot Encoding (OHE) forms the basis of vector space for hashed categorical data. Specifically, text has tokens (read: words) that forms a dictionary. English has upwards of 100,000 words that are in current use, many other languages, that I know of, have even more. The OHE for english will then be a 100,000 length vector with exactly one of its values set (to 1). OHE works when the number of categories are much less ($~10$).
+Encoding is a method of mapping data onto Hilbert space. One Hot Encoding (OHE) forms the basis of vector space for hashed categorical data. Specifically, text has tokens (read: words) that form a dictionary. English has upwards of 100,000 words that are in current use. Many other languages, that I know of, have even more. The OHE for english will then be a 100,000 length vector with exactly one of its values set (to 1). OHE works well when the number of categories are much less ($~10$).
 
 Data can be transformed from a higher dimensional space to lower dimensional space by use of one or more projections (sequentially). Data can be transformed from lower dimensional space to higher dimensional space by means of kernels. Projections and kernels are often represented as matrices, which may include non-linear functions. The transformed data becomes an *embedding*.
 
@@ -64,19 +64,19 @@ $$
 
 ### Classification
 
-Classification involves labelled data points. Data points with a particular label belong to a class. Data point to class, is usually a surjection. Multiple labels leads to multi-class classification problem.
+Classification involves labelled data points. Data points with a particular label belong to a class. Data point to class: is usually a surjection. Multiple labels leads to multi-class classification problem.
 
 #### Sampling
 
-Data abundance is incredible, but too much data can cause excessive variance. This can be countered by supplying just enough data to the relevant algorithms, so that they limit themselves to learning collective patterns rather than finer details of small set of data points. This is done by sampling. We can pick required amount of data randomly not considering their labels. Stratified sampling is a better way to pick same number of data points from each class for training and for validation. Stratification can be made more complex by considering the importance of each data point.
+Data abundance is incredible, but too much data can cause excessive variance. This can be countered by supplying just enough data to the relevant algorithms so that they limit themselves to learning collective patterns rather than finer details of small set of data points. This is done by sampling. We can pick required amount of data randomly (not considering their labels), for one. Stratified sampling is a better way to pick same number of data points from each class for training and for validation. Stratification can be made more complex by considering the importance of each data point.
 
 #### Augmentation
 
-Lack of enough data can lead to bias. Synthetic data can be generated to counter this. Images, for one, can be flipped, cropped or down-sampled, rotated, lightened, darkened et cetera.
+Lack of enough data can lead to bias. Synthetic data can be generated to counter this. Images, for instance, can be flipped, cropped or down-sampled, rotated, lightened, darkened et cetera.
 
 #### Imbalance
 
-Variation in number of data points belonging to different classes even when there is ample data can cause variance within a particular class, and bias against other set of classes. This can be countered by oversampling data from minority classes (with our without augmentation).
+Variation in number of data points belonging to different classes, even when there is ample data, can cause variance within a particular class, and bias against other set of classes. This can be countered by oversampling data from minority classes (with our without augmentation).
 
 #### Methods
 
@@ -88,7 +88,7 @@ $$
 \end{equation}
 $$
 
-Support vectors are pair of points, each belonging to a different class, that are nearest to the logistic boundary.
+Support vectors are pairs of points, each belonging to a different class, that are nearest to the logistic boundary.
 
 $$
 \begin{equation}
@@ -99,7 +99,7 @@ $$
 \end{equation}
 $$
 
-Support Vector Machines (SVMs) try to maximize the distance to the support vectors. Detecting and removing anomaly helps train better SVMs. When number of classes is huge, it is more efficient to train with one-versus-all strategy. On the other hand, training with one-versus-one strategy increases accuracy at the cost of increased complexity (and variance).
+Support Vector Machines (SVMs) try to maximize the minimum distance of the logistic boundaries from the corresponding support vectors. Detecting and removing anomaly helps train better SVMs. When number of classes is huge, it is more efficient to train with one-versus-all strategy. On the other hand, training with one-versus-one strategy increases accuracy at the cost of increased complexity (and variance).
 
 Decision trees are another great way of segregating data. Analogous to breadth first search, each node tries to reduce entropy of training data that reaches the node. Decision trees have one of the quickest inference runtime (IME).
 
@@ -123,11 +123,11 @@ $$
 
 #### Bagging
 
-We sample $E$ to create many different datasets ($E_{i}$) and train a model ($h_{i}$) for each of the $E_{i}$s. Ensembling the independently trained models (by weighted mean, for example) often improves the overall results.
+We sample $E$ to create many different datasets ($E_{i}$), and train a model ($h_{i}$) for each of the $E_{i}$s. Ensembling the independently trained models (by weighted mean, for example) often improves the overall result.
 
 ### Recommendation
 
-We try to increase the chance of a buyer ($B$) accepting a product ($P$), if the product is offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent system for each element $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
+We try to increase the chance of a buyer ($B$) accepting a product ($P$), if the product is offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent recommender for each $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
 
 SVMs and Decision Trees also work well in the case when $\vert B \vert$ is not too large, and $\vert P \vert$ is small (IME).
 
@@ -137,7 +137,7 @@ Algorithms that learn by back propagation, must have activation, loss, value, re
 
 #### Loss and Return
 
-Loss functions need to be minimized whereas value functions need to be maximized. Functions such as mean-squared-error accentuate the difference between the obtained and expected. If the difference it smaller than 1, then the loss diminishes, whereas it aggravates if the difference is larger than 1. Ideally, in probabilistic modelling, the output is obtained from a softmax layer, so the loss usually diminishes. In this case, it is conducive to use mean-absolute-error.
+Loss functions need to be minimized whereas value functions need to be maximized. Functions such as mean-squared-error accentuate the difference between the obtained and expected. If the difference it smaller than 1, then the loss diminishes, whereas it aggravates if the difference is larger than 1. Ideally, in probabilistic modelling, the output is obtained from a softmax layer, so the loss diminishes. In this case, it is conducive to use mean-absolute-error.
 
 $$
 \begin{equation}
@@ -148,7 +148,7 @@ $$
 \end{equation}
 $$
 
-It is possible to design a custom loss function based on business optimizations. Furthermore, it is also possible to combine loss functions linearly or as a weighted sum with weights derived from focusing on data points. One such example is the Huber loss.
+It is possible to design a custom loss function based on business optimizations. Furthermore, it is also possible to combine loss functions linearly or as a weighted sum with weights derived from importance of individual data points. One such example is the Huber Loss.
 
 $$
 \begin{equation}
@@ -175,11 +175,11 @@ Systems need to handle data, code, and the results from running the code.
 
 ### Infrastructure, Operations and Deployment
 
-Data collection can be difficult if the data domain is niche (images of engine blocks in differing configurations, for instance). Data bought from external vendors is often refined and categorized, but there may be restrictions, to say nothing of the costs. It is better to put compressed BLOB at locations dedicated for storage. There is also a possibility of shipping data along with code by incorporating large file storage systems, but I have no practical experience with this method.
+Data collection can be difficult if the data domain is niche (images of engine blocks in differing configurations, for example). Data bought from external vendors is often refined and categorized, but there may be restrictions, to say nothing of the costs. It is better to put compressed BLOB at locations dedicated for storage. There is also a possibility of shipping data along with code by incorporating large file storage systems, but I have no practical experience with this method.
 
-It is a logical step to create applications to view, label and handle data. The same application can also run batch processes to transport data to servers dedicated for training and prepare them for consumption. It may enable options to commence training as well as save the architecture and weights to storage server (usually at predefined checkpoints).
+It is a logical step to create applications to view, label and handle data. The same application can also run batch processes to transport data to servers dedicated for training, and prepare them for consumption. It may enable options to commence training as well as save the architecture and weights to storage server (usually at predefined checkpoints).
 
-When required benchmarks have been achieved, the model (as a package) can be copied and reconstructed at servers that are nearest to its users.
+When required benchmarks have been achieved, the model (as a package) can be copied and reconstructed at servers that are nearest to its end users.
 
 #### Try This At Home
 
@@ -189,7 +189,7 @@ Although, I would strongly recommend renting compute and storage from known vend
 2. Create users, write systemd configurations and scripts for services.
 3. Create microservices for remote execution (similar to command injection).
 
-I tried this using a set of refurbished and new mini-PCs running low end processors (under the hood), as a downstream task for another of my projects. It is possible to run simple algorithms with limited data and communicate with edge devices. Multiprocessing often led to heating and subsequent throttling to the extent that it didn't make much difference.
+I tried this using a set of refurbished and new mini-PCs running low-end processors (under the hood), as a downstream task for another of my projects. It is possible to run simple algorithms with limited data and communicate with edge devices. Multiprocessing often led to heating and subsequent throttling to the extent that it didn't make much difference.
 
 ### Edge Computing
 
@@ -199,7 +199,21 @@ Models that can retrain or fine tune themselves in short durations (~ 10s of sec
 
 ## Capabilities of Language Generation Models
 
-TODO.
+Tokens are basic data units of language models. One or more tokens combine to form larger units of language (such as words and sentences). Models predict generation probabilities of tokens. Heuristics can be applied to these probabilities to change to outcome of the generated text.
+
+### Channels
+
+Language generators I tested had three channels: greediness selector (called *temperature*), maximum cumulative probability of token choices and lastly, the maximum number of choices (called *k*). I presume that at every token generation step, the probabilities corresponding to most of the tokens in dictionary would be zero.
+
+$$
+\begin{equation}
+    \displaylines{
+        k_{max} = \sum_{tokens} \[p_{token} \gt 1\]
+    }
+\end{equation}
+$$
+
+Assume, $p_{token} = 0$ for those tokens that had positive probabilities but not large enough to be included in cumulative probability. So, for very specific but common conversations, choosing high values for each of the channels would not matter because of the how limited the choices would be.
 
 ### Reference
 
