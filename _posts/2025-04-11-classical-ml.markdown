@@ -213,7 +213,19 @@ $$
 \end{equation}
 $$
 
-Assume, $p_{token} = 0$ for those tokens that had positive probabilities but not large enough to be included in cumulative probability. So, for very specific but common conversations, choosing high values for each of the channels would not matter because of the how limited the choices would be.
+Assume, $p_{token} = 0$ for those tokens that have positive probabilities, but not large enough to be included in cumulative probability. So, for very specific, but common conversations, choosing high values for each of the channels would not matter (other than possibly increasing the time to fulfill requests) because of the how limited the choices would be.
+
+### Embeddings and Vector Databases
+
+Cosine and dot product are elementary operations on vectors. Nearest neighbor and locality sensitive hashing are more advanced techniques for finding similarity or separation between vectors, although they may require lot of tweaking before being considered acceptable on metrics (IME).
+
+Of all the options to play with, such as **FAISS**, **ChromaDB** and **Pinecone**, I decided to use **Qdrant** due to familiarity. Most of them have *in memory* feature for quick implementation that are typical of notebooks.
+
+Embeddings generated from generative models can be used for semantic similarity with results ranging from satisfactory to unequivocal depending upon the texts from which the embeddings were generated and the model used.
+
+### Multi-model Understanding
+
+
 
 ### Reference
 
