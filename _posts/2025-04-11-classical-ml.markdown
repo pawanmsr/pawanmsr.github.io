@@ -225,7 +225,19 @@ Embeddings generated from generative models can be used for semantic similarity 
 
 ### Multi-model Understanding
 
+#### Document
 
+#### Image
+
+#### Video
+
+#### Audio
+
+### Retrieval Augmented Generation
+
+### Invoking Functions
+
+### Agents
 
 ### Reference
 
