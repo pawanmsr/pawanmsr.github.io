@@ -127,7 +127,7 @@ We sample $E$ to create many different datasets ($E_{i}$), and train a model ($h
 
 ### Recommendation
 
-We try to increase the chance of a buyer ($B$) accepting a product ($P$), if the product is offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent recommender for each $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
+We try to increase the chance of buyers ($B$) accepting products ($P$), if the products are offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent recommender for each $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
 
 SVMs and Decision Trees also work well in the case when $\vert B \vert$ is not too large, and $\vert P \vert$ is small (IME).
 
@@ -137,7 +137,7 @@ Algorithms that learn by back propagation, must have activation, loss, value, re
 
 #### Loss and Return
 
-Loss functions need to be minimized whereas value functions need to be maximized. Functions such as mean-squared-error accentuate the difference between the obtained and expected. If the difference it smaller than 1, then the loss diminishes, whereas it aggravates if the difference is larger than 1. Ideally, in probabilistic modelling, the output is obtained from a softmax layer, so the loss diminishes. In this case, it is conducive to use mean-absolute-error.
+Loss functions need to be minimized whereas value functions need to be maximized. Functions such as mean-squared-error accentuate the difference between the obtained and expected. If the difference is smaller than 1, then the loss diminishes, whereas it aggravates if the difference is larger than 1. Ideally, in probabilistic modelling, the output is obtained from a softmax layer, so the loss diminishes. In this case, it is conducive to use mean-absolute-error.
 
 $$
 \begin{equation}
@@ -208,12 +208,12 @@ Language generators I tested had three channels: greediness selector (called *te
 $$
 \begin{equation}
     \displaylines{
-        k_{max} = \sum_{tokens} \[p_{token} \gt 1\]
+        k_{max} = \sum_{tokens} [\, p_{token} \gt 0 \,]
     }
 \end{equation}
 $$
 
-Assume, $p_{token} = 0$ for those tokens that have positive probabilities, but not large enough to be included in cumulative probability. So, for very specific, but common conversations, choosing high values for each of the channels would not matter (other than possibly increasing the time to fulfill requests) because of the how limited the choices would be.
+Assume, $p_{token} = 0$ for those tokens that have positive probabilities, but not large enough to be included in cumulative probability. So, for very specific, but common conversations, choosing high values for each of the channels would not matter (other than possibly increasing the time to fulfill requests) because of how limited the choices would be.
 
 ### Embeddings and Vector Databases
 
@@ -221,28 +221,48 @@ Cosine and dot product are elementary operations on vectors. Nearest neighbor an
 
 Of all the options to play with, such as **FAISS**, **ChromaDB** and **Pinecone**, I decided to use **Qdrant** due to familiarity. Most of them have *in memory* feature for quick implementation that are typical of notebooks.
 
-Embeddings generated from generative models can be used for semantic similarity with results ranging from satisfactory to unequivocal depending upon the texts from which the embeddings were generated and the model used.
+Embeddings generated from generative models can be used for semantic similarity with results ranging from satisfactory to unequivocal depending upon the texts from which the embeddings were generated and the model used. I used the stanzas of the poem below as documents and queried on all four of them with the embedding of *CAP Theorem*. The last stanza had the highest (dot product) score as was expected.
 
-### Multi-model Understanding
+### Multi-Modal Understanding
 
-#### Document
+Language generation after providing data to the model is important because of its usefulness to people.
 
-#### Image
+#### Retrieval Augmented Generation
 
-#### Video
+Suppose a person is not aware of differences in specifications in data-sheets. It is possible for them to provide the data-sheets to the models and question the model about the specification. I tested the models available to me by providing the poem below as a document. I received accurate response.
 
-#### Audio
+#### Image and Video
 
-### Retrieval Augmented Generation
+Obtaining text from image or video, is Image or Video Understanding. Obtaining images or videos from text, is Image or Video Generation.
+
+##### Understanding
+
+Worried about UFO sightings? It is possible to query the models for descriptions of images. If there have been similar sightings before, then one might get a good enough description that might relieve them of worries.
+
+Evaluation of descriptions is possible. A simple way is to generated many descriptions and score them based on percent presence of required information.
+
+#### Generation
+
+I am not aware of quantifiable metrics for audio-visual generation. If you know of any then please do share. Moreover, image or video generation can be expensive.
 
 ### Invoking Functions
 
+Simple as well as nested function calls are possible on simple functions with restrictions.
+
 ### Agents
+
+[Lang-chain provider](https://python.langchain.com/docs/integrations/providers/) needs to be picked before they can be used to create agents with. Lang-graphs relay between well defined nodes and LLMs perform the conversation. Tools can be used for moderation.
+
+### Notebook
+
+Second part of this blog follows my experiments in [kaggle notebook](https://www.kaggle.com/code/pawanmsr/capstone). One can find the code-blocks on GitHub too. Please feel free to review.
 
 ### Reference
 
 Capstone on Kaggle by Google
 
+![CAP on Stones](/assets/img/posts/cap.svg)
+
 ## Acknowledgements
 
-
+The open-source community, papers, conferences, compassionate colleagues and employers.
