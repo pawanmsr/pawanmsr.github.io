@@ -5,7 +5,6 @@ description: "Experiences in designing classical machine learning systems and ca
 date: 2025-04-11 10:45 +0530
 categories: [blog]
 math: true
-draft: true
 ---
 
 Statistical algorithms capable of recognizing patterns in data, and exploiting those patterns to perform specific tasks, have evolved quite rapidly over the past decade. In this article I lay out my experiences in designing classical machine learning systems, and testing capabilities of larger compute intensive generative models and agents.
@@ -14,7 +13,8 @@ Statistical algorithms capable of recognizing patterns in data, and exploiting t
 
 The focus is more on industrial applications rather than theoretical study.
 
-- IME: In My Experience
+- IME: In My Experience.
+- $\vert S \vert$ is cardinality of (number of elements in) set $S$.
 
 ## Treatise on Classical Machine Learning
 
@@ -28,7 +28,7 @@ Classical machine learning consists of classification, regression, recommendatio
 
 #### Transformation
 
-Encoding is a method of mapping data onto Hilbert space. One Hot Encoding (OHE) forms the basis of vector space for hashed categorical data. Specifically, text has tokens (read: words) that form a dictionary. English has upwards of 100,000 words that are in current use. Many other languages, that I know of, have even more. The OHE for english will then be a 100,000 length vector with exactly one of its values set (to 1). OHE works well when the number of categories are much less ($~10$).
+Encoding is a method of mapping data onto Hilbert space. One Hot Encoding (OHE) forms the basis of vector space for hashed categorical data. Specifically, text has tokens (read: words) that form a dictionary. English has upwards of 100,000 words that are in current use. Many other languages, that I know of, have even more. The OHE for english will then be a 100,000 length vector with exactly one of its values set (to 1). OHE works well when the number of categories are much less ($\simeq 10$).
 
 Data can be transformed from a higher dimensional space to lower dimensional space by use of one or more projections (sequentially). Data can be transformed from lower dimensional space to higher dimensional space by means of kernels. Projections and kernels are often represented as matrices, which may include non-linear functions. The transformed data becomes an *embedding*.
 
@@ -58,7 +58,7 @@ $$
     \displaylines{
         \kappa(x_{i}, x_{j}) = e^{- \gamma \Vert x_{i} - x_{j} \Vert^{2}} \\
         \Phi = e^{- \gamma \Vert x \Vert^{2}} \\
-        B = \Phi' = e^{\gamma \Vert x \vert^{2}}
+        B = \Phi' = e^{\gamma \Vert x \Vert^{2}}
     }
 $$
 
@@ -109,25 +109,25 @@ Classification metrics: precision and recall, and their harmonic mean indicates 
 
 ### Regression and Prediction
 
-Regression tries to make sense of past trends to predict future trends. Prediction is generated from an Hypothesis ($h$). One can come up with many different hypothesis by referring and analyzing data, ranging from a binary generator to a trend-line to a piecewise continuous polynomial. Each of these hypothesis will have a prior ($P(h)$), which is an indicator of quality of assumptions made to construct the hypothesis. The likelihood of occurrence of an event ($e$) when following a particular hypothesis is $P(e \| h)$. A model or policy can be a stand-alone hypothesis or an *ensemble*. Importance of different hypothesis is given by posterior ($P(h \| e)$).
+Regression tries to make sense of past trends to predict future trends. Prediction is generated from an hypothesis ($h$). One can come up with many different hypotheses by referring and analyzing data, ranging from: binary generators, to trend-lines, to piecewise continuous polynomials. Each of these hypotheses will have a prior ($P(h)$), which is an indicator of quality of assumptions made to construct the hypothesis. The likelihood of occurrence of an event ($e$) when following a particular hypothesis is $P(e \| h)$. A model or policy can be a stand-alone hypothesis or an *ensemble*. Relevance of different hypothesis is given by posterior ($P(h \| e)$).
 
 $$
 \begin{equation}
     \displaylines{
         h \in H \,, \ \vert H \vert = m \\
         e \in E \,, \ \vert E \vert = n \\
-        P(h | e) = \frac{P(e | h) P(h)}{\sum P(e | h)}
+        P(h | e) = \frac{P(e | h) P(h)}{\sum_{e, h} P(e | h)}
     }
 \end{equation}
 $$
 
 #### Bagging
 
-We sample $E$ to create many different datasets ($E_{i}$), and train a model ($h_{i}$) for each of the $E_{i}$s. Ensembling the independently trained models (by weighted mean, for example) often improves the overall result.
+We sample $E$ to create many different datasets ($E_{i}$), and train a model ($h_{i}$) on each of the $E_{i}$s. Ensembling the independently trained models (by weighted mean, for example) often improves the overall result.
 
 ### Recommendation
 
-We try to increase the chance of buyers ($B$) accepting products ($P$), if the products are offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent recommender for each $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
+Recommendation tries to increase the chance of buyers ($B$) accepting products ($P$), if the products are offered to them, or brought to their knowledge. If $\vert B \vert$ is small, then we can find correlation and degree of association of every product with each $b_{i} \in B$.  On the other hand, if $\vert B \vert$ is large, then we can train independent recommender for each $b_{i} \in B$, especially if $\vert P \vert$ is small. We can also cluster $b_{i} \in B$, and then apply similar methods as when $\vert B \vert$ is small. Matrix factorization works well for the former, whereas collaborative-filtering and neural-network architectures such as two-towers work well for later.
 
 SVMs and Decision Trees also work well in the case when $\vert B \vert$ is not too large, and $\vert P \vert$ is small (IME).
 
@@ -137,13 +137,13 @@ Algorithms that learn by back propagation, must have activation, loss, value, re
 
 #### Loss and Return
 
-Loss functions need to be minimized whereas value functions need to be maximized. Functions such as mean-squared-error accentuate the difference between the obtained and expected. If the difference is smaller than 1, then the loss diminishes, whereas it aggravates if the difference is larger than 1. Ideally, in probabilistic modelling, the output is obtained from a softmax layer, so the loss diminishes. In this case, it is conducive to use mean-absolute-error.
+Loss functions need to be minimized, whereas value functions need to be maximized. Functions such as mean-squared-error accentuate the difference between the obtained and expected. If the difference is smaller than 1, then the loss diminishes, whereas it aggravates if the difference is larger than 1. Ideally, in probabilistic modelling, the output is obtained from a softmax layer, so the loss diminishes. In this case, it is conducive to use mean-absolute-error.
 
 $$
 \begin{equation}
     \displaylines{
         L_{mse} = \frac{1}{2} \frac{\sum_{e} \Vert y - \hat{y} \Vert^{2}}{\vert E \vert} \\
-        L_{mae} = \frac{\sum_{e} \vert y - \hat{y} \vert}{\vert E \vert}
+        L_{mae} = \frac{\sum_{e} \Vert y - \hat{y} \Vert}{\vert E \vert}
     }
 \end{equation}
 $$
@@ -154,7 +154,7 @@ $$
 \begin{equation}
     \displaylines{
         L_{huber} = \begin{cases}
-            L_{mse} & \vert y - \hat{y} \vert \lt \delta \\
+            L_{mse} & \Vert y - \hat{y} \Vert \lt \delta \\
             \delta \times (L_{mae} - \frac{1}{2} \delta) & \\
         \end{cases}
     }
@@ -168,6 +168,8 @@ $$
     V_{t} = R_{t + 1} + \gamma \times V_{t + 1}
 \end{equation}
 $$
+
+$R_{t}$ is return at time $t$.
 
 ## Designing Machine Learning Systems
 
@@ -195,9 +197,9 @@ I tried this using a set of refurbished and new mini-PCs running low-end process
 
 Inference cost can be saved for miniature models by shipping them with user applications. Additionally, inference will no longer require an API call. Programming the algorithm in application native language can become a bottleneck. A web application will usually need the forward propagation programmed in javascript or typescript, for instance.
 
-Models that can retrain or fine tune themselves in short durations (~ 10s of seconds) on at least a few types of devices, can be shipped with user applications. Repeated retraining can lead to slow-downs and heat-up that might force users to review the application negatively. Moreover, there can be minor differences in parameter values if trained on non-standard host devices, due to non-availability or differences in data types within the processors.
+Models that can retrain or fine tune themselves in short durations (~ 10s of seconds) on at least a few types of devices, can be shipped with user application. Repeated retraining can lead to slow-downs and heat-up that might force users to review the application negatively. Moreover, there can be minor differences in parameter values if trained on non-standard host devices, due to non-availability or differences in data types within the processors.
 
-## Capabilities of Language Generation Models
+## Capabilities of Language Generation
 
 Tokens are basic data units of language models. One or more tokens combine to form larger units of language (such as words and sentences). Models predict generation probabilities of tokens. Heuristics can be applied to these probabilities to change to outcome of the generated text.
 
@@ -221,29 +223,29 @@ Cosine and dot product are elementary operations on vectors. Nearest neighbor an
 
 Of all the options to play with, such as **FAISS**, **ChromaDB** and **Pinecone**, I decided to use **Qdrant** due to familiarity. Most of them have *in memory* feature for quick implementation that are typical of notebooks.
 
-Embeddings generated from generative models can be used for semantic similarity with results ranging from satisfactory to unequivocal depending upon the texts from which the embeddings were generated and the model used. I used the stanzas of the poem below as documents and queried on all four of them with the embedding of *CAP Theorem*. The last stanza had the highest (dot product) score as was expected.
+Embeddings generated from generative models can be used for semantic similarity with results ranging from satisfactory to unequivocal depending upon the texts from which the embeddings were generated and the model used. I used the stanzas from the poem below as documents, and queried on all four of the stanzas with the embedding of the text: *CAP Theorem*. The last stanza had the highest (dot product) score - as was expected.
 
-### Multi-Modal Understanding
+### Multi-Modal Understanding and Generation
 
 Language generation after providing data to the model is important because of its usefulness to people.
 
 #### Retrieval Augmented Generation
 
-Suppose a person is not aware of differences in specifications in data-sheets. It is possible for them to provide the data-sheets to the models and question the model about the specification. I tested the models available to me by providing the poem below as a document. I received accurate response.
+Suppose a person wants to find differences in specifications in data-sheets. It is possible for them to provide the data-sheets to the models and question the model about the specification. I tested the models available to me by providing the poem below as a document. I received accurate response.
 
 #### Image and Video
 
-Obtaining text from image or video, is Image or Video Understanding. Obtaining images or videos from text, is Image or Video Generation.
+Obtaining text from image or video, is *Image* or *Video Understanding*. Obtaining images or videos from text, is *Image* or *Video Generation*.
 
 ##### Understanding
 
 Worried about UFO sightings? It is possible to query the models for descriptions of images. If there have been similar sightings before, then one might get a good enough description that might relieve them of worries.
 
-Evaluation of descriptions is possible. A simple way is to generated many descriptions and score them based on percent presence of required information.
+Evaluation of descriptions is possible. A simple way is to generated many descriptions and score them based on ratio of information present to required information.
 
-#### Generation
+##### Generation
 
-I am not aware of quantifiable metrics for audio-visual generation. If you know of any then please do share. Moreover, image or video generation can be expensive.
+I am not aware of quantifiable metrics for evaluating audio-visual generation. If you know of any then please do [share](mailto:{{ site.author.email }}). Nonetheless, image or video generation can be expensive.
 
 ### Invoking Functions
 
@@ -253,9 +255,11 @@ Simple as well as nested function calls are possible on simple functions with re
 
 [Lang-chain provider](https://python.langchain.com/docs/integrations/providers/) needs to be picked before they can be used to create agents with. Lang-graphs relay between well defined nodes and LLMs perform the conversation. Tools can be used for moderation.
 
+Prospective applications have wide reach: from gaming to customer support. I have yet to apply lang-graphs extensively.
+
 ### Notebook
 
-Second part of this blog follows my experiments in [kaggle notebook](https://www.kaggle.com/code/pawanmsr/capstone). One can find the code-blocks on GitHub too. Please feel free to review.
+Later half of this blog follows my experiments in [kaggle notebook](https://www.kaggle.com/code/pawanmsr/capstone). One can find the code-blocks on GitHub too. Please feel free to review.
 
 ### Reference
 
