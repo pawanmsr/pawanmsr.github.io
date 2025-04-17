@@ -3,7 +3,8 @@ layout: post
 title: "Statistics Adventures: Classical Machine Learning and Language Generation"
 description: "Experiences in designing classical machine learning systems and capabilities of language generation models."
 date: 2025-04-11 10:45 +0530
-categories: [blog]
+updated: 20025-04-17-1927 +0530
+categories: [blog, projects]
 math: true
 ---
 
@@ -221,7 +222,7 @@ Assume, $p_{token} = 0$ for those tokens that have positive probabilities, but n
 
 Cosine and dot product are elementary operations on vectors. Nearest neighbor and locality sensitive hashing are more advanced techniques for finding similarity or separation between vectors, although they may require lot of tweaking before being considered acceptable on metrics (IME).
 
-Of all the options to play with, such as **FAISS**, **ChromaDB** and **Pinecone**, I decided to use **Qdrant** due to familiarity. Most of them have *in memory* feature for quick implementation that are typical of notebooks.
+Of all the options to play with, such as *FAISS*, *ChromaDB* and *Pinecone*, I decided to use [Qdrant](https://qdrant.tech/){:target="_blank"} due to familiarity. Most of them have *in memory* feature for quick implementation that are typical of notebooks.
 
 Embeddings generated from generative models can be used for semantic similarity with results ranging from satisfactory to unequivocal depending upon the texts from which the embeddings were generated and the model used. I used the stanzas from the poem below as documents, and queried on all four of the stanzas with the embedding of the text: *CAP Theorem*. The last stanza had the highest (dot product) score - as was expected.
 
@@ -241,7 +242,7 @@ Obtaining text from image or video, is *Image* or *Video Understanding*. Obtaini
 
 Worried about UFO sightings? It is possible to query the models for descriptions of images. If there have been similar sightings before, then one might get a good enough description that might relieve them of worries.
 
-Evaluation of descriptions is possible. A simple way is to generated many descriptions and score them based on ratio of information present to required information.
+Evaluation of descriptions is possible. A simple way is to generate many descriptions and score them based on ratio of information present to required information.
 
 ##### Generation
 
@@ -253,17 +254,19 @@ Simple as well as nested function calls are possible on simple functions with re
 
 ### Agents
 
-[Lang-chain provider](https://python.langchain.com/docs/integrations/providers/) needs to be picked before they can be used to create agents with. Lang-graphs relay between well defined nodes and LLMs perform the conversation. Tools can be used for moderation.
+[LangChain Provider](https://python.langchain.com/docs/integrations/providers/){:target="_blank"} needs to be picked before they can be used to create agents with. Lang-graphs relay between well defined nodes and LLMs perform the conversation. Tools can be used for moderation.
 
 Prospective applications have wide reach: from gaming to customer support. I have yet to apply lang-graphs extensively.
 
 ### Notebook
 
-Later half of this blog follows my experiments in [kaggle notebook](https://www.kaggle.com/code/pawanmsr/capstone). One can find the code-blocks on GitHub too. Please feel free to review.
+Later third of this blog follows from my experiments in [Kaggle Notebook](https://www.kaggle.com/code/pawanmsr/capstone){:target="_blank"}. One can find the code-blocks on GitHub too. Please feel free to review.
 
-### Reference
+### References
 
-Capstone on Kaggle by Google
+*Capstone* on *Kaggle* by *Google*.  
+
+My poems are result of my reveries.
 
 ![CAP on Stones](/assets/img/posts/cap.svg)
 
