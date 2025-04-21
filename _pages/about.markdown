@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This is **not** exactly a portfolio website. This site acts as one of my happy places where I express some of my thoughts, and share my learnings, projects, books, hobbies and more. I usually write for people like me or younger.
+This is **not** exactly a portfolio website. This site acts as one of my happy places where I express some of my thoughts, and share my learnings, projects, books, hobbies and more. I usually write for people like me or younger (especially in similar fields or those who have tread similar tracks as myself).
 
 *I harbour slight social anxiety, which coupled with impassiveness gives people an impression of naivety. If anything seems even slightly offensive or puerile, then please consider it an attempt at humour.*
 

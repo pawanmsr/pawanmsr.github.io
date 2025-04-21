@@ -3,7 +3,7 @@ layout: post
 title: "Statistics Adventures: Classical Machine Learning and Language Generation"
 description: "Experiences in designing classical machine learning systems and capabilities of language generation models."
 date: 2025-04-11 10:45 +0530
-updated: 20025-04-17-1927 +0530
+updated: 2025-04-17-1927 +0530
 categories: [blog, projects]
 math: true
 ---
