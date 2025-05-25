@@ -22,6 +22,8 @@ toc: false
 
 ## Perspective
 
+*I use this poem as a lesson on the difficulty of switching context.*
+
 ![Opposite of Right](/assets/img/posts/oor.svg)
 
 Inspired, impersonal but original.  
