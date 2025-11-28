@@ -24,7 +24,7 @@ Systems that evolve over time have excited me ever so often, and my attempts to 
 
 My poems are result of my reveries.
 
-![Rise and Fall](/assets/img/posts/rnf.svg)
+![Derivatives Free Verse](/assets/img/posts/dfv.svg)
 
 ## References
 
