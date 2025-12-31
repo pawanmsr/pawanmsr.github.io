@@ -1,0 +1,28 @@
+@use '../common/static'
+@use '../common/dynamic'
+
+.notes
+    background: dynamic.$note-background
+    padding: 16px
+    margin: 8px
+
+    .note
+        stroke: rgb(23, 121, 186)
+    
+    .tip
+        stroke: rgb(58, 219, 118)
+    
+    .important
+        stroke: rgb(191, 64, 191)
+    
+    .warning
+        stroke: rgb(255, 174, 0)
+    
+    .caution
+        stroke: rgb(204, 75, 55)
+    
+    span
+        color: dynamic.$quote-color
+        padding-left: 8px
+        padding-right: 8px
+        font-size: 32px
