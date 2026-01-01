@@ -108,7 +108,7 @@ Agents' information set may comprise of private knowledge and mutual knowledge. 
 
 ```haskell
 -- spot price is the current price
--- strike price is the price the 
+-- strike price is the price at which the 
 --  seller/buyer agrees to sell/buy
 payoffLong :: Double -> Double -> Double
 payoffLong spot strike
