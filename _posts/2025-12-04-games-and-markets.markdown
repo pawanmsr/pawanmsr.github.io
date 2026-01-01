@@ -155,7 +155,7 @@ It could also be possible that something that is worthless to one may be pricele
 
 Whimsical words become worthless, and so, statements record financial activities and positions. A position is closed when the underlying asset is delivered - until then it remains an accounts payable or longer term notes payable with the borrower. Accounting can be performed in each of the different ways, and a particular method can be pointed to, based on purpose.
 
-### The Winner Takes It All
+### I Want to Break Free
 
 Small debts are borrowers' problem, but large debts become lenders' problem. If the yield spread of bonds ($S$) can be computed from history, and recovery rate ($R$) is known, then one way to formulate probability of default ($P$) at time $t$ is by defining average hazard rate ($\overline{\lambda(t)}$).
 
@@ -171,6 +171,8 @@ Debt is not always bad - it can be leveraged. Debt financing becomes an interest
 > [!TIP] Time Of Our Lives
 > The best time to default, from a macroeconomics perspective, will be when the debt is cheap - the repercussions can be absorbed effectively. Individually, the best time to default would be when default rates soar - the debt collector may get busy worrying about their own debt(s).
 >
+
+### The Winner Takes It All
 
 Markets may not always be free. Demand can be manufactured and supply can be constricted - as it often happens during wartime. Prices my not remain constant regardless. While a small predictable rise in prices is expected a fall can lead to deflation. Deflation is not good because demand suffers due to anticipation of lower prices, and excessive inflation is not good because demand explodes due to fear of being priced out. Negative feedback is a whirlwind eager to transmute into a tornado, if left unchecked.
 
