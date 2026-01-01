@@ -17,7 +17,7 @@ module Notes
 
         PEN = /\h*>[ \t]*/ # TODO: Fix [ \t] with \h
         TYPE = /!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)/
-        EXPRESSION = /^(#{PEN.source}\n?)*\[#{TYPE.source}\](.*)\n(\h*>.*\n?)*/
+        EXPRESSION = /^(#{PEN.source}\n?)*\[#{TYPE.source}\](.*)\n((\h*>.*\n?)*)/
         
         # Collect posts.
         # Find notes in post.
@@ -51,7 +51,7 @@ module Notes
                 "<h6 id='#{header}'>" \
                 "<i class='#{name}' data-feather='#{ICONS[type]}'></i>" \
                 "<span>#{header}</span></h6>" \
-                "<p>#{@converter.convert(scribble)}</p>" \
+                "#{@converter.convert(scribble)}" \
                 "</div>"
             end
         end
