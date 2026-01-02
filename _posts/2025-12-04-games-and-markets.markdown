@@ -132,7 +132,7 @@ It may not be possible to put a value on everything.
 >
 > <cite>Jack</cite>
 
-It could also be possible that something that is worthless to one may be priceless to some other. Jack assumes mutual knowledge, but he is acting on private information.
+It could also be possible that something that is worthless to one may be priceless to some other. Jack assumes mutual knowledge, but he is acting on private information. Asymmetric information causes market inefficiencies.
 
 > [!IMPORTANT] Do You Want To Know A Secret?
 > Based On True Events
@@ -172,17 +172,92 @@ Debt is not always bad - it can be leveraged. Debt financing becomes an interest
 > The best time to default, from a macroeconomics perspective, will be when the debt is cheap - the repercussions can be absorbed effectively. Individually, the best time to default would be when default rates soar - the debt collector may get busy worrying about their own debt(s).
 >
 
+It is easier to use continuous compounding rate ($r_{c}$), which can be obtained by equating the amounts equations and solving for it.
+
+$$
+Pe^{r_{c}n} = P(1 + \frac{r}{m})^{nm} \\
+r_{c} = m \ln(1 + \frac{r}{m})
+$$
+
+$P$ is the initial amount, $n$ is the number of years, and $m$ is the compounding per year.
+
 ### The Winner Takes It All
 
 Markets may not always be free. Demand can be manufactured and supply can be constricted - as it often happens during wartime. Prices my not remain constant regardless. While a small predictable rise in prices is expected a fall can lead to deflation. Deflation is not good because demand suffers due to anticipation of lower prices, and excessive inflation is not good because demand explodes due to fear of being priced out. Negative feedback is a whirlwind eager to transmute into a tornado, if left unchecked.
 
-Options (contract) offer protection against unpredictable changes in prices. Call buys and put sells the underlying asset if the right is exercised.
+Options (contract) offer insurance against unpredictable changes in prices. Call buys and put sells the underlying asset if the right is exercised.
 
 > [!NOTE] Marry You
-> Marriages can be thought of as bipartite graph (or an n-partite graph if it's not just men and women), wherein girls buy call options from boys at different dates, and boys buy call options from girls at different dates. They keep buying them without exercising them. The prices of the options decreases as the expiration date get nearer. The value of the underlying assets nullify if the holders decide to exercise their options and those underlying assets who had issued the options lose all the options they have had. This way the web gradually collapses.
+> Marriages can be thought of as bipartite graph (or an n-partite graph if it's not just men and women), wherein girls buy call options from boys at different dates, and boys buy call options from girls at different dates. They keep buying them without exercising them. The prices of the options decreases as the expiration date get nearer. The value of the underlying assets nullify if the holders decide to exercise their options and those underlying assets who had issued the options, lose all the options they have had. This way the web gradually collapses.
 >
 
-Futures and Forwards (contract) insure the price of the underlying asset at a later date. (American variant of) The former can be exercised before its delivery date.
+Futures and Forwards (contract) fix the price of the underlying asset at a later date. (American variant of) The former can be exercised before its delivery date. Number of contracts needed is determined by hedge ratio ($h$), the size of the position being hedged ($Q_{P}$) and the size of futures contract of the underlying asset ($Q_{F}$).
+
+$$
+\begin{equation}
+    h = \rho \times \frac{\sigma_{S}}{\sigma_{F}} \\
+    N = h \times \frac{Q_{P}}{Q_{F}} \\
+    N = \beta \times \frac{V_{P}}{V_{F}}
+\end{equation}
+$$
+
+Hedge ratio is proportional to the ratio of standard deviations of change in spot prices and change in futures price. The proportionality constant ($\rho$) is the coefficient of correlation of the standard deviations ($\sigma_{S}$ and $\sigma_{F}$). If the assets being hedged are different from those in the futures contract, then the the ratio of their values ($V_{P}$ and $V_{F}$) is used instead. $\beta$ is the regression coefficient of return on the assets. It can be used to obtain the near term expected return on assets ($R_{f} + \beta (R_{m} - R_{f})$ where $R_{m}$ and $R_{f}$ are return on market and risk free investments respectively). The underlying asset could be a derivative, but surely there are restriction on the number of times a derivative can be created for another derivative.
+
+```haskell
+-- underlying asset is a stock.
+forwardPriceOnStock :: Float -> Float -> Float -> Float
+forwardPriceOnStock spot rate time = spot * exp (rate * time)
+
+-- underlying asset is another derivative
+forwardPriceOnDerivative :: (Float -> Float) -> Float -> Float -> Float
+forwardPriceOnDerivative derivative rate time = (derivative time) * exp (rate * time)
+
+-- rate is risk free rate
+-- time is time to maturity
+
+```
+
+Risk free rates are benchmark rates such as LIBOR or MIBOR. They can also be yields on bonds or return on treasury bills.
+
+```shell
+# price of forwards contract on a stock
+# stock price is 100, risk is 5%, time is quarter of year
+$ forwardPriceOnStock 100 0.05 0.25
+$ 101.25785
+
+# price of forwards contract on another forwards contract
+# risk free rate is 5% and all else is same as before
+$ forwardPriceOnDerivative (forwardPriceOnStock 100 0.05) 0.05 0.25
+$ 102.531525
+
+# let's buy a forwards contract on the forwards contract
+#   on a stock that we just bought
+$ forwardPriceOnDerivative (forwardPriceOnDerivative \
+    (forwardPriceOnStock 100 0.05) 0.05) 0.05 0.25
+$ 103.82121
+
+# different rate and time may cause it to
+#   increase more rapidly
+
+```
+
+Time to maturity can be negative if the price needs to be computed for a past date.
+
+> [!NOTE] Somebody That I Used to Know
+> If the asset pays an interest or a dividend, then the spot price must be reduced by that amount.
+>
+> The dividend date may not fall within the time to maturity, but their announcement often tumbles the stock price by dividend amount. Stocks are sold just after the ex-dividend date (because that is when the recipients of dividend are finalized).
+>
+
+The value of European call ($c$) or put ($p$) options can be obtained from put-call parity if the value of either of them is known.
+
+$$
+\begin{equation}
+    D + c + Ke^{-rT} = p + S_{0}
+\end{equation}
+$$
+
+The value of dividends ($D$), the strike price ($K$), and the spot price ($S_{0}$) must be given.
 
 ## Time (and Tick Size)
 
@@ -195,11 +270,68 @@ Futures and Forwards (contract) insure the price of the underlying asset at a la
 $$
 \begin{equation}
     \delta t = \frac{T}{N} \\
-    \delta f = f(t + \delta t) - f(t)
+    \delta f = f(t + \delta t) - f(t) \\
+    \delta f = f_{i} - f_{i - 1}  
 \end{equation}
 $$
 
-The measured value $f$ may depend on other parameters and actions of participating agents. The smallest possible change in $f$ is the tick size.
+The measured value $f$ may depend on other parameters and actions of participating agents. The smallest possible change in $f$ is the tick size. Volatility ($\sigma$) is standard deviation of (continuously compounded) return ($r$) on $f$.
+
+$$
+    f_{i} = f_{i - 1}e^{r_{i}} \\
+    r_{i} = \ln \frac{f_{i}}{f_{i - 1}}
+$$
+
+At the end of current timestep ($n$), over $m$ previous measurements of $f$, volatility becomes a maximum likelihood estimate.
+
+$$
+\begin{equation}
+    \bar{r} = \frac{1}{m} \sum_{i = 1}^{m} r_{n - i} \\
+    \sigma_{n}^{2} = \frac{1}{m} \sum_{i = 1}^{m} (r_{n - i} - \bar{r})^{2} \\
+    \sigma_{n}^{2} = \sum_{i = 1}^{m} \alpha_{i} (r_{n - i} - \bar{r})^{2}
+\end{equation}
+$$
+
+$\alpha_{i}$ are weights, which maybe higher for more recent measurements.
+
+```haskell
+import Math (square)
+
+-- often times change ratio is used instead of natural log
+returnRate :: Double -> Double -> Double
+returnRate current previous = (current - previous) / previous
+
+-- exponentially weighted moving average
+ewma :: Double -> Double -> Double -> Double -> Double
+ewma variance current previous lambda
+    | lambda <= 1 && lambda > 0 = lambda * variance + 
+        (1 - lambda) * square (returnRate current previous)
+    | otherwise = 0.2 * variance + 
+        0.8 * square (returnRate current previous)
+
+```
+
+Other more complex formulations for volatility use of heteroscedasticity.
+
+### I Like To Move It Move It
+
+If the time interval ($\delta t$) is small in comparison to volatility ($\sigma$), then (risk neutral) upward and downward movement factors are:
+
+$$
+    u = e^{\sigma \delta t} \\
+    d = e^{- \sigma \delta t}
+$$
+
+The asset changes to $S_{0}u$ on upward movement and $S_{0}d$ on downward movement. Correspondingly, the derivative prices move to $f_{u}$ and $f_{d}$.
+
+$$
+\begin{equation}
+    p = \frac{e^{r_{f}t} - d}{u - d} \\
+    f = e^{-rt}[pf_{u} + (1 - p)f_{d}] \\
+\end{equation}
+$$
+
+$p$ is probability of upward movement and $r_{f}$ is risk free rate.
 
 ## Poems and Mnemonic
 
