@@ -517,11 +517,12 @@ More stateful programming methods may be better suited.
 
 ## Chalte Chalte
 
-मेरे ये गीत याद रखना| Songs help me associate - others may have different ways.
+मेरे ये गीत याद रखना  
+Songs help me associate - others may have different ways.
 
 There is a lot more to all that is mentioned. Many more interesting details were skipped due to my insufficiency. I haven't been able to grasp levels of dominant strategies in games that involve more than two players, for one.
 
-Moreover one could study all of this and then get caught up in some hazard. If you find any of it useful, then I hope you become Batman - I will be your butler in the more subtle vehicle.
+If you find any of it useful, then I hope you become Batman - I will be your butler in the more subtle vehicle.
 
 ## Poems and Mnemonic
 
