@@ -14,7 +14,7 @@ Elementary theoretical understanding of games, markets and related stochastic pr
 
 ### Precis
 
-Systems that evolve over time have excited me ever so often, and my attempts to grasp their complexity (for certifications or otherwise) have resulted in limited avail. I have got an opportunity lately, to make a definitive attempt in my spare time. This article, however elaborate, is not backed by any practical insights or data and any comical aspects may be simplifications without concern for accuracy.
+Systems that evolve over time have excited me ever so often, and my attempts to grasp their complexity (for certifications or otherwise) have resulted in limited avail. I have got an opportunity lately, to make a definitive attempt in my spare time. This article, however elaborate, is not backed by any practical insights or data, and any comical aspects may be simplifications without concern for accuracy.
 
 ## Functional Programming
 
@@ -130,7 +130,7 @@ It may not be possible to put a value on everything.
 
 > I got a jar of dirt. I got a jar of dirt.
 >
-> <cite>Jack</cite>
+> <cite>~~Captain~~ Jack Sparrow</cite>
 
 It could also be possible that something that is worthless to one may be priceless to some other. Jack assumes mutual knowledge, but he is acting on private information. Asymmetric information causes market inefficiencies.
 
@@ -172,7 +172,7 @@ Debt is not always bad - it can be leveraged. Debt financing becomes an interest
 > The best time to default, from a macroeconomics perspective, will be when the debt is cheap - the repercussions can be absorbed effectively. Individually, the best time to default would be when default rates soar - the debt collector may get busy worrying about their own debt(s).
 >
 
-It is easier to use continuous compounding rate ($r_{c}$), which can be obtained by equating the amounts equations and solving for it.
+It is easier to use continuous compounding rate ($r_{c}$), which can be obtained by equating the amounts equations, and solving for it.
 
 $$
 Pe^{r_{c}n} = P(1 + \frac{r}{m})^{nm} \\
@@ -183,7 +183,7 @@ $P$ is the initial amount, $n$ is the number of years, and $m$ is the compoundin
 
 ### The Winner Takes It All
 
-Markets may not always be free. Demand can be manufactured and supply can be constricted - as it often happens during wartime. Prices my not remain constant regardless. While a small predictable rise in prices is expected a fall can lead to deflation. Deflation is not good because demand suffers due to anticipation of lower prices, and excessive inflation is not good because demand explodes due to fear of being priced out. Negative feedback is a whirlwind eager to transmute into a tornado, if left unchecked.
+Markets may not always be free. Demand can be manufactured and supply can be constricted - as it often happens during wartime. Prices my not remain constant regardless. While a small predictable rise in prices is expected, a fall can lead to deflation. Deflation is not good because demand suffers due to anticipation of lower prices, and excessive inflation is not good because demand explodes due to fear of being priced out. Negative feedback is a whirlwind eager to transmute into a tornado, if left unchecked.
 
 Options (contract) offer insurance against unpredictable changes in prices. Call buys and put sells the underlying asset if the right is exercised.
 
@@ -201,7 +201,7 @@ $$
 \end{equation}
 $$
 
-Hedge ratio is proportional to the ratio of standard deviations of change in spot prices and change in futures price. The proportionality constant ($\rho$) is the coefficient of correlation of the standard deviations ($\sigma_{S}$ and $\sigma_{F}$). If the assets being hedged are different from those in the futures contract, then the the ratio of their values ($V_{P}$ and $V_{F}$) is used instead. $\beta$ is the regression coefficient of return on the assets. It can be used to obtain the near term expected return on assets ($R_{f} + \beta (R_{m} - R_{f})$ where $R_{m}$ and $R_{f}$ are return on market and risk free investments respectively). The underlying asset could be a derivative, but surely there are restriction on the number of times a derivative can be created for another derivative.
+Hedge ratio is proportional to the ratio of standard deviations of change in spot price, and change in futures price. The proportionality constant ($\rho$) is the coefficient of correlation of the standard deviations ($\sigma_{S}$ and $\sigma_{F}$). If the assets being hedged are different from those in the futures contract, then the the ratio of their values ($V_{P}$ and $V_{F}$) is used instead. $\beta$ is the regression coefficient of return on the assets. It can be used to obtain the near term expected return on assets ($R_{f} + \beta (R_{m} - R_{f})$ where $R_{m}$ and $R_{f}$ are return on market and risk free investments respectively). The underlying asset could be a derivative, but surely there are restrictions on the number of times a derivative can be created for another derivative.
 
 ```haskell
 -- underlying asset is a stock.
@@ -348,7 +348,7 @@ $$
 \end{equation}
 $$
 
-$p$ is probability of upward movement, $r_{f}$ is risk free rate, $\mu$ is the expected actual return and $\Delta$ is the number of offsetting assets needed to hedge the position against price movements. American option prices for two possible movement in each time step are computed using binomial tree. If non-movement is also considered, that is, the price may not move, then the option prices need to be computed using trinomial tree. The expectation can be computed by performing a Monte-Carlo simulation that traverses a path of the tree by randomly selecting nodes weighted by their probabilities.
+$p$ is probability of upward movement, $r_{f}$ is risk free rate, $\mu$ is the expected actual return and $\Delta$ is the number of offsetting assets needed to hedge the position against price movements. American option prices for two possible movements, in each time step, are computed using binomial tree. If non-movement is also considered, that is, the price may not move, then the option prices need to be computed using trinomial tree. The expectation can be computed by performing a Monte-Carlo simulation that traverses a path of the tree by randomly selecting nodes weighted by their probabilities.
 
 ```haskell
 -- Binomial tree is a type of binary tree
@@ -428,7 +428,7 @@ $$
    \ln y_{t} - \ln y_{0} \sim \mathcal{N}(\mu t - \frac{1}{2}\sigma^{2}t, \sigma^{2}t)
 $$
 
-The derivative, follows a slightly more complicated equation.
+The derivative follows a slightly more complicated equation.
 
 $$
 \begin{equation}
@@ -438,7 +438,7 @@ $$
 \end{equation}
 $$
 
-Drift is expected whereas $dz$ resembles Brownian motion, which means it is erratic. The formulations and derivations follow Itô calculus. The analytic solution assumes risk neutral world and constant volatility.
+Drift is expected, whereas $dz$ resembles Brownian motion, which means it is erratic. The formulations and derivations follow Itô calculus. The analytic solution assumes risk neutral world and constant volatility.
 
 $$
 \begin{equation}
@@ -455,7 +455,7 @@ Price of put option ($p$) can be obtained from equation $\ref{parity}$ by substi
 -- power x y raises x to y
 import Math (power)
 
--- instead of writing the longer decimal
+-- instead of writing the longer decimal numbers,
 --  division by hundred has been done explicitly
 -- look up table would be way more accurate
 standardNormalCDF :: Float -> Float
@@ -493,7 +493,7 @@ put spot strike rate volatility time cdf =
 
 ```
 
-It will get much more complicated if rate and volatility are not longer assumed constant.
+It will get much more complicated if rate and volatility become functions of time (and other variables).
 
 ```shell
 # On a spot price of 100, strike price of 110, with 5% risk free rate,
@@ -511,7 +511,7 @@ $ 41.360817
 
 ### Finite Difference Method
 
-Trying to find solutions to differential equations may be painful exercise and likely fruitless for most of us, but it is always possible to visualise them numerically. $y$ and all the other variables that affect $f$ are split equally (not necessarily same number of intervals). The partial derivative of $f$ with respect to each of the variable is computed (assuming all other variables are constant), and then these partial derivatives are substituted into the differential equation to get the value of $f$ at next step. This new value of $f$ is used to compute the next iteration of partial derivatives - at least that's how I do it.
+Trying to find solutions to differential equations may be painful exercise, and likely fruitless for most of us, but it is always possible to visualise them numerically. $y$ and all the other variables that affect $f$ are split equally (not necessarily same number of intervals). The partial derivative of $f$ with respect to each of the variable is computed (assuming all other variables are constant), and then these partial derivatives are substituted into the differential equation to get the value of $f$ at next step. This new value of $f$ is used to compute the next iteration of partial derivatives - at least that's how I do it.
 
 More stateful programming methods may be better suited.
 
@@ -524,6 +524,12 @@ There is a lot more to all that is mentioned. Many more interesting details were
 
 If you find any of it useful, then I hope you become Batman - I will be your butler in the more subtle vehicle.
 
+> You have a debt to pay.
+>
+> <cite>Davy Jones</cite>
+
+I seem to have more than just one - I am off to see what I can do about them.
+
 ## Poems and Mnemonic
 
 My poems are result of my reveries.
@@ -535,4 +541,4 @@ My poems are result of my reveries.
 - Options, Futures and Other Derivatives. Hull, J C. Basu, S.
 - Game Theory and Mechanism Design. Narahari, Y.
 
-Many other books and blogs such as 2018 CFA Curriculum Level 1 Volume 1, Learn You a Haskell Great Good, et cetera.
+Many other books and blogs such as 2018 CFA Curriculum Level 1 Volumes 1-3, Learn You a Haskell Great Good, et cetera.
