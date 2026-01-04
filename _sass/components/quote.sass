@@ -1,4 +1,5 @@
 @use '../common/static'
+@use '../common/dynamic'
 
 blockquote
     border: none
@@ -11,9 +12,21 @@ blockquote
 
     p
         display: inline
-        font-size: 20px
+        font-size: 24px
+        font-family: "Brush Script MT", cursive
         font-weight: static.$p-font-weight
-        &:before
-            content: "“ "
-        &:after
-            content: " ”"
+        &:first-of-type
+            &:before
+                content: "“ "
+            &:after
+                content: " ”"
+
+        cite
+            font-size: 20px
+            font-family: "Garamond", "Georgia", serif
+            font-weight: static.$cite-font-weight
+            &:before
+                content: "("
+            &:after
+                content: ")"
+                

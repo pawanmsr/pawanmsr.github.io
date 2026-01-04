@@ -117,7 +117,7 @@ $$
     \displaylines{
         h \in H \,, \ \vert H \vert = m \\
         e \in E \,, \ \vert E \vert = n \\
-        P(h | e) = \frac{P(e | h) P(h)}{\sum_{e, h} P(e | h)}
+        P(h | e) = \frac{P(e | h) P(h)}{\sum_{e, h} P(h) P(e | h)}
     }
 \end{equation}
 $$
