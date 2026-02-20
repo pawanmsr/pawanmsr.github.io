@@ -18,4 +18,8 @@
     {% endif %}
 
     <script async src="{{ site.data.assets.post.js | relative_url }}"></script>
+
+    {% if page.graphics %}
+    <script src="{{ site.data.assets.post.graphics.js | relative_url }}" type="module" async></script>
+    {% endif %}
 {% endif %}

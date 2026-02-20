@@ -21,7 +21,9 @@
             {% if site.author.socials[name].username %}
             <li>
                 <a href="{{ site.data.socials[name].url | append: site.author.socials[name].username }}" target="_blank">
+                    {% if site.data.socials[name].icon %}
                     <i data-feather="{{ site.data.socials[name].icon }}"></i>
+                    {% endif %}
                 </a>
             </li>
             {% endif %}

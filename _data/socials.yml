@@ -33,3 +33,15 @@ youtube:
 email:
   url: mailto
   icon: mail
+
+tumblr:
+  url: https:://www.tumblr.com/
+  icon: 
+
+threads:
+  url: https://www.threads.com/@
+  icon: 
+
+mathstodon:
+  url: https://mathstodon.xyz/@
+  icon: 
