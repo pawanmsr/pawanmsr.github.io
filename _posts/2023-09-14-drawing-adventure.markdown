@@ -3,13 +3,14 @@ layout: post
 title:  "Drawing Adventure and The Heaven for Engineers"
 description:    "Caricature of Sukhoi Su-30 MKI 'Flanker-H' and Mikoyan-Gurevich MiG-21 'Fishbed'."
 date:   2023-09-14 17:30 +0530
-updated: 2025-02-12 12:30 +0530
+updated: 2026-02-22 21:51 +0530
 categories: [fun]
+graphics: true
 ---
 
 *Young Adult or an Engineering Enthusiast? Read ON!*
 
-Technical arts has been one of my favourite topics to learn and practise. It is also one of the means to alleviate boredom - especially when the mood isn't right for intellectual (or any other sort of) tasking.  
+Technical arts has been one of my favourite topics to learn and practice. It is also one of the means to alleviate boredom - especially when the mood isn't right for intellectual (or any other sort of) tasking.  
 
 ## Hour Long Artwork  
 
@@ -40,6 +41,16 @@ Here's how I remembered it again on February 12, 2025:
 ![Dreaming between Love and Hate](/assets/img/posts/dlh.svg)
 
 My poems are result of my reveries, but this one is based on true events.
+
+## Day Long Artwork
+
+Sketches are two dimensional. Models are three dimensional. Operations on sketches such as extrusions, fillets, joins expand them to three dimensions.
+
+### The Spirit of Storms
+
+[GLB](/assets/bin/marut.glb)
+
+HAL HF-24 Marut was one of the last planes to have undergone airborne aerodynamic (instead of wind tunnel) testing by being tugged by another aircraft.
 
 ## Engineering Ecosystem  
 
