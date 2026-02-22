@@ -26,8 +26,6 @@ function download_assets() {
     cd "$1" || exit 1
     
     for item in * ; do
-        echo "$2"
-        echo "${item}"
         if [ -f "${item}" ] && [ "${item}" == "$2" ]; then
             if command -v wget &> /dev/null ; then
                 wget -i "$2"
@@ -43,8 +41,6 @@ function download_assets() {
             download_assets "${item}" "$2"
         fi
     done
-
-    ls -lah .
     
     cd -
 }
