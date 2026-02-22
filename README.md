@@ -19,4 +19,6 @@ Poetry, Hobbies, Projects and more. Laughs and learning.
 # Rakefile automation
 rake test
 
+# TODO: convert to sass.
+
 ```

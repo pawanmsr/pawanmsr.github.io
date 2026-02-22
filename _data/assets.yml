@@ -25,6 +25,9 @@ post:
   math:
     js: /assets/external/mathjax/js/tex-mml-chtml.js
 
+  graphics:
+    js: /assets/external/babylon/js/babylon-viewer.esm.min.js
+
 nav:
   img: /assets/img/bhautiki-samay.gif
 

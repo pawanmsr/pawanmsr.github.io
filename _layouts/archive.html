@@ -7,7 +7,7 @@ layout: page
     
     <ul class="no-bullet">
         {% for post in page.posts %}
-        <li>
+        <li class="clearfix">
             <a href="{{ post.url | prepend: site.base_url }}">
                 <span>{{ post.title }}</span>
                 <span class="float-right">{{ post.date | date: "%d %B %Y" }}</span>
@@ -32,7 +32,7 @@ layout: page
             <ul class="no-bullet">
             {% assign curr_year = year %}
         {% endif %}
-        <li>
+        <li class="clearfix">
             <a href="{{ post.url | prepend: site.base_url}}">
                 <span>{{ post.title }}</span>
                 <span class="float-right">{{ post.date | date: "%d %B %Y" }}</span>
