@@ -42,4 +42,4 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
       - name: Run Tests
-        run: bash run.sh -ib
+        run: bash run.sh -icb
