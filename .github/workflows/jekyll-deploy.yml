@@ -42,7 +42,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
       - name: Run Tests
-        run: bash run.sh -ib
+        run: bash run.sh -icb
       - name: Upload Artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
