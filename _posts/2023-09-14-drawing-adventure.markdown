@@ -50,7 +50,7 @@ Sketches are two dimensional. Models are three dimensional. Operations on sketch
 
 [GLB](/assets/bin/marut.glb)
 
-HAL HF-24 Marut was one of the last planes to have undergone airborne aerodynamic (instead of wind tunnel) testing by being tugged by another aircraft.
+HAL HF-24 Marut was one of the last planes to have undergone airborne aerodynamic (instead of wind tunnel) testing by being tugged by another aircraft. Views from simulation are also available on tumblr blog.
 
 ## Engineering Ecosystem  
 
